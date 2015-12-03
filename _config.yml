@@ -72,3 +72,8 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+#enable GitHub flavored markdown (needed for tables)
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
