@@ -292,33 +292,21 @@ footer {
 @import "svg-icons";
 
 
-table
-{
-  font-size: 14px;
-	border-collapse:collapse;
-	margin:20px 0 0;
-	padding:0;
+table {
+    border:#ccc 1px solid;
+    border-radius:3px;
 }
-
-table tr
-{
-	border-top:1px solid #ccc;
-	background-color:#fff;
-	margin:0;
-	padding:0;
+table th {
+    padding:21px 25px 22px 25px;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
 }
-
-table tr:nth-child(2n)
-{
-	background-color:#f8f8f8;
+table tr {
+    padding-left:20px;
 }
-table tr th[align="center"], table tr td[align="center"] {
-	text-align:center;
-}
-table tr th, table tr td
-{
-	border:1px solid #ccc;
-	text-align:left;
-	margin:0;
-	padding:6px 13px;
+table td {
+    padding:18px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
 }
