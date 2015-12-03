@@ -36,9 +36,3 @@ permalink: /syllabus/
 |Apr 25|
 |Apr 27|
 |FINAL| Final Presentation
-
-
-EASTER BREAK
-5-min Group Progress Presentation
-
-Cross-team hacking
