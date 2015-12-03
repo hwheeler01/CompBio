@@ -4,7 +4,7 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-| Date          | Topics        | Exercises | DUE |
+| **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| -----:|---|
 |Jan 20|Intro to Python, ROSALIND |
 |Jan 25|
@@ -38,3 +38,7 @@ permalink: /syllabus/
 |FINAL| Final Presentation
 
 
+EASTER BREAK
+5-min Group Progress Presentation
+
+Cross-team hacking
