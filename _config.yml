@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: COMP 383 Computing
+name: COMP 383 Computational Biology
 
 # Short bio or description (displayed in the header)
 description: Spring 2016
@@ -17,7 +17,6 @@ avatar: https://raw.githubusercontent.com/hwheeler01/CompBio/gh-pages/images/dna
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-"
   dribbble:
   email: hwheeler1@luc.edu
   facebook:
