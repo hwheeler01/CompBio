@@ -143,14 +143,14 @@ Course grades are assigned according to the following scale:<br>
 | ------------- |:-------------:| :-----:|---|
 |Jan 20|Syllabus, Intro to Python & ROSALIND |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
 |Jan 25|Sequences as Strings |DNA, REVC, GC, PROT, SUBS, HAMM| |
-|Jan 27|Graphs and Motifs |GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a>
-|Feb 1|
-|Feb 3|
-|Feb 8|
-|Feb 10|
-|Feb 15|
-|Feb 17|
-|Feb 22|
+|Jan 27|Graphs and Motifs |GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
+|Feb 1|ORFs, Splicing, k-Mers, oh my! | ORF, SPLC, TRAN, LONG, KMER | |
+|Feb 3|Constructing a de Bruijn Graph | SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 2</a> |
+|Feb 8|BioPython | INI, DBPR, FRMT | |
+|Feb 10|FASTQ NGS Data|TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
+|Feb 15|Testing, Debugging | |
+|Feb 17|Parsing in Python | VCF to PLINK dosage | VCF parser (via Sakai)|
+|Feb 22|Group Project Introduction, form teams | |
 |Feb 24|
 |Feb 29|
 |Mar 2|
