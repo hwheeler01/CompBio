@@ -139,38 +139,38 @@ Course grades are assigned according to the following scale:<br>
 
 <span style="font-weight: bold;"><a name="schedule"></a>Course Schedule:</span><br>
 
-| **Date**      | **Topics**    | **Exercises** | **DUE by 11:59PM** |
+| **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 20|Syllabus, Intro to Python & ROSALIND |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
+|Jan 20|Syllabus, Introduction to Python & ROSALIND |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
 |Jan 25|Sequences as Strings |DNA, REVC, GC, PROT, SUBS, HAMM| |
 |Jan 27|Graphs and Motifs |GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | ORF, SPLC, TRAN, LONG, KMER | |
 |Feb 3|Constructing a de Bruijn Graph | SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 2</a> |
 |Feb 8|BioPython | INI, DBPR, FRMT | |
 |Feb 10|FASTQ NGS Data|TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
-|Feb 15|Testing, Debugging | |
-|Feb 17|Parsing in Python | VCF to PLINK dosage | VCF parser (via Sakai)|
-|Feb 22|Group Project Introduction, form teams | |
-|Feb 24|
-|Feb 29|
-|Mar 2|
+|Feb 15|Parsing in Python | VCF to PrediXcan dosage|
+|Feb 17|Group Project Introduction, Form Groups |  | VCF Parser (via Sakai)|
+|Feb 22|Group Meetings, Approval of Project & Group| contact PI to discuss project/transfer data|  |
+|Feb 24|Introduction to GitHub | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> & <a href="https://pages.github.com/">Site</a> 
+|Feb 29|Group Meetings | define individual roles & set weekly benchmarks |
+|Mar 2|Group Work |  |
 |Mar 7| ***No class: SPRING BREAK*** |
 |Mar 9| ***No class: SPRING BREAK*** |
-|Mar 14|
-|Mar 16|
-|Mar 21|
-|Mar 23|
+|Mar 14|Initial Group Presentations| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
+|Mar 16|Initial Group Presentations| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
+|Mar 21|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #1</a> |
+|Mar 23|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #1 Comments</a>
 |Mar 28| ***No class: EASTER BREAK*** |
-|Mar 30|
-|Apr 4|
-|Apr 6|
-|Apr 11|
-|Apr 13|
-|Apr 18|
-|Apr 20|
-|Apr 25|
-|Apr 27|
-|May 6| Final Presentation
+|Mar 30|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>
+|Apr 4|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #2</a> |
+|Apr 6|Cross-team hacking | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #2 Comments</a>
+|Apr 11|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #3</a>
+|Apr 13|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #3 Comments</a>
+|Apr 18|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #4</a>
+|Apr 20|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #4 Comments</a>
+|Apr 25|Group Work | discuss rough draft |
+|Apr 27|Group Work |
+|May 6| **Final Presentations: Friday May 6, 4:15-6:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>See the <a href="http://www.luc.edu/academics/schedules/spring/academic_calendar.shtml">Loyola academic calendar</a> for registration and withdrawal dates. 
 
