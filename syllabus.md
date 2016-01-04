@@ -63,7 +63,10 @@ permalink: /syllabus/
 
 <span style="font-weight: bold;"><a name="objectives"></a>Course Objectives: </span>
 
-- Analyze primary literature in the field of bioinformatics and computational biology- Design and implement advanced data structures for computational biology- Design and implement advanced algorithms for computational biology- Increase proficiency in object-oriented and scripting programming languages
+- Analyze primary literature in the field of bioinformatics and computational biology
+- Design and implement advanced data structures for computational biology
+- Design and implement advanced algorithms for computational biology
+- Increase proficiency in object-oriented and scripting programming languages
 
 
 <br>
@@ -78,9 +81,11 @@ There is no specific text for this course. Rather, we will be using free online 
 Plagiarism and cheating will not be tolerated (see <a href="http://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml">University Policy</a>) and will be
 reported to the college. STUDENTS FOUND TO PRESENT SOMEONE ELSE’S WORK AS THEIR OWN WILL **RECEIVE ZERO POINTS FOR THE ASSIGNMENT**. ANY STUDENT WHO REPEATS SUCH AN ACTION WILL RECEIVE A FAILING GRADE (F) FOR THE COURSE.
 
-The ROSALIND and Python programming assignments at the beginning of the semester can be done independently or in pairs. However, your code must be commented in your own words and turned in independently. ***If you had a partner for an assignment, note his/her name in your code comments***. Cheating includes submitting as your own work something that has been written by an outside person (or web site). If you are working on a pair or group project, an “outside person” refers to people other than your partner or team.
+The ROSALIND and Python programming assignments at the beginning of the semester can be done independently or in pairs. However, your code must be commented in your own words and turned in independently. In pair programming, the object is to work together, learning from each other, not to divide the work into two pieces with each partner working on a different piece. ***If you had a partner for an assignment, note his/her name in your code comments***. Cheating includes submitting as your own work something that has been written by an outside person (or web site). If you are working on a pair or group project, an “outside person” refers to people other than your partner or team.
 
-After the first month or so, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. As such, “coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make. This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be accepted. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of thebehavior. Repeat offenders will earn an F for the course.As a contributing member of a group, it is your responsibility to ensure that all members are contributing. Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
+After the first month or so, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. As such, “coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make. This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be accepted. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
+behavior. Repeat offenders will earn an F for the course.
+As a contributing member of a group, it is your responsibility to ensure that all members are contributing. Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
 
 <span style="font-weight: bold;"><a name="disabilities"></a>Students with Special Needs:</span>&nbsp; 
 
@@ -172,7 +177,9 @@ Course grades are assigned according to the following scale:<br>
 |Apr 27|Group Work |
 |May 6| **Final Presentations: Friday May 6, 4:15-6:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
 
-<span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>See the <a href="http://www.luc.edu/academics/schedules/spring/academic_calendar.shtml">Loyola academic calendar</a> for registration and withdrawal dates. 
+<span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
+
+See the <a href="http://www.luc.edu/academics/schedules/spring/academic_calendar.shtml">Loyola academic calendar</a> for registration and withdrawal dates. 
 
 <br>
 *This syllabus is subject to change during the course at the discretion of the instructor.*
