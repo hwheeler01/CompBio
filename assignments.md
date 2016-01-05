@@ -52,7 +52,7 @@ Once you are enrolled, you will see the assigment problems listed <a href="http:
 
 <span style="font-weight: bold;"><a name="parser"></a></span>
 ##Python Parser
-
+For better or worse, new file formats are developed frequently in computational biology, often every time a new method or software is released (see <https://www.biostars.org/p/55351/>). Thus, as budding computational biologists, you will often be tasked with converting files from one format to another in order to try out a shiny new method on your data. If you're lucky, someone will have written and posted a script to do exactly what you want. Often, however, it is quicker/safer/easier to write your own script. For this assignment, you will be given the "real life" task of coverting imputed genotype data into a format appropriate for a new method. Details are <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">here</a>. 
 
 <span style="font-weight: bold;"><a name="present"></a></span>
 ##Group Presentations
