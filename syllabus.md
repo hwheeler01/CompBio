@@ -154,7 +154,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 8|BioPython | INI, DBPR, FRMT | |
 |Feb 10|FASTQ NGS Data|TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
 |Feb 15|Parsing in Python | VCF to PrediXcan dosage|
-|Feb 17|Group Project Introduction, Form Groups |  | VCF Parser (via Sakai)|
+|Feb 17|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (via Sakai)|
 |Feb 22|Group Meetings, Approval of Project & Group| contact PI to discuss project/transfer data|  |
 |Feb 24|Introduction to GitHub | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> & <a href="https://pages.github.com/">Site</a> 
 |Feb 29|Group Meetings | define individual roles & set weekly benchmarks |
