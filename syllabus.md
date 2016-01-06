@@ -140,7 +140,7 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 20|Syllabus, Introduction to Python & ROSALIND |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
+|Jan 20|Syllabus, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
 |Jan 25|Sequences as Strings |DNA, REVC, GC, PROT, SUBS, HAMM| |
 |Jan 27|Graphs and Motifs |GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | ORF, SPLC, TRAN, LONG, KMER | |

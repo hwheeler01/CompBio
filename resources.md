@@ -12,4 +12,8 @@ permalink: /resources/
 
 - <a href="https://www.biostars.org/p/123728/">Resources</a> for statistical computing in R.
 
+- A straight-forward <a href="http://www.cureffi.org/2014/08/27/git-tutorial/">GitHub tutorial</a> written by a computational biologist that will get you started. 
+
+- A couple of ~20 minute YouTube videos introducing GitHub: one from <a href="https://www.youtube.com/watch?v=0fKg7e37bQE">LearnCode.academy</a> and one from <a href="https://www.youtube.com/watch?v=LXoWxrTdXkM">GEEKBLOGTV</a>.
+
 - <a href="https://www.google.com/">Google</a>, obvi.
