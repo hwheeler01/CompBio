@@ -8,7 +8,7 @@ permalink: /resources/
 
 - <a href="http://biopython.org/wiki/Biopython">Biopython</a> is a set of freely available tools for biological computation written in Python by an international team of developers.
 
-- In class, we will solve some introductory problems using <a href="http://rosalind.info/">ROSALIND</a>, but the resource includes many advanced problems that get more challenging as you move down each <a href="http://rosalind.info/problems/topics/">topic list</a>. Check out those of interest to you and build your skills.
+- In class, we will solve some introductory problems using <a href="http://rosalind.info/">ROSALIND</a>, but the resource includes many advanced problems that get more challenging as you move down each <a href="http://rosalind.info/problems/topics/">topic list</a>. Check out those of interest to you and build your skills. You may get an idea for a group project by doing these exercises.
 
 - <a href="https://www.biostars.org/p/123728/">Resources</a> for statistical computing in R.
 

@@ -13,11 +13,11 @@ permalink: /syllabus/
 - TA:
 
 
-<table style="width: 459px; height: 182px;" class="docutils" border="1">
+<table style="width: px; height: 12px;" class="docutils" border="1">
 
 
 
-  <caption><b>Syllabus Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
+  <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
 
     <tr>
 
@@ -69,7 +69,6 @@ permalink: /syllabus/
 - Increase proficiency in object-oriented and scripting programming languages
 
 
-<br>
 
 
 <span style="font-weight: bold;"><a name="texts"></a>Course Materials: </span>
@@ -94,9 +93,8 @@ Any student with special needs or difficulties in learning and completing course
 
 <span style="font-weight: bold;"><a name="assignments"></a>Assignments:</span>
 
-Details are <a href="http://hwheeler01.github.io/CompBio/assignments/">here</a>.
+Your grade will comprise several assignments as listed below. Details can be found on the <a href="http://hwheeler01.github.io/CompBio/assignments/">Assignments</a> page.
 
-<br>
 
 
 <span style="font-weight: bold;"><a name="grades"></a>Grading:</span><br>
@@ -121,10 +119,10 @@ Details are <a href="http://hwheeler01.github.io/CompBio/assignments/">here</a>.
 
 
 
-<br>
+
 Course grades are assigned according to the following scale:<br>
 
-| **Grade** | **Points** |
+| **Grade** | **Minimum Points** |
 | :--- |:---:|
 |A | 90|
 |A-| 87|
@@ -136,10 +134,6 @@ Course grades are assigned according to the following scale:<br>
 |C-| 67|
 |D+| 64|
 |D | 60|
-
-
-<br>
-
 
 
 <span style="font-weight: bold;"><a name="schedule"></a>Course Schedule:</span><br>
