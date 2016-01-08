@@ -5,33 +5,19 @@ permalink: /assignments/
 ---
 <table style="width: px; height: 12px;" class="docutils" border="1">
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
-
     <tr>
-
       <td><a class="reference internal" href="#rosalind">ROSALIND</a></td>
-
       <td><a class="reference external" href="#parser">Python Parser</a></td>
-
     </tr>
-
     <tr>
-
       <td><a class="reference external" href="#present">Group Presentations</a></td>
-
       <td><a class="reference internal" href="#blogs">Blogs</a></td>
-      
     </tr>
-
     <tr>
-
 	<td><a class="reference external" href="#code">Project Code</a></td>
-
       <td><a class="reference external" href="#note">Application Note</a></td>
-
     </tr>
-
   </tbody>
-
 </table>
 
 <span style="font-weight: bold;"><a name="rosalind"></a></span>
@@ -58,8 +44,8 @@ There will be four due dates for blog entries, 5 points each. This will serve as
 
 <span style="font-weight: bold;"><a name="code"></a></span>
 ##Project Code
-Commented code is due on the day of the scheduled final exam period by 11:59PM. This code should be hosted online through <a href="https://github.com/">GitHub</a>. Included with this code is a straight-forward documentation and sample data. The code should have adequate documentation in the repository's `README.md` file such that anyone could download the code, install it or get it to run, and run through the test data without encountering any problems; this should be thought of as a User’s Manual. If I cannot run the code and run the test data, I cannot grade the functionality of the code. The breakdown of your group grade for code is: 2 pts comments; 2 pts documentation; 0.5 pt sample data; 0.5 pt creation of site/repository; 10 pts functionality.
+Commented code is due on the day of the scheduled final exam period by 11:59PM. This code should be hosted online through <a href="https://github.com/">GitHub</a>. You should include straight-forward documentation and sample data in your repository. The code should have adequate documentation in the repository's `README.md` file such that anyone could download the code, install it or get it to run, and run through the sample/test data without encountering any problems; this should be thought of as a User’s Manual. If I cannot run the code and run the test data, I cannot grade the functionality of the code. The breakdown of your group grade for code is: 2 pts comments; 2 pts documentation; 1 pt test data; 10 pts functionality.
 
 <span style="font-weight: bold;"><a name="note"></a></span>
 ##Application Note
-Parallel to the code developed, you will also be drafting what is commonly referred to as an *Application Note*. This is a brief (2-page journal style, 1000-1300 words plus one image) presentation of the application. It includes Abstract, Background, Implementation, Results, and References sections. The Abstract should be brief (100-200 words). The Background section should introduce the problem as well as the existing software tools that are available to solve the problem, a subset of the problem, or a closely related problem. The Implementation will include details about the development of the application in ENGLISH. In other words, what functionality was developed (not a list of classes/functions); this includes the run-time and memory usage estimates. The Results section typically includes the actual use of your software on a set of data (i.e. your test data) to show how it solves the problem at hand. Likewise, the same set of data is then analyzed by OTHER available tools or statistical models in an effort to show how your solution is superior.You will have two group grades for the Application Note: a **Rough Draft (5 pts)** and the **Final Draft (10 pts)**. The Rough Draft, due 2 weeks prior to the final paper, will provide you with the opportunity to get feedback on your paper.
+Parallel to the code developed, you will also be drafting what is commonly referred to as an *Application Note*. This is a brief (2-page journal style, 1000-1300 words plus one image) presentation of the application. It includes Abstract, Background, Implementation, Results, and References sections. The Abstract should be brief (100-200 words). The Background section should introduce the problem as well as the existing software tools that are available to solve the problem, a subset of the problem, or a closely related problem. The Implementation will include details about the development of the application in ENGLISH. In other words, what functionality was developed (not a list of classes/functions); this includes the run-time and memory usage estimates. The Results section typically includes the actual use of your software on a set of data (i.e. your test data) to show how it solves the problem at hand. Likewise, the same set of data is then analyzed by OTHER available tools or statistical models in an effort to show how your solution is superior.You will have two group grades for the Application Note: a **Rough Draft (5 pts)** and the **Final Draft (10 pts)**. The Rough Draft, due 2 weeks prior to the final paper, will provide you with the opportunity to get feedback on your paper. Turn both these assignments in via <a href="https://sakai.luc.edu/">Sakai</a> and be sure the Application Note includes a link to your Project Code repository.
