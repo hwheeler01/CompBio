@@ -15,3 +15,5 @@ permalink: /resources/
 - A straight-forward <a href="http://www.cureffi.org/2014/08/27/git-tutorial/">GitHub tutorial</a> written by a computational biologist that will get you started. 
 
 - A couple of ~20 minute YouTube videos introducing <a href="https://github.com/">GitHub</a>: one from <a href="https://www.youtube.com/watch?v=0fKg7e37bQE">LearnCode.academy</a> and one from <a href="https://www.youtube.com/watch?v=LXoWxrTdXkM">GEEKBLOGTV</a>.
+
+-  Instructor office hours will be held Tuesdays from 2:30 - 4:30PM in my office LSB 324. To meet at a time other than this, you must email me at <hwheeler1@luc.edu> to schedule a day and time in advance; I cannot meet with students that just “drop by”. Another route to get assistance is to ask questions via email. I will do my best to respond to emails within 24 hours. There are a number of forums where you can post your questions or search for questions. When you encounter a problem, error message, etc., you can always try and **Google it!**
