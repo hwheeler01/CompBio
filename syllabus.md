@@ -140,13 +140,13 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 20|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a>|
-|Jan 25|Sequences as Strings |DNA, REVC, GC, PROT, SUBS, HAMM| |
-|Jan 27|Graphs and Motifs |GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
-|Feb 1|ORFs, Splicing, k-Mers, oh my! | ORF, SPLC, TRAN, LONG, KMER | |
-|Feb 3|Constructing a de Bruijn Graph | SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 2</a> |
-|Feb 8|BioPython | INI, DBPR, FRMT | |
-|Feb 10|FASTQ NGS Data|TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
+|Jan 20|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |Num 1-6: INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a> (Jan 21)|
+|Jan 25|Sequences as Strings |Num 7-12: DNA, REVC, GC, PROT, SUBS, HAMM | |
+|Jan 27|Graphs and Motifs |Num 13-15: GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
+|Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 16-20: ORF, SPLC, TRAN, LONG, KMER | |
+|Feb 3|Constructing a de Bruijn Graph | Num 21-22: SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 2</a> |
+|Feb 8|BioPython | Num 23-25: INI, DBPR, FRMT | |
+|Feb 10|FASTQ NGS Data| Num 26-30: TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
 |Feb 15|Parsing in Python | VCF to PrediXcan dosage|
 |Feb 17|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (via Sakai)|
 |Feb 22|Group Meetings, Approval of Project & Group| contact PI to discuss project/transfer data|  |

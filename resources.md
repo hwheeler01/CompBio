@@ -10,6 +10,8 @@ permalink: /resources/
 
 - In class, we will solve some introductory problems using <a href="http://rosalind.info/">ROSALIND</a>, but the resource includes many advanced problems that get more challenging as you move down each <a href="http://rosalind.info/problems/topics/">topic list</a>. Check out those of interest to you and build your skills. You may get an idea for a group project by doing these exercises.
 
+- <a href="http://software-carpentry.org/lessons/">Software carpentry</a> and <a href="http://www.datacarpentry.org/lessons/">Data Carpentry</a> have many lessons designed for research computing in Python, R, Git, Unix Shell, etc.
+
 - <a href="https://www.biostars.org/p/123728/">Resources</a> for statistical computing in R.
 
 - A straight-forward <a href="http://www.cureffi.org/2014/08/27/git-tutorial/">GitHub tutorial</a> written by a computational biologist that will get you started. 
