@@ -10,7 +10,7 @@ permalink: /syllabus/
 - email:	<hwheeler1@luc.edu>
 - web page:	<http://hwheeler01.github.io/CompBio>
 - office hours: Tuesdays 2:30 - 4:30, LSB 324
-- TA:
+- TA: Jon Brenner <jbrenluc@gmail.com>
 
 
 <table style="width: px; height: 12px;" class="docutils" border="1">
