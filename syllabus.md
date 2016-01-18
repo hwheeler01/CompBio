@@ -6,58 +6,33 @@ permalink: /syllabus/
 - Day/Time:	Mondays 2:45 - 4:05 and Wednesdays 2:45 - 4:45
 - Classroom:	Cuneo Hall 104
 - Prerequisites:	COMP 271 and BIOL 388
-- Instructor:	 Dr. Heather Wheeler
-- email:	<hwheeler1@luc.edu>
-- web page:	<http://hwheeler01.github.io/CompBio>
-- office hours: Tuesdays 2:30 - 4:30, LSB 324
+- Instructor:	 Dr. Heather Wheeler <hwheeler1@luc.edu>
+- Website:	<http://hwheeler01.github.io/CompBio>
+- Office Hours: Tuesdays 2:30 - 4:30, LSB 324
 - TA: Jon Brenner <jbrenluc@gmail.com>
 
 
 <table style="width: px; height: 12px;" class="docutils" border="1">
-
-
-
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
-
     <tr>
-
       <td><a class="reference internal" href="#objectives">Objectives</a></td>
-
       <td><a class="reference external" href="#texts">Course Materials</a></td>
-
     </tr>
-
     <tr>
-
       <td><a class="reference external" href="#honesty">Academic Integrity</a></td>
-
       <td><a class="reference internal" href="#disabilities">Students with Special Needs</a></td>
-      
     </tr>
-
     <tr>
-
 	<td><a class="reference external" href="#assignments">Assignments</a></td>
-
       <td><a class="reference external" href="#grades">Grades</a></td>
-
     </tr>
-
       <tr>
-
       <td style="vertical-align: top;"><a class="reference external" href="#schedule">Course Schedule</a></td>
-
       <td style="vertical-align: top;"><a class="reference external" href="#dates">Important Dates</a> </td>
-
     </tr>
-
   </tbody>
-
 </table>
 
-
-
-<br>
 
 
 
