@@ -68,7 +68,7 @@ Any student with special needs or difficulties in learning and completing course
 
 <span style="font-weight: bold;"><a name="assignments"></a>Assignments:</span>
 
-Your grade will comprise several assignments as listed below. Non-ROSALIND assignments will be turned in via <a href="https://sakai.luc.edu/">Sakai</a>. Details can be found on the <a href="http://hwheeler01.github.io/CompBio/assignments/">Assignments</a> page.
+Your grade will comprise several assignments as listed below. Non-ROSALIND assignments will be turned in via <a href="https://sakai.luc.edu/">Sakai</a>. Details can be found on the <a href="http://hwheeler01.github.io/CompBio/assignments/">Assignments</a> page. **LATE ASSIGNMENTS WILL NOT BE ACCEPTED.**
 
 
 
