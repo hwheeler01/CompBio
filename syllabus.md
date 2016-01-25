@@ -115,8 +115,16 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+|Jan 20|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |Num 1-6: INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a> (Jan 21)|
+|Jan 25|<a href="http://hwheeler01.github.io/CompBio/week2_tips.py">week2_tips.py</a>, <a href="http://hwheeler01.github.io/CompBio/INI6.py">INI6.py</a>, Sequences as Strings |Num 7-12: DNA, REVC, GC, PROT, SUBS, HAMM | |
+=======
+>>>>>>> Stashed changes
 |Jan 20|<a href="http://hwheeler01.github.io/CompBio/introlecture.pdf">Course Introduction</a>, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |Num 1-6: INI1-6|<a href="http://rosalind.info/classes/254/">ROSALIND Python Village</a> (Jan 21)|
 |Jan 25|Sequences as Strings |Num 7-12: DNA, REVC, GC, PROT, SUBS, HAMM | |
+>>>>>>> origin/gh-pages
 |Jan 27|Graphs and Motifs |Num 13-15: GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1</a> |
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 16-20: ORF, SPLC, TRAN, LONG, KMER | |
 |Feb 3|Constructing a de Bruijn Graph | Num 21-22: SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 2</a> |
