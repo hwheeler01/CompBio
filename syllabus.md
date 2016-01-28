@@ -7,9 +7,10 @@ permalink: /syllabus/
 - Classroom:	Cuneo Hall 104
 - Prerequisites:	COMP 271 and BIOL 388
 - Instructor:	 Dr. Heather Wheeler <hwheeler1@luc.edu>
+- Instructor Office Hours: Tuesdays 2:30 - 4:30 in LSB 324
 - Website:	<http://hwheeler01.github.io/CompBio>
-- Office Hours: Tuesdays 2:30 - 4:30, LSB 324
 - TA: Jon Brenner <jbrenluc@gmail.com>
+- TA Office Hours: Mondays 1:30 - 2:30 and Wednesdays 5:30 - 6:30 in LSB 230
 
 
 <table style="width: px; height: 12px;" class="docutils" border="1">
