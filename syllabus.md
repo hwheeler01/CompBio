@@ -120,7 +120,7 @@ Course grades are assigned according to the following scale:<br>
 |Jan 25|<a href="http://hwheeler01.github.io/CompBio/week2_tips.py">week2_tips.py</a>, Sequences as Strings |Num 7-12: DNA, REVC, GC, PROT, SUBS, HAMM | |
 |Jan 27|Graphs and Motifs |Num 13-15: GRPH, LCSM, MPRT ||
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 16-20: ORF, SPLC, TRAN, LONG, KMER | |
-|Feb 3|Constructing a de Bruijn Graph | Num 21-22: SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1 & 2</a> (Fri Feb 5) |
+|Feb 3|Constructing a de Bruijn Graph <a href="http://hwheeler01.github.io/CompBio/week3_hints.html">Homework Hints</a> | Num 21-22: SETO, DBRU | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Stronghold 1 & 2</a> (Fri Feb 5) |
 |Feb 8|BioPython | Num 23-25: INI, DBPR, FRMT | |
 |Feb 10|FASTQ NGS Data| Num 26-30: TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> |
 |Feb 15|Parsing in Python | VCF to PrediXcan dosage|
