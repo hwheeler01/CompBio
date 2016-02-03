@@ -22,7 +22,7 @@ permalink: /assignments/
 
 <span style="font-weight: bold;"><a name="rosalind"></a></span>
 
-##ROSALIND##
+## ROSALIND
 
 ROSALIND, named after superstar scientist <a href="https://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind Franklin</a>, is a platform for learning bioinformatics and programming through problem solving. We will be using it in COMP 383 to introduce Python and to practice solving computational problems relevant to molecular biology.
 
