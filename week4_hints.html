@@ -56,10 +56,25 @@ img {
 <div id="the-first-3-are-warm-up-problems-introducing-you-to-some-biopython-tools-that-may-come-in-handy-for-your-projects-andor-future-research." class="section level3">
 <h3>The first 3 are warm-up problems, introducing you to some BioPython tools that may come in handy for your projects and/or future research.</h3>
 <ol start="23" style="list-style-type: decimal">
-<li><p>Install BioPython (see <strong>Programming Shortcut</strong> for installation instructions). Once installed, the solution is easy.</p></li>
+<li>Install BioPython (see <strong>Programming Shortcut</strong> for installation instructions). Once installed, the solution is easy. Here are my recommended ways to install things:</li>
+</ol>
+<div id="mac-osx" class="section level5">
+<h5>Mac OSX</h5>
+<p>From a terminal window try:</p>
+<p><code>pip install numpy</code></p>
+<p><code>pip install biopython</code></p>
+<p>If you don’t have <code>pip</code> installed, try this first and then do the above:</p>
+<p><code>sudo easy_install pip</code></p>
+<p>If that doesn’t work, you probably don’t have Apple’s XCode tools installed (available from the App Store, but takes a long time to download), try these directions instead: <a href="http://biopython.org/DIST/docs/install/Installation.html#sec23" class="uri">http://biopython.org/DIST/docs/install/Installation.html#sec23</a></p>
+</div>
+<div id="windows" class="section level5">
+<h5>Windows</h5>
+<p>Choose the click-and-run installer for your version of python (probably 2.7) here: <a href="http://biopython.org/wiki/Download" class="uri">http://biopython.org/wiki/Download</a></p>
+<ol start="24" style="list-style-type: decimal">
 <li><p>The <strong>Programming Shortcut</strong> is your friend. Use the <code>Bio.ExPASy</code> and <code>Bio.SwissProt</code> modules.</p></li>
 <li><p>Again, the <strong>Programming Shortcut</strong> is your friend. Use the <code>Bio.Entrez</code> and <code>Bio.SeqIO</code> modules. Entrez requires your email address, a precaution against excessive usage. See <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc110" class="uri">http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc110</a> for details.</p></li>
 </ol>
+</div>
 </div>
 <div id="the-last-5-problems-deal-with-the-quality-control-of-next-generation-sequencing-reads.-these-are-best-done-in-order.-recall-from-biol-388-bioinformatics" class="section level3">
 <h3>The last 5 problems deal with the quality control of next-generation sequencing reads. These are best done in order. Recall from BIOL 388 Bioinformatics:</h3>
