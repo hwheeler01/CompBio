@@ -39,7 +39,7 @@ The above commands return nothing. You can check that `git` understood what you 
 
 Resources:
 
-* [GitHub's advice](https://help.github.com/articles/set-up-git).
+* [GitHub's advice](https://help.github.com/articles/set-up-git)
 * [Quick primer on the shell](http://stat545-ubc.github.io/git09_shell.html)
 
 
@@ -50,18 +50,17 @@ Go to <https://github.com> and make sure you are logged in.
 Click green "New repository" button. Or, if you are on your own profile page, click on "Repositories", then click the green "New" button.
 
 Repository name: `myrepo` (or whatever you wish)  
-Public  
-YES Initialize this repository with a README
+Choose "Public" and check the box next to "Initialize this repository with a README."
 
 Click big green button "Create repository."
 
-Copy the HTTPS clone URL. It's near the bottom of the right sidebar.
+Copy the HTTPS clone URL. There is clipboard icon near the right side under the description.
 
-### Clone the repo to your local computer
+### 4. Clone the repo to your local computer
 
-Go to the [shell](git09_shell.html).
+Go to the [shell](http://stat545-ubc.github.io/git09_shell.html).
 
-Take charge of -- or at least notice! -- what directory you're in. `pwd` to display working directory. `cd` to move around. Personally, I would do this sort of thing in `~/tmp`.
+Take charge of -- or at least notice! -- what directory you're in. `pwd` to display working directory. `cd` to move around. 
 
 Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](git09_shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
 
@@ -72,7 +71,7 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 This should look something like this:
 
 ``` bash
-jenny@2015-mbp tmp $ git clone https://github.com/jennybc/myrepo.git
+Heathers-MacBook-Air:GitHub heather$ git clone https://github.com/hwheeler01/myrepo.git
 Cloning into 'myrepo'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
@@ -85,26 +84,22 @@ Make this new repo your working directory, list its files, display the README, a
 ``` bash
 cd myrepo
 ls
-less README.md
+more README.md
 git remote show origin
 ```
 
 This should look something like this:
 
 ``` bash
-jenny@2015-mbp ~ $ cd myrepo
-
-jenny@2015-mbp myrepo $ ls
+Heathers-MacBook-Air:GitHub heather$ cd myrepo/
+Heathers-MacBook-Air:myrepo heather$ ls
 README.md
-
-jenny@2015-mbp myrepo $ less README.md 
+Heathers-MacBook-Air:myrepo heather$ more README.md 
 # myrepo
-tutorial development
-
-jenny@2015-mbp myrepo $ git remote show origin
+Heathers-MacBook-Air:myrepo heather$ git remote show origin
 * remote origin
-  Fetch URL: https://github.com/jennybc/myrepo.git
-  Push  URL: https://github.com/jennybc/myrepo.git
+  Fetch URL: https://github.com/hwheeler01/myrepo.git
+  Push  URL: https://github.com/hwheeler01/myrepo.git
   HEAD branch: master
   Remote branch:
     master tracked
@@ -113,8 +108,20 @@ jenny@2015-mbp myrepo $ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (up to date)
 ```
+### How does git work?
 
-### Make a local change, commit, and push
+Here is a diagram of the different zones of your git universe and how different actions affect them.
+![](images/git-tutorial-diagram.png)
+
+If your needs are relatively simple, then in a typical usage you would:
+
+- Create local files however you like - maybe in your favorite text editor
+- `git add` your changes to be tracked by git
+- `git commit` your changes to your local git repo
+- `git push` your changes from local to your remote repo (GitHub.com)
+- `git pull` any remote changes to your local repo
+
+### 5. Make a local change, then: add, commit, and push
 
 Add a line to README and verify that Git notices the change:
 
@@ -126,8 +133,9 @@ git status
 This should look something like this:
 
 ``` bash
-jenny@2015-mbp myrepo $ echo "A line I wrote on my local computer" >> README.md
-jenny@2015-mbp myrepo $ git status
+Heathers-MacBook-Air:myrepo heather$ echo "A line I wrote on my local computer" >> README.md
+
+Heathers-MacBook-Air:myrepo heather$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
@@ -142,7 +150,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 Commit this change and push to your remote repo on GitHub.
 
 ``` bash
-git add -A
+git add README.md
 git commit -m "A commit from my local computer"
 git push
 ```
@@ -150,25 +158,23 @@ git push
 This should look something like this:
 
 ``` bash
-jenny@2015-mbp myrepo $ git add -A
+Heathers-MacBook-Air:myrepo heather$ git add README.md 
 
-jenny@2015-mbp myrepo $ git commit -m "A commit from my local computer"
-[master de669ba] A commit from my local computer
- 1 file changed, 1 insertion(+)
- 
-jenny@2015-mbp myrepo $ git push
+Heathers-MacBook-Air:myrepo heather$ git commit -m 'A commit from my local computer'
+[master ba04d05] A commit from my local computer
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Heathers-MacBook-Air:myrepo heather$ git push
 Counting objects: 3, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 311 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 305 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/jennybc/myrepo.git
-   b4112c5..de669ba  master -> master
+To https://github.com/hwheeler01/myrepo.git
+   5bacf85..ba04d05  master -> master
 ```
 
 If you're a new GitHub user, you will be challenged for your GitHub username and password. Provide them!
 
-### Confirm the local change propagated to the GitHub remote
+### 6. Confirm the local change propagated to the GitHub remote
 
 Go back to the browser. I assume we're still viewing your new GitHub repo.
 
@@ -177,8 +183,6 @@ Refresh.
 You should see the new "A line I wrote on my local computer" in the README.
 
 If you click on "commits," you should see one with the message "A commit from my local computer."
-
-If you have made it this far, you are ready to graduate to [using Git and GitHub with RStudio](git07_git-github-rstudio.html). But first ...
 
 ### Am I really going to type GitHub username and password on each push?
 
