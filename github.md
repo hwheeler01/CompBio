@@ -1,9 +1,9 @@
 ---
-title: Introduction to GitHub
-title: GitHub
+layout: page
+title: Introduction to Git and GitHub
 permalink: /github/
 ---
-# Introduction to Git and GitHub
+
 Portions adpated from <http://stat545-ubc.github.io/git00_index.html> and <http://www.cureffi.org/2014/08/27/git-tutorial/>
 
 ## Why Git?
