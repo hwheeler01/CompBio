@@ -85,10 +85,12 @@ img {
 # chr rsid position Allele1 tAllele2 tAlleleFreq tdos_sample1 tdos_sample2 ... tdos_samplen
 #
 chr1 rs10399749 55299 C T 0.16430 0 1 ... 0
-chr1 rs3091273 55302 C T 0.16132 0 1 ... 0
+chr1 rs3091273 55302 C T 0.16132 0.022 0.994 ... 0.017
 ...</code></pre>
 <ul>
 <li>Dosage for each person refers to the number of alleles for the 2nd allele listed (between 0 and 2).</li>
+<li>Genotyped SNP dosages will be an integer in the set {0,1,2}.</li>
+<li>Imputed SNP dosages are probabilistic and thus range between 0 and 2 to account for uncertainty.</li>
 <li>It is expected that there will be one file per chromosome.</li>
 </ul>
 <pre><code># samples.txt is a list of the dosage column headers from the *vcf.gz file.
