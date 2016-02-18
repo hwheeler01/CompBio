@@ -25,7 +25,7 @@ Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get 
 
 On Mac, open a terminal window and on Windows, open a Git BASH window. Tell `git` your name and **GitHub email** by typing (use your own name and email in the single quotes):
 
-`git config --global user.name 'Heather Wheeler'`
+`git config --global user.name 'Heather E. Wheeler'`
   
 - The above does __NOT__ have to be your GitHub username, although it can be. Another good option is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators.
 
@@ -126,14 +126,14 @@ If your needs are relatively simple, then in a typical usage you would:
 Add a line to README and verify that Git notices the change:
 
 ``` bash
-echo "A line I wrote on my local computer" >> README.md
+echo " Some words I wrote on my local computer" >> README.md
 git status
 ```
 
 This should look something like this:
 
 ``` bash
-Heathers-MacBook-Air:myrepo heather$ echo "A line I wrote on my local computer" >> README.md
+Heathers-MacBook-Air:myrepo heather$ echo " Some words I wrote on my local computer" >> README.md
 
 Heathers-MacBook-Air:myrepo heather$ git status
 On branch master
@@ -182,17 +182,103 @@ Refresh.
 
 You should see the new "A line I wrote on my local computer" in the README.
 
-If you click on "commits," you should see one with the message "A commit from my local computer."
+If you click on "commits" (upper left) you should see one with the message "A commit from my local computer."
 
-### Am I really going to type GitHub username and password on each push?
+#### Am I really going to type GitHub username and password on each push?
 
 It is likely that your first push, above, leads to a challenge for your GitHub username and password.
 
-This will drive you crazy in the long-run and make you reluctant to push. Read more [here](git06_credential-caching.html) about GitHub credential caching.
+This will drive you crazy in the long-run and make you reluctant to push. Read more [here](http://stat545-ubc.github.io/git06_credential-caching.html) about GitHub credential caching, so you don't have to type your password in each time. 
 
-Now is the perfect time to go there, since you have a functioning test repo.
+### 7. Add, commit, push a script, then change it
 
-### Clean up
+Let's say you'd like to add your solution to the nucleotide counting problem to GitHub. Here's what mine looks like:
+
+```python
+#!/usr/bin/python
+s = open('rosalind_dna.txt','r').read()
+a = s.count("A")
+c = s.count("C")
+g = s.count("G")
+t = s.count("T")
+print a, c, g, t
+```
+
+```bash
+#copy your script (use your computer's path) to your repo
+Heathers-MacBook-Air:myrepo heather$ cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
+#add, commit, push
+Heathers-MacBook-Air:myrepo heather$ git add DNA.py
+Heathers-MacBook-Air:myrepo heather$ git commit -m 'add nt count script'
+Heathers-MacBook-Air:myrepo heather$ git push
+```
+Refresh GitHub to confirm your script was added.
+
+Now, let's say you've discovered a more efficient way to write your python script. Edit your script to something like this:
+
+```python
+#!/usr/bin/python
+s = open('rosalind_dna.txt','r').read()
+print s.count("A"), s.count("C"), s.count("G"), s.count("T")
+```
+
+Check for differences between your local directory and your GitHub repo.
+```bash
+Heathers-MacBook-Air:myrepo heather$ git diff
+```
+
+Your screen should look something like this:
+
+```
+UPDATE when rerun
+diff --git a/DNA.py b/DNA.py
+index f227036..95e092e 100755
+--- a/DNA.py
++++ b/DNA.py
+@@ -3,6 +3,3 @@
+ s = open('rosalind_dna.txt','r').read()
+ 
+ print s.count("A"), s.count("C"), s.count("G"), s.count("T")
+-
+-
+-
+```
+
+Now add, commit (**with a relevant message!!!**), and push just like before.
+
+```bash
+Heathers-MacBook-Air:myrepo heather$ git add DNA.py
+Heathers-MacBook-Air:myrepo heather$ git commit -m 'shortened nt count script to 2 lines'
+Heathers-MacBook-Air:myrepo heather$ git push
+```
+
+See how things have changed at GitHub.
+
+###8. Suggestions for using GitHub in a group
+
+- Designate one member to maintain the primary repository
+- All other members *fork* the primary repository and *clone* it to their local machines
+- Any changes made by other members can be submitted as pull requests to the primary repository owner
+- Primary owner can decide whether to accept the changes or not
+- This way, multiple copies of your code will be floating around in case one member does something stupid and deletes a bunch of stuff
+
+Ok, but how do we fork and clone repositories? See <https://help.github.com/articles/fork-a-repo/> for more explanation and an example below:
+
+Let's practice by forking Dr. Wheeler's `myrepo`
+
+First, go to <https://github.com/hwheeler01/DrW_myrepo> while you are logged in to GitHub and click **Fork** near the upper right.
+
+From your shell:
+
+```bash
+Heathers-MacBook-Air:myrepo heather$ cd ..
+Heathers-MacBook-Air:~ heather$ git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
+Heathers-MacBook-Air:~ heather$ cd DrW_myrepo
+Heathers-MacBook-Air:DrW_myrepo heather$ git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
+Heathers-MacBook-Air:DrW_myrepo heather$ git remote -v
+```
+
+#### Clean up
 
 When you're read to clean up, delete the local repo in the [shell](git09_shell.html):
 
@@ -232,3 +318,13 @@ git merge test-branch
 git checkout test-branch
 git merge master
 ```
+```
+bash
+#add and change a script
+cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
+git add DNA.py
+git commit -m 'add nt count script'
+git push
+```
+
+git commit -m 'shorten script to 2 lines'
