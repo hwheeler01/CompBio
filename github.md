@@ -12,7 +12,7 @@ Git is a version control system. It’s original purpose was to help groups of d
 Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. Below are directions on how to install the Git software locally on your computer.
 
 ### 1. Make a GitHub account and install Git
-Go to <a href=https://github.com/>GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
+Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
 
 #### For Mac OSX:
 Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that provides the command line version of Git itself, a GUI client, and smooth integration with GitHub.
@@ -108,10 +108,12 @@ Heathers-MacBook-Air:myrepo heather$ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (up to date)
 ```
+
 ### How does git work?
 
 Here is a diagram of the different zones of your git universe and how different actions affect them.
-![](images/git-tutorial-diagram.png)
+
+![]({{ site.baseurl }}/images/git-tutorial-diagram.png)
 
 If your needs are relatively simple, then in a typical usage you would:
 
@@ -206,11 +208,11 @@ print a, c, g, t
 
 ```bash
 #copy your script (use your computer's path) to your repo
-Heathers-MacBook-Air:myrepo heather$ cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
+cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
 #add, commit, push
-Heathers-MacBook-Air:myrepo heather$ git add DNA.py
-Heathers-MacBook-Air:myrepo heather$ git commit -m 'add nt count script'
-Heathers-MacBook-Air:myrepo heather$ git push
+git add DNA.py
+git commit -m 'add nt count script'
+git push
 ```
 Refresh GitHub to confirm your script was added.
 
@@ -247,14 +249,14 @@ index f227036..95e092e 100755
 Now add, commit (**with a relevant message!!!**), and push just like before.
 
 ```bash
-Heathers-MacBook-Air:myrepo heather$ git add DNA.py
-Heathers-MacBook-Air:myrepo heather$ git commit -m 'shortened nt count script to 2 lines'
-Heathers-MacBook-Air:myrepo heather$ git push
+git add DNA.py
+git commit -m 'shortened nt count script to 2 lines'
+git push
 ```
 
 See how things have changed at GitHub.
 
-###8. Suggestions for using GitHub in a group
+### 8. Suggestions for using GitHub in a group
 
 - Designate one member to maintain the primary repository
 - All other members *fork* the primary repository and *clone* it to their local machines
@@ -271,60 +273,48 @@ First, go to <https://github.com/hwheeler01/DrW_myrepo> while you are logged in 
 From your shell:
 
 ```bash
-Heathers-MacBook-Air:myrepo heather$ cd ..
-Heathers-MacBook-Air:~ heather$ git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
-Heathers-MacBook-Air:~ heather$ cd DrW_myrepo
-Heathers-MacBook-Air:DrW_myrepo heather$ git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
-Heathers-MacBook-Air:DrW_myrepo heather$ git remote -v
-```
-
-#### Clean up
-
-When you're read to clean up, delete the local repo in the [shell](git09_shell.html):
-
-``` bash
+#move up one directory from your myrepo
 cd ..
-rm -rf myrepo/
+#clone your GitHub repo to your local machine
+git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
+cd DrW_myrepo
+#specify Dr. Wheeler's repo is upstream of your copy
+git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
+git remote -v
+```
+The final command should look like:
+
+```bash
+git remote -v UPDATE WHEN TEST
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 ```
 
-In the browser, viewing your repo's landing page on GitHub, click on "Settings", near the bottom or the right sidebar.
+### KEY POINT: Every time you start a coding session in your local repository, fetch and merge with the upstream branch to keep everything in sync.
 
-Scroll down, click on "delete repository," and do as it asks.
+See directions here: <https://help.github.com/articles/syncing-a-fork/>
 
-Go back to the [index for the all the Git stuff](git00_index.html).
+To sync a fork with our example:
 
-
-### Try the git tutorial
-<https://try.github.io/levels/1/challenges/1>
-
-### branching and merging
-<http://pcottle.github.io/learnGitBranching/>
-
-```
-#see branches that are in your repo
-git branch
-#make a branch called test-branch
-git branch test-branch 
-#move to test-branch
-git checkout test-branch
-#make and commit changes
-git add myscript.py
-git commit -m 'fixed function2 in myscript.py'
-git push
-#merge the branch test-branch into the master branch
-git checkout master 
-git merge test-branch
-#now merge master into test-branch so all branches are the same
-git checkout test-branch
-git merge master
-```
-```
-bash
-#add and change a script
-cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
-git add DNA.py
-git commit -m 'add nt count script'
-git push
+```bash
+#make sure you are in your DrW_myrepo directory
+git fetch upstream
+git checkout master
+git merge upstream/master
 ```
 
-git commit -m 'shorten script to 2 lines'
+How does a group member submit a pull request (change) to the primary group member?
+
+Compare files at GitHub.
+
+<https://help.github.com/articles/creating-a-pull-request/>
+
+Then the primary group member must merge the pull request:
+
+<https://help.github.com/articles/merging-a-pull-request/>
+
+###9. Handling merge conflicts
+<http://kbroman.org/github_tutorial/pages/merge_conflicts.html>
+
