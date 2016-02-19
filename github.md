@@ -9,7 +9,7 @@ Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http:
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
 
-Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. Below are directions on how to install the Git software locally on your computer.
+Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it.
 
 ### 1. Make a GitHub account and install Git
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
@@ -84,7 +84,7 @@ Make this new repo your working directory, list its files, display the README, a
 ``` bash
 cd myrepo
 ls
-more README.md
+cat README.md
 git remote show origin
 ```
 
@@ -94,7 +94,7 @@ This should look something like this:
 Heathers-MacBook-Air:GitHub heather$ cd myrepo/
 Heathers-MacBook-Air:myrepo heather$ ls
 README.md
-Heathers-MacBook-Air:myrepo heather$ more README.md 
+Heathers-MacBook-Air:myrepo heather$ cat README.md 
 # myrepo
 Heathers-MacBook-Air:myrepo heather$ git remote show origin
 * remote origin
@@ -216,12 +216,13 @@ git push
 ```
 Refresh GitHub to confirm your script was added.
 
-Now, let's say you've discovered a more efficient way to write your python script. Edit your script to something like this:
+Now, let's say you've discovered a more efficient way to write your python script by using a for loop. Edit your script to something like this:
 
 ```python
 #!/usr/bin/python
 s = open('rosalind_dna.txt','r').read()
-print s.count("A"), s.count("C"), s.count("G"), s.count("T")
+for n in ["A","C","G","T"]:
+	print s.count(n),
 ```
 
 Check for differences between your local directory and your GitHub repo.
@@ -231,26 +232,29 @@ Heathers-MacBook-Air:myrepo heather$ git diff
 
 Your screen should look something like this:
 
-```
-UPDATE when rerun
+```bash
+Heathers-MacBook-Air:myrepo heather$ git diff
 diff --git a/DNA.py b/DNA.py
-index f227036..95e092e 100755
+index de9aee2..c7b9542 100755
 --- a/DNA.py
 +++ b/DNA.py
-@@ -3,6 +3,3 @@
+@@ -1,7 +1,4 @@
+ #!/usr/bin/python
  s = open('rosalind_dna.txt','r').read()
- 
- print s.count("A"), s.count("C"), s.count("G"), s.count("T")
--
--
--
+-a = s.count("A")
+-c = s.count("C")
+-g = s.count("G")
+-t = s.count("T")
+-print a, c, g, t
++for n in ["A","C","G","T"]:
++       print s.count(n),
 ```
 
 Now add, commit (**with a relevant message!!!**), and push just like before.
 
 ```bash
 git add DNA.py
-git commit -m 'shortened nt count script to 2 lines'
+git commit -m 'shortened DNA.py with a for loop'
 git push
 ```
 
@@ -266,7 +270,7 @@ See how things have changed at GitHub.
 
 Ok, but how do we fork and clone repositories? See <https://help.github.com/articles/fork-a-repo/> for more explanation and an example below:
 
-Let's practice by forking Dr. Wheeler's `myrepo`
+Let's practice by forking Dr. Wheeler's repository called `DrW_myrepo`
 
 First, go to <https://github.com/hwheeler01/DrW_myrepo> while you are logged in to GitHub and click **Fork** near the upper right.
 
@@ -282,21 +286,19 @@ cd DrW_myrepo
 git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
 git remote -v
 ```
-The final command should look like:
+The final command above should look like:
 
 ```bash
-git remote -v UPDATE WHEN TEST
-origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
-origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
-upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
-upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+Heathers-MacBook-Air:DrW_myrepo heather$ git remote -v
+origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (fetch)
+origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (push)
+upstream	https://github.com/hwheeler01/DrW_myrepo.git (fetch)
+upstream	https://github.com/hwheeler01/DrW_myrepo.git (push)
 ```
 
-### KEY POINT: Every time you start a coding session in your local repository, fetch and merge with the upstream branch to keep everything in sync.
+### KEY POINT: Every time you start a coding session in your local forked repository, sync with the upstream branch to get any updates.
 
-See directions here: <https://help.github.com/articles/syncing-a-fork/>
-
-To sync a fork with our example:
+To sync your fork with the upstream DrW_repo:
 
 ```bash
 #make sure you are in your DrW_myrepo directory
@@ -304,17 +306,51 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 ```
+See more details here: <https://help.github.com/articles/syncing-a-fork/>
 
+###Sending a pull request.
 How does a group member submit a pull request (change) to the primary group member?
+Let's say you've come up with any even shorter `DNA.py` script and changed the file in your local repository to this:
 
-Compare files at GitHub.
+```python
+#!/usr/bin/python
+s = open('rosalind_dna.txt','r').read()
+print s.count("A"), s.count("C"), s.count("G"), s.count("T")
+```
+Add, commit, and push the change to your forked repo.
+
+```bash
+git add DNA.py
+git commit -m 'shortened DNA.py to 2 lines'
+git push
+```
+
+Compare files at GitHub. Go to your forked repository and click the green button "New pull request". This will take you to a page comparing the differences between the base fork `hwheeler01/DrW_myrepo` and the head fork `YOUR-USERNAME/DrW_myrepo` and look something like this:
+
+![]({{ site.baseurl }}/images/pullrequest1.png)
+
+Click the green "Create pull request" button and add a brief message about what you changed:
+
+![]({{ site.baseurl }}/images/pullrequest2.png)
+
+Then, you guessed it, click the green "Create pull request button" one more time and a pull request will be sent to Dr. Wheeler (or, when working in your groups, your primary repository owner).
+
+Now she will decide if she likes your change and click "Merge pull request" if she does or "Close pull request" if she doesn't:
+
+![]({{ site.baseurl }}/images/pullrequest3.png)
+
+For more details on creating and merging pull requests:
 
 <https://help.github.com/articles/creating-a-pull-request/>
 
-Then the primary group member must merge the pull request:
-
 <https://help.github.com/articles/merging-a-pull-request/>
 
-###9. Handling merge conflicts
+###9. Other useful information
+- Try to organize your work so multiple group members aren't working on the same file (or the same portion of the file) at the same time, but here's what to do if you have a merge conflict:
 <http://kbroman.org/github_tutorial/pages/merge_conflicts.html>
+- Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. GitHub's policy: <https://help.github.com/articles/what-is-my-disk-quota/>
+- Additional Git and GitHub resources are posted here: <http://hwheeler01.github.io/CompBio/resources/>
 
+
+
+### KEY POINT: Add and commit new scripts throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.
