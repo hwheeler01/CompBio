@@ -347,10 +347,12 @@ For more details on creating and merging pull requests:
 
 ### 9. Other useful information
 
-- Try to organize your work so multiple group members aren't working on the same file (or the same portion of the file) at the same time, but here's what to do if you have a merge conflict:
-<http://kbroman.org/github_tutorial/pages/merge_conflicts.html>
-- Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. GitHub's policy: <https://help.github.com/articles/what-is-my-disk-quota/>
-- Additional Git and GitHub resources are posted here: <http://hwheeler01.github.io/CompBio/resources/>
+- Try to organize your work so multiple group members aren't working on the same file (or the same portion of the file) at the same time, but here's what to do if you have a
+<a href="http://kbroman.org/github_tutorial/pages/merge_conflicts.html">merge conflict</a>.
+
+- Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. See <a href="https://help.github.com/articles/what-is-my-disk-quota/">GitHub's policy</a> for more info.
+
+- Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
 
 
 
