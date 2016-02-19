@@ -35,7 +35,7 @@ On Mac, open a terminal window and on Windows, open a Git BASH window. Tell `git
 
 The above commands return nothing. You can check that `git` understood what you typed by looking at the output of:
 
-`git config --global --list`.
+`git config --global --list`
 
 Resources:
 
@@ -308,7 +308,7 @@ git merge upstream/master
 ```
 See more details here: <https://help.github.com/articles/syncing-a-fork/>
 
-###Sending a pull request.
+### Sending a pull request.
 How does a group member submit a pull request (change) to the primary group member?
 Let's say you've come up with any even shorter `DNA.py` script and changed the file in your local repository to this:
 
@@ -345,7 +345,8 @@ For more details on creating and merging pull requests:
 
 <https://help.github.com/articles/merging-a-pull-request/>
 
-###9. Other useful information
+### 9. Other useful information
+
 - Try to organize your work so multiple group members aren't working on the same file (or the same portion of the file) at the same time, but here's what to do if you have a merge conflict:
 <http://kbroman.org/github_tutorial/pages/merge_conflicts.html>
 - Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. GitHub's policy: <https://help.github.com/articles/what-is-my-disk-quota/>
