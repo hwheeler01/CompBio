@@ -4,7 +4,7 @@ title: Introduction to Git and GitHub
 permalink: /github/
 ---
 
-Portions adpated from <http://stat545-ubc.github.io/git00_index.html> and <http://www.cureffi.org/2014/08/27/git-tutorial/>
+Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http://www.cureffi.org/2014/08/27/git-tutorial/>
 
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
@@ -60,7 +60,7 @@ Copy the HTTPS clone URL. There is clipboard icon near the right side under the 
 
 Go to the [shell](http://stat545-ubc.github.io/git09_shell.html).
 
-Take charge of -- or at least notice! -- what directory you're in. `pwd` to display working directory. `cd` to move around. 
+Take note of what directory you're in. Use `pwd` to display working directory and `cd` to move around. 
 
 Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](git09_shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
 
