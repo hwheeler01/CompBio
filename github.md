@@ -15,10 +15,10 @@ Full participation in the “data science community” these days practically re
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
 
 #### For Mac OSX:
-Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that provides the command line version of Git itself, a GUI client, and smooth integration with GitHub.
+Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that provides the command line version of Git itself, a GUI client, and smooth integration with GitHub. Choose the defaults upon installation.
 
 #### For Windows:
-Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get Git in addition to some other useful tools, such as the <a href="http://stat545-ubc.github.io/git09_shell.html">Bash shell</a> and a GUI client. 
+Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get Git in addition to some other useful tools, such as the <a href="http://stat545-ubc.github.io/git09_shell.html">Bash shell</a> and a GUI client. Choose the defaults upon installation.
 
 ### 2. Introduce yourself to Git
 *You only have to set this up once per machine.*
@@ -27,7 +27,7 @@ On Mac, open a terminal window and on Windows, open a Git BASH window. Tell `git
 
 `git config --global user.name 'Heather E. Wheeler'`
   
-- The above does __NOT__ have to be your GitHub username, although it can be. Another good option is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators.
+- A good option for the above is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators.
 
 `git config --global user.email 'hwheeler1@luc.edu'`
   
@@ -58,11 +58,11 @@ Copy the HTTPS clone URL. There is clipboard icon near the right side under the 
 
 ### 4. Clone the repo to your local computer
 
-Go to the [shell](http://stat545-ubc.github.io/git09_shell.html).
+Go to the [shell](http://stat545-ubc.github.io/git09_shell.html) (on Mac: Terminal, on Windows: Git BASH).
 
 Take note of what directory you're in. Use `pwd` to display working directory and `cd` to move around. 
 
-Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](git09_shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
+Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](http://stat545-ubc.github.io/git09_shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
 
 ``` bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
@@ -266,7 +266,7 @@ See how things have changed at GitHub.
 - All other members *fork* the primary repository and *clone* it to their local machines
 - Any changes made by other members can be submitted as pull requests to the primary repository owner
 - Primary owner can decide whether to accept the changes or not
-- This way, multiple copies of your code will be floating around in case one member does something stupid and deletes a bunch of stuff
+- This way, multiple copies of your code will be floating around in case one member does something stupid and deletes their entire repository
 
 Ok, but how do we fork and clone repositories? See <https://help.github.com/articles/fork-a-repo/> for more explanation and an example below:
 
@@ -279,7 +279,7 @@ From your shell:
 ```bash
 #move up one directory from your myrepo
 cd ..
-#clone your GitHub repo to your local machine
+#clone YOUR GitHub repo to your local machine
 git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
 cd DrW_myrepo
 #specify Dr. Wheeler's repo is upstream of your copy
@@ -310,7 +310,7 @@ See more details here: <https://help.github.com/articles/syncing-a-fork/>
 
 ### Sending a pull request.
 How does a group member submit a pull request (change) to the primary group member?
-Let's say you've come up with any even shorter `DNA.py` script and changed the file in your local repository to this:
+Let's say you've come up with any even shorter `DNA.py` script and changed the file in your local working directory to this:
 
 ```python
 #!/usr/bin/python
