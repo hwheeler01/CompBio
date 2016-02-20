@@ -9,7 +9,7 @@ Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http:
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
 
-Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it.
+Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now so we can track your progress and make sure you are actively working on your project. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it.
 
 ### 1. Make a GitHub account and install Git
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
@@ -225,9 +225,10 @@ for n in ["A","C","G","T"]:
 	print s.count(n),
 ```
 
-Check for differences between your local directory and your GitHub repo.
+Check for differences between your local working directory and your GitHub repo.
+
 ```bash
-Heathers-MacBook-Air:myrepo heather$ git diff
+git diff
 ```
 
 Your screen should look something like this:
@@ -292,8 +293,8 @@ The final command above should look like:
 Heathers-MacBook-Air:DrW_myrepo heather$ git remote -v
 origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (fetch)
 origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (push)
-upstream	https://github.com/hwheeler01/DrW_myrepo.git (fetch)
-upstream	https://github.com/hwheeler01/DrW_myrepo.git (push)
+upstream  https://github.com/hwheeler01/DrW_myrepo.git (fetch)
+upstream  https://github.com/hwheeler01/DrW_myrepo.git (push)
 ```
 
 ### KEY POINT: Every time you start a coding session in your local forked repository, sync with the upstream branch to get any updates.
@@ -325,7 +326,7 @@ git commit -m 'shortened DNA.py to 2 lines'
 git push
 ```
 
-Compare files at GitHub. Go to your forked repository and click the green button "New pull request". This will take you to a page comparing the differences between the base fork `hwheeler01/DrW_myrepo` and the head fork `YOUR-USERNAME/DrW_myrepo` and look something like this:
+Compare files at GitHub. Go to your forked `DrW_myrepo` repository and click the green button "New pull request". This will take you to a page comparing the differences between the base fork `hwheeler01/DrW_myrepo` and the head fork `YOUR-USERNAME/DrW_myrepo` and look something like this:
 
 ![]({{ site.baseurl }}/images/pullrequest1.png)
 
