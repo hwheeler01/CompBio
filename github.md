@@ -353,8 +353,10 @@ For more details on creating and merging pull requests:
 
 - Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. See <a href="https://help.github.com/articles/what-is-my-disk-quota/">GitHub's policy</a> for more info.
 
+- In addition to all your code, use GitHub to store key journal articles, your presentation slides, and test input files.
+
 - Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
 
 
 
-### KEY POINT: Add and commit new scripts throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.
+### KEY POINT: Add and commit new scripts and other small files throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.

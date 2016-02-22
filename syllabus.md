@@ -125,7 +125,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 10|FASTQ NGS Data| Num 26-30: TFSQ, PHRE, FILT, BPHR, BFIL | <a href="http://rosalind.info/classes/254/">ROSALIND Bioinformatics Armory</a> (Fri Feb 12)|
 |Feb 15|Parsing in Python | VCF to PrediXcan dosage|
 |Feb 17|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (Fri Feb 19 via Sakai)|
-|Feb 22|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | contact PI to discuss project/transfer data|  |
+|Feb 22|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, <a href="http://hwheeler01.github.io/CompBio/group_assignments.html">Group</a> Meetings | contact PI to discuss project/transfer data|  |
 |Feb 24|Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> 
 |Feb 29|Group Work | define individual roles & set weekly benchmarks |
 |Mar 2|Group Work |  |
