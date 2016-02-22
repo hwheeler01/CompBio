@@ -182,7 +182,7 @@ Go back to the browser. I assume we're still viewing your new GitHub repo.
 
 Refresh.
 
-You should see the new "A line I wrote on my local computer" in the README.
+You should see the new " Some words I wrote on my local computer" in the README.
 
 If you click on "commits" (upper left) you should see one with the message "A commit from my local computer."
 
@@ -194,7 +194,7 @@ This will drive you crazy in the long-run and make you reluctant to push. Read m
 
 ### 7. Add, commit, push a script, then change it
 
-Let's say you'd like to add your solution to the nucleotide counting problem to GitHub. Here's what mine looks like:
+Let's say you'd like to add your solution to the nucleotide counting problem to your GitHub repo. Here's what mine looks like:
 
 ```python
 #!/usr/bin/python
@@ -269,7 +269,7 @@ See how things have changed at GitHub.
 - Primary owner can decide whether to accept the changes or not
 - This way, multiple copies of your code will be floating around in case one member does something stupid and deletes their entire repository
 
-Ok, but how do we fork and clone repositories? See <https://help.github.com/articles/fork-a-repo/> for more explanation and an example below:
+Ok, but how do we fork and clone repositories? We'll do an example below, but see <https://help.github.com/articles/fork-a-repo/> for more explanation.
 
 Let's practice by forking Dr. Wheeler's repository called `DrW_myrepo`
 
@@ -353,10 +353,9 @@ For more details on creating and merging pull requests:
 
 - Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. See <a href="https://help.github.com/articles/what-is-my-disk-quota/">GitHub's policy</a> for more info.
 
-- In addition to all your code, use GitHub to store key journal articles, your presentation slides, and test input files.
+- In addition to storing and tracking all your code, use GitHub to store key journal articles, your presentation slides, and test input files.
 
 - Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
-
 
 
 ### KEY POINT: Add and commit new scripts and other small files throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.
