@@ -126,7 +126,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 15|Parsing in Python | VCF to PrediXcan dosage|
 |Feb 17|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (Fri Feb 19 via Sakai)|
 |Feb 22|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, <a href="http://hwheeler01.github.io/CompBio/group_assignments.html">Group</a> Meetings | contact PI to discuss project/transfer data|  |
-|Feb 24|Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> 
+|Feb 24|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> 
 |Feb 29|Group Work | define individual roles & set weekly benchmarks |
 |Mar 2|Group Work |  |
 |Mar 7| ***No class: SPRING BREAK*** |
