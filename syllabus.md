@@ -131,8 +131,8 @@ Course grades are assigned according to the following scale:<br>
 |Mar 2|Group Work |  |
 |Mar 7| ***No class: SPRING BREAK*** |
 |Mar 9| ***No class: SPRING BREAK*** |
-|Mar 14|Initial Group Presentations| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
-|Mar 16|Initial Group Presentations| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
+|Mar 14|Initial Group Presentations: Groups 1 & 4| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
+|Mar 16|Initial Group Presentations Groups 2,3,5,6| | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 21|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #1</a> |
 |Mar 23|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">Blog #1 Comments</a>
 |Mar 28| ***No class: EASTER BREAK*** |
