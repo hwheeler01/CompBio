@@ -8,7 +8,7 @@ permalink: /resources/
 
 - <a href="http://biopython.org/wiki/Biopython">Biopython</a> is a set of freely available tools for biological computation written in Python by an international team of developers.
 
-- In class, we will solve some introductory problems using <a href="http://rosalind.info/">ROSALIND</a>, but the resource includes many advanced problems that get more challenging as you move down each <a href="http://rosalind.info/problems/topics/">topic list</a>. Check out those of interest to you and build your skills. You may get an idea for a group project by doing these exercises.
+- In class, we will solve some introductory problems using <a href="http://rosalind.info/">ROSALIND</a>, but the resource includes many advanced problems that get more challenging as you move down each <a href="http://rosalind.info/problems/topics/">topic list</a>. Check out those of interest to you and build your skills. You may get ideas for your group project by doing these exercises.
 
 - <a href="http://software-carpentry.org/lessons/">Software carpentry</a> and <a href="http://www.datacarpentry.org/lessons/">Data Carpentry</a> have many lessons designed for research computing in Python, R, Git, Unix Shell, etc.
 
@@ -18,4 +18,4 @@ permalink: /resources/
 
 - A couple of ~20 minute YouTube videos introducing <a href="https://github.com/">GitHub</a>: one from <a href="https://www.youtube.com/watch?v=0fKg7e37bQE">LearnCode.academy</a> and one from <a href="https://www.youtube.com/watch?v=LXoWxrTdXkM">GEEKBLOGTV</a>.
 
--  Instructor office hours will be held Tuesdays from 2:30 - 4:30PM in my office LSB 324. To meet at a time other than this, you must email me at <hwheeler1@luc.edu> to schedule a day and time in advance; I cannot meet with students that just “drop by”. Another route to get assistance is to ask questions via email. I will do my best to respond to emails within 24 hours. Our TA, Jon Brenner, will be in class on Mondays and can also be contacted via email at <jbrenluc@gmail.com> with programming questions or to schedule a meeting outside of class time. There are a number of forums where you can post your questions or search for questions. When you encounter a problem, error message, etc., <a href="https://www.google.com/">google</a> it first!
+-  Instructor office hours will be held Tuesdays from 2:00 - 4:00PM in my office LSB 324. To meet at a time other than this, you must email me at <hwheeler1@luc.edu> to schedule a day and time in advance; I cannot meet with students that just “drop by”. Another route to get assistance is to ask questions via email. I will do my best to respond to emails within 24 hours. For programming help, [tutoring hours](http://www.luc.edu/cs/schedules/tutoringhours/) are also available from the Computer Science Department. When you encounter a problem, error message, etc., <a href="https://www.google.com/">google</a> it first!

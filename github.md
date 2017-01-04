@@ -261,6 +261,8 @@ git push
 
 See how things have changed at GitHub.
 
+<span style="font-weight: bold;"><a name="gitsuggest"></a></span>
+
 ### 8. Suggestions for using GitHub in a group
 
 - Designate one member to maintain the primary repository

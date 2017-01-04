@@ -75,14 +75,14 @@ Your grade will comprise several assignments as listed below. Non-ROSALIND assig
 
 | **Assignment** | **Points**|
 | :------------- | ---------:|
-| ROSALIND Python Village | 2 |
-| ROSALIND Bioinformatics Stronghold 1  | 3 |
-| ROSALIND Bioinformatics Stronghold 2 | 5|
-| ROSALIND Bioinformatics Armory | 5 |
-| Python Parser | 5|
+| ROSALIND Python Village | 3 |
+| ROSALIND Bioinformatics Stronghold 1  | 5 |
+| ROSALIND Bioinformatics Stronghold 2 | 8 |
+| ROSALIND Bioinformatics Armory | 7 |
+| Python Parser | 5 |
 | Initial Group Project Presentation | 10|
 | 5-minute Group Progress Presentations (5 points each, 2 total) | 10 |
-| Blog Posts (5 points each, 4 total) | 20 |
+| GitHub Repo Checks (3 points each, 4 total) | 12 |
 | Application Note Rough Draft | 5 |
 | Final Presentation | 10 |
 | Final Project (code) | 15 |
@@ -126,23 +126,23 @@ Course grades are assigned according to the following scale:<br>
 |Feb 20|Parsing in Python | VCF to PrediXcan dosage| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> |
 |Feb 22|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (Fri Feb 19 via Sakai)|
 |Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, <a href="http://hwheeler01.github.io/CompBio/group_assignments.html">Group</a> Meetings | | Parser (make new assignment w/SSH & plink)  |
-|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>| Repo Update #1 (README defining individual roles & set weekly benchmarks) |
+|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) (Start Wiki defining individual roles & set weekly benchmarks) |
 |Mar 6| ***No class: SPRING BREAK*** |
 |Mar 8| ***No class: SPRING BREAK*** |
 |Mar 13|Group Work| | |
 |Mar 15|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 20|Group Work | |  |
-|Mar 22|Group Work | | Repo Update #2|
+|Mar 22|Group Work | | [Repo Check #2](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 27|Group Work| | |
 |Mar 29|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>
 |Apr 3|Group Work | | |
-|Apr 5|Cross-team hacking | | Repo Update #3 |
+|Apr 5|Cross-team hacking | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |Apr 10|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">|
 |Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>|
 |Apr 17| ***No class: EASTER BREAK*** |
 |Apr 19|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
 |Apr 24|Group Work | discuss rough draft |
-|Apr 26|Group Work | | Repo Update #4 |
+|Apr 26|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |May 5| **Final Presentations: Friday May 6, 4:15-6:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>

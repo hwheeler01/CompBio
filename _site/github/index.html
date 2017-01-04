@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to Git and GitHub – COMP 383 Computational Biology – Dr. Heather E. Wheeler, Spring 2016</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Dr. Heather E. Wheeler, Spring 2016">
+    <meta property="og:description" content="Dr. Heather E. Wheeler, Spring 2016" />
+    
+    <meta name="author" content="COMP 383 Computational Biology" />
+
+    
+    <meta property="og:title" content="Introduction to Git and GitHub" />
+    <meta property="twitter:title" content="Introduction to Git and GitHub" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/CompBio/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="COMP 383 Computational Biology - Dr. Heather E. Wheeler, Spring 2016" href="/CompBio/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/CompBio/" class="site-avatar"><img src="https://raw.githubusercontent.com/hwheeler01/CompBio/gh-pages/images/DNA1r.png" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/CompBio/">COMP 383 Computational Biology</a></h1>
+            <p class="site-description">Dr. Heather E. Wheeler, Spring 2016</p>
+          </div>
+
+          <nav>
+<!--	    <a href="/CompBio/">Blog</a>  -->
+	    <a href="/CompBio/syllabus/">Syllabus</a>
+	    <a href="/CompBio/assignments/">Assignments</a>
+	    <a href="/CompBio/resources/">Resources</a>
+	    <a href="/CompBio/github"></a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="page">
+
+  <h1>Introduction to Git and GitHub</h1>
+
+  <div class="entry">
+    <p>Portions adapted from <a href="http://stat545-ubc.github.io/git00_index.html">http://stat545-ubc.github.io/git00_index.html</a> and <a href="http://www.cureffi.org/2014/08/27/git-tutorial/">http://www.cureffi.org/2014/08/27/git-tutorial/</a></p>
+
+<h2 id="why-git">Why Git?</h2>
+<p>Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.</p>
+
+<p>Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now so we can track your progress and make sure you are actively working on your project. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it.</p>
+
+<h3 id="make-a-github-account-and-install-git">1. Make a GitHub account and install Git</h3>
+<p>Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your <code class="highlighter-rouge">.edu</code> email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You’ll also need to install and configure git; follow the directions for your operating system.</p>
+
+<h4 id="for-mac-osx">For Mac OSX:</h4>
+<p>Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that provides the command line version of Git itself, a GUI client, and smooth integration with GitHub. Choose the defaults upon installation.</p>
+
+<h4 id="for-windows">For Windows:</h4>
+<p>Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get Git in addition to some other useful tools, such as the <a href="http://stat545-ubc.github.io/git09_shell.html">Bash shell</a> and a GUI client. Choose the defaults upon installation.</p>
+
+<h3 id="introduce-yourself-to-git">2. Introduce yourself to Git</h3>
+<p><em>You only have to set this up once per machine.</em></p>
+
+<p>On Mac, open a terminal window and on Windows, open a Git BASH window. Tell <code class="highlighter-rouge">git</code> your name and <strong>GitHub email</strong> by typing (use your own name and email in the single quotes):</p>
+
+<p><code class="highlighter-rouge">git config --global user.name 'Heather E. Wheeler'</code></p>
+
+<ul>
+  <li>A good option for the above is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators.</li>
+</ul>
+
+<p><code class="highlighter-rouge">git config --global user.email 'hwheeler1@luc.edu'</code></p>
+
+<ul>
+  <li>This <strong>must</strong> be the email that you used to sign up for GitHub.</li>
+</ul>
+
+<p>The above commands return nothing. You can check that <code class="highlighter-rouge">git</code> understood what you typed by looking at the output of:</p>
+
+<p><code class="highlighter-rouge">git config --global --list</code></p>
+
+<p>Resources:</p>
+
+<ul>
+  <li><a href="https://help.github.com/articles/set-up-git">GitHub’s advice</a></li>
+  <li><a href="http://stat545-ubc.github.io/git09_shell.html">Quick primer on the shell</a></li>
+</ul>
+
+<h3 id="make-your-first-repo-on-github">3. Make your first repo on GitHub</h3>
+
+<p>Go to <a href="https://github.com">https://github.com</a> and make sure you are logged in.</p>
+
+<p>Click green “New repository” button. Or, if you are on your own profile page, click on “Repositories”, then click the green “New” button.</p>
+
+<p>Repository name: <code class="highlighter-rouge">myrepo</code> (or whatever you wish)  <br />
+Choose “Public” and check the box next to “Initialize this repository with a README.”</p>
+
+<p>Click big green button “Create repository.”</p>
+
+<p>Copy the HTTPS clone URL. There is clipboard icon near the right side under the description.</p>
+
+<h3 id="clone-the-repo-to-your-local-computer">4. Clone the repo to your local computer</h3>
+
+<p>Go to the <a href="http://stat545-ubc.github.io/git09_shell.html">shell</a> (on Mac: Terminal, on Windows: Git BASH).</p>
+
+<p>Take note of what directory you’re in. Use <code class="highlighter-rouge">pwd</code> to display working directory and <code class="highlighter-rouge">cd</code> to move around.</p>
+
+<p>Clone <code class="highlighter-rouge">myrepo</code> from GitHub to your computer. This URL should have <strong>your GitHub username</strong> and the name of <strong>your practice repo</strong>. If your <a href="http://stat545-ubc.github.io/git09_shell.html">shell</a> cooperates, you should be able to paste the whole <code class="highlighter-rouge">https://....</code> bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. <strong>Accurately.</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+</code></pre>
+</div>
+
+<p>This should look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:GitHub heather<span class="nv">$ </span>git clone https://github.com/hwheeler01/myrepo.git
+Cloning into <span class="s1">'myrepo'</span>...
+remote: Counting objects: 3, <span class="k">done</span>.
+remote: Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 0
+Unpacking objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+</code></pre>
+</div>
+
+<p>Make this new repo your working directory, list its files, display the README, and get some information on its connection to GitHub:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd </span>myrepo
+ls
+cat README.md
+git remote show origin
+</code></pre>
+</div>
+
+<p>This should look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:GitHub heather<span class="nv">$ </span><span class="nb">cd </span>myrepo/
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>ls
+README.md
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>cat README.md 
+<span class="c"># myrepo</span>
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git remote show origin
+<span class="k">*</span> remote origin
+  Fetch URL: https://github.com/hwheeler01/myrepo.git
+  Push  URL: https://github.com/hwheeler01/myrepo.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured <span class="k">for</span> <span class="s1">'git pull'</span>:
+    master merges with remote master
+  Local ref configured <span class="k">for</span> <span class="s1">'git push'</span>:
+    master pushes to master <span class="o">(</span>up to date<span class="o">)</span>
+</code></pre>
+</div>
+
+<h3 id="how-does-git-work">How does git work?</h3>
+
+<p>Here is a diagram of the different zones of your git universe and how different actions affect them.</p>
+
+<p><img src="/CompBio/images/git-tutorial-diagram.png" alt="" /></p>
+
+<p>If your needs are relatively simple, then in a typical usage you would:</p>
+
+<ul>
+  <li>Create local files however you like - maybe in your favorite text editor</li>
+  <li><code class="highlighter-rouge">git add</code> your changes to be tracked by git</li>
+  <li><code class="highlighter-rouge">git commit</code> your changes to your local git repo</li>
+  <li><code class="highlighter-rouge">git push</code> your changes from local to your remote repo (GitHub.com)</li>
+  <li><code class="highlighter-rouge">git pull</code> any remote changes to your local repo</li>
+</ul>
+
+<h3 id="make-a-local-change-then-add-commit-and-push">5. Make a local change, then: add, commit, and push</h3>
+
+<p>Add a line to README and verify that Git notices the change:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">" Some words I wrote on my local computer"</span> &gt;&gt; README.md
+git status
+</code></pre>
+</div>
+
+<p>This should look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">" Some words I wrote on my local computer"</span> &gt;&gt; README.md
+
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git status
+On branch master
+Your branch is up-to-date with <span class="s1">'origin/master'</span>.
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git checkout -- &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+
+	modified:   README.md
+
+no changes added to commit <span class="o">(</span>use <span class="s2">"git add"</span> and/or <span class="s2">"git commit -a"</span><span class="o">)</span>
+</code></pre>
+</div>
+
+<p>Commit this change and push to your remote repo on GitHub.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add README.md
+git commit -m <span class="s2">"A commit from my local computer"</span>
+git push
+</code></pre>
+</div>
+
+<p>This should look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git add README.md 
+
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git commit -m <span class="s1">'A commit from my local computer'</span>
+<span class="o">[</span>master ba04d05] A commit from my <span class="nb">local </span>computer
+ 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>, 1 deletion<span class="o">(</span>-<span class="o">)</span>
+
+Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git push
+Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 305 bytes | 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/hwheeler01/myrepo.git
+   5bacf85..ba04d05  master -&gt; master
+</code></pre>
+</div>
+
+<p>If you’re a new GitHub user, you will be challenged for your GitHub username and password. Provide them!</p>
+
+<h3 id="confirm-the-local-change-propagated-to-the-github-remote">6. Confirm the local change propagated to the GitHub remote</h3>
+
+<p>Go back to the browser. I assume we’re still viewing your new GitHub repo.</p>
+
+<p>Refresh.</p>
+
+<p>You should see the new “ Some words I wrote on my local computer” in the README.</p>
+
+<p>If you click on “commits” (upper left) you should see one with the message “A commit from my local computer.”</p>
+
+<h4 id="am-i-really-going-to-type-github-username-and-password-on-each-push">Am I really going to type GitHub username and password on each push?</h4>
+
+<p>It is likely that your first push, above, leads to a challenge for your GitHub username and password.</p>
+
+<p>This will drive you crazy in the long-run and make you reluctant to push. Read more <a href="http://stat545-ubc.github.io/git06_credential-caching.html">here</a> about GitHub credential caching, so you don’t have to type your password in each time.</p>
+
+<h3 id="add-commit-push-a-script-then-change-it">7. Add, commit, push a script, then change it</h3>
+
+<p>Let’s say you’d like to add your solution to the nucleotide counting problem to your GitHub repo. Here’s what mine looks like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'rosalind_dna.txt'</span><span class="p">,</span><span class="s">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"G"</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"T"</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">a</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">t</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#copy your script (use your computer's path) to your repo</span>
+cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
+<span class="c">#add, commit, push</span>
+git add DNA.py
+git commit -m <span class="s1">'add nt count script'</span>
+git push
+</code></pre>
+</div>
+<p>Refresh GitHub to confirm your script was added.</p>
+
+<p>Now, let’s say you’ve discovered a more efficient way to write your python script by using a for loop. Edit your script to something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'rosalind_dna.txt'</span><span class="p">,</span><span class="s">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="s">"A"</span><span class="p">,</span><span class="s">"C"</span><span class="p">,</span><span class="s">"G"</span><span class="p">,</span><span class="s">"T"</span><span class="p">]:</span>
+	<span class="k">print</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">n</span><span class="p">),</span>
+</code></pre>
+</div>
+
+<p>Check for differences between your local working directory and your GitHub repo.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff
+</code></pre>
+</div>
+
+<p>Your screen should look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:myrepo heather<span class="nv">$ </span>git diff
+diff --git a/DNA.py b/DNA.py
+index de9aee2..c7b9542 100755
+--- a/DNA.py
++++ b/DNA.py
+@@ -1,7 +1,4 @@
+ <span class="c">#!/usr/bin/python</span>
+ s <span class="o">=</span> open<span class="o">(</span><span class="s1">'rosalind_dna.txt'</span>,<span class="s1">'r'</span><span class="o">)</span>.read<span class="o">()</span>
+-a <span class="o">=</span> s.count<span class="o">(</span><span class="s2">"A"</span><span class="o">)</span>
+-c <span class="o">=</span> s.count<span class="o">(</span><span class="s2">"C"</span><span class="o">)</span>
+-g <span class="o">=</span> s.count<span class="o">(</span><span class="s2">"G"</span><span class="o">)</span>
+-t <span class="o">=</span> s.count<span class="o">(</span><span class="s2">"T"</span><span class="o">)</span>
+-print a, c, g, t
++for n <span class="k">in</span> <span class="o">[</span><span class="s2">"A"</span>,<span class="s2">"C"</span>,<span class="s2">"G"</span>,<span class="s2">"T"</span><span class="o">]</span>:
++       print s.count<span class="o">(</span>n<span class="o">)</span>,
+</code></pre>
+</div>
+
+<p>Now add, commit (<strong>with a relevant message!!!</strong>), and push just like before.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add DNA.py
+git commit -m <span class="s1">'shortened DNA.py with a for loop'</span>
+git push
+</code></pre>
+</div>
+
+<p>See how things have changed at GitHub.</p>
+
+<p><span style="font-weight: bold;"><a name="gitsuggest"></a></span></p>
+
+<h3 id="suggestions-for-using-github-in-a-group">8. Suggestions for using GitHub in a group</h3>
+
+<ul>
+  <li>Designate one member to maintain the primary repository</li>
+  <li>All other members <em>fork</em> the primary repository and <em>clone</em> it to their local machines</li>
+  <li>Any changes made by other members can be submitted as pull requests to the primary repository owner</li>
+  <li>Primary owner can decide whether to accept the changes or not</li>
+  <li>This way, multiple copies of your code will be floating around in case one member does something stupid and deletes their entire repository</li>
+</ul>
+
+<p>Ok, but how do we fork and clone repositories? We’ll do an example below, but see <a href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a> for more explanation.</p>
+
+<p>Let’s practice by forking Dr. Wheeler’s repository called <code class="highlighter-rouge">DrW_myrepo</code></p>
+
+<p>First, go to <a href="https://github.com/hwheeler01/DrW_myrepo">https://github.com/hwheeler01/DrW_myrepo</a> while you are logged in to GitHub and click <strong>Fork</strong> near the upper right.</p>
+
+<p>From your shell:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#move up one directory from your myrepo</span>
+<span class="nb">cd</span> ..
+<span class="c">#clone YOUR GitHub repo to your local machine</span>
+git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
+<span class="nb">cd </span>DrW_myrepo
+<span class="c">#specify Dr. Wheeler's repo is upstream of your copy</span>
+git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
+git remote -v
+</code></pre>
+</div>
+<p>The final command above should look like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Heathers-MacBook-Air:DrW_myrepo heather<span class="nv">$ </span>git remote -v
+origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git <span class="o">(</span>push<span class="o">)</span>
+upstream  https://github.com/hwheeler01/DrW_myrepo.git <span class="o">(</span>fetch<span class="o">)</span>
+upstream  https://github.com/hwheeler01/DrW_myrepo.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre>
+</div>
+
+<h3 id="key-point-every-time-you-start-a-coding-session-in-your-local-forked-repository-sync-with-the-upstream-branch-to-get-any-updates">KEY POINT: Every time you start a coding session in your local forked repository, sync with the upstream branch to get any updates.</h3>
+
+<p>To sync your fork with the upstream DrW_repo:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#make sure you are in your DrW_myrepo directory</span>
+git fetch upstream
+git checkout master
+git merge upstream/master
+</code></pre>
+</div>
+<p>See more details here: <a href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a></p>
+
+<h3 id="sending-a-pull-request">Sending a pull request.</h3>
+<p>How does a group member submit a pull request (change) to the primary group member?<br />
+Let’s say you’ve come up with any even shorter <code class="highlighter-rouge">DNA.py</code> script and changed the file in your local working directory to this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'rosalind_dna.txt'</span><span class="p">,</span><span class="s">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"A"</span><span class="p">),</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"C"</span><span class="p">),</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"G"</span><span class="p">),</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">"T"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>Add, commit, and push the change to your forked repo.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add DNA.py
+git commit -m <span class="s1">'shortened DNA.py to 2 lines'</span>
+git push
+</code></pre>
+</div>
+
+<p>Compare files at GitHub. Go to your forked <code class="highlighter-rouge">DrW_myrepo</code> repository and click the green button “New pull request”. This will take you to a page comparing the differences between the base fork <code class="highlighter-rouge">hwheeler01/DrW_myrepo</code> and the head fork <code class="highlighter-rouge">YOUR-USERNAME/DrW_myrepo</code> and look something like this:</p>
+
+<p><img src="/CompBio/images/pullrequest1.png" alt="" /></p>
+
+<p>Click the green “Create pull request” button and add a brief message about what you changed:</p>
+
+<p><img src="/CompBio/images/pullrequest2.png" alt="" /></p>
+
+<p>Then, you guessed it, click the green “Create pull request button” one more time and a pull request will be sent to Dr. Wheeler (or, when working in your groups, your primary repository owner).</p>
+
+<p>Now she will decide if she likes your change and click “Merge pull request” if she does or “Close pull request” if she doesn’t:</p>
+
+<p><img src="/CompBio/images/pullrequest3.png" alt="" /></p>
+
+<p>For more details on creating and merging pull requests:</p>
+
+<p><a href="https://help.github.com/articles/creating-a-pull-request/">https://help.github.com/articles/creating-a-pull-request/</a></p>
+
+<p><a href="https://help.github.com/articles/merging-a-pull-request/">https://help.github.com/articles/merging-a-pull-request/</a></p>
+
+<h3 id="other-useful-information">9. Other useful information</h3>
+
+<ul>
+  <li>
+    <p>Try to organize your work so multiple group members aren’t working on the same file (or the same portion of the file) at the same time, but here’s what to do if you have a<br />
+<a href="http://kbroman.org/github_tutorial/pages/merge_conflicts.html">merge conflict</a>.</p>
+  </li>
+  <li>
+    <p>Don’t push large files to GitHub (&gt;50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. See <a href="https://help.github.com/articles/what-is-my-disk-quota/">GitHub’s policy</a> for more info.</p>
+  </li>
+  <li>
+    <p>In addition to storing and tracking all your code, use GitHub to store key journal articles, your presentation slides, and test input files.</p>
+  </li>
+  <li>
+    <p>Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.</p>
+  </li>
+</ul>
+
+<h3 id="key-point-add-and-commit-new-scripts-and-other-small-files-throughout-your-coding-session-always-push-everything-at-the-end-of-a-session-so-your-github-repository-is-updated-with-your-new-work">KEY POINT: Add and commit new scripts and other small files throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.</h3>
+
+  </div>
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:hwheeler1@luc.edu"><i class="svg-icon email"></i></a>
+
+
+<a href="http://github.com/hwheeler01"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="http://twitter.com/genetix22"><i class="svg-icon twitter"></i></a>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
