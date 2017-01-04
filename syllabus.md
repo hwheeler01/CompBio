@@ -115,15 +115,15 @@ Course grades are assigned according to the following scale:<br>
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
 |Jan 18|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="https://www.yhat.com/products/rodeo">Rodeo IDE</a>, Num 1-6: INI1-6||
-|Jan 23|Command Line and SSH | <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>, <a href="https://cygwin.com/install.html">Cygwin</a> (Windows users), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>|<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a>
-|Jan 25|<a href="http://hwheeler01.github.io/CompBio/week2_tips.py">week2_tips.py</a>, Sequences as Strings |Num 7-12: DNA, REVC, GC, PROT, SUBS, HAMM | |
-|Jan 30|Graphs and Motifs |Num 13-15: GRPH, LCSM, MPRT ||
-|Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 16-20: ORF, SPLC, TRAN, LONG, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1 |
-|Feb 6|Constructing a de Bruijn Graph <a href="http://hwheeler01.github.io/CompBio/week3_hints.html">Homework Hints</a> | Num 21-22: SETO, DBRU |  |
-|Feb 8|Dynamic Programming| Num 23: EDIT||
-|Feb 13|BioPython <a href="http://hwheeler01.github.io/CompBio/week4_hints.html">Homework Hints</a>| Num 23-25: INI, DBPR, FRMT | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> |
-|Feb 15|FASTQ NGS Data| Num 26-30: TFSQ, PHRE, FILT, BPHR, BFIL | |
-|Feb 20|Parsing in Python | VCF to PrediXcan dosage| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> |
+|Jan 23|Command Line and SSH | <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>, <a href="https://cygwin.com/install.html">Cygwin</a> (Windows users), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>|<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
+|Jan 25|<a href="http://hwheeler01.github.io/CompBio/week2_tips.py">week2_tips.py</a>, Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
+|Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT ||
+|Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
+|Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM)|  |
+|Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
+|Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
+|Feb 15|FASTQ NGS Data| Num 31-35: TFSQ, PHRE, FILT, BPHR, BFIL | |
+|Feb 20|Parsing in Python | VCF to PrediXcan dosage| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
 |Feb 22|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (Fri Feb 19 via Sakai)|
 |Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, <a href="http://hwheeler01.github.io/CompBio/group_assignments.html">Group</a> Meetings | | Parser (make new assignment w/SSH & plink)  |
 |Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) (Start Wiki defining individual roles & set weekly benchmarks) |
