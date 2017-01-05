@@ -56,7 +56,7 @@ reported to the college. STUDENTS FOUND TO PRESENT SOMEONE ELSE’S WORK AS THEI
 
 The ROSALIND and Python programming assignments at the beginning of the semester will be done independently (although you can get help from each other in class). Cheating includes submitting as your own work something that has been written by another person (classmate, tutor, web site, etc.). You must comment your code in your own words to demonstrate that you understand it. You may be asked questions about how your code works and your comments will help you explain.  Inability to answer such questions will result in a reduced grade.
 
-After the first month or so, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. As such, “coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make. This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
+After the first third of the course, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. As such, “coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make. This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
 behavior. Repeat offenders will earn an F for the course.
 As a contributing member of a group, it is your responsibility to ensure that all members are contributing. Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
 
@@ -116,17 +116,17 @@ Course grades are assigned according to the following scale:<br>
 | ------------- |:-------------:| :-----:|---|
 |Jan 18|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="https://www.yhat.com/products/rodeo">Rodeo IDE</a>, Num 1-6: INI1-6||
 |Jan 23|Command Line and SSH | <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>, <a href="https://cygwin.com/install.html">Cygwin</a> (Windows users), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>|<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
-|Jan 25|<a href="http://hwheeler01.github.io/CompBio/week2_tips.py">week2_tips.py</a>, Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
+|Jan 25|Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
 |Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT ||
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
 |Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM)|  |
 |Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
 |Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
 |Feb 15|FASTQ NGS Data| Num 31-35: TFSQ, PHRE, FILT, BPHR, BFIL | |
-|Feb 20|Parsing in Python | VCF to PrediXcan dosage| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
-|Feb 22|Group Project Introduction, Form Groups |  | <a href="http://hwheeler01.github.io/CompBio/vcf_parser.html">VCF Parser</a> (Fri Feb 19 via Sakai)|
-|Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, <a href="http://hwheeler01.github.io/CompBio/group_assignments.html">Group</a> Meetings | | Parser (make new assignment w/SSH & plink)  |
-|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) (Start Wiki defining individual roles & set weekly benchmarks) |
+|Feb 20|Parsing in Python | parse VCF file | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
+|Feb 22|Group Project Introduction, Form Groups |  | |
+|Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | Python Parser   |
+|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Wiki on your Project Repo defining individual roles & set weekly benchmarks| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 6| ***No class: SPRING BREAK*** |
 |Mar 8| ***No class: SPRING BREAK*** |
 |Mar 13|Group Work| | |
@@ -143,7 +143,7 @@ Course grades are assigned according to the following scale:<br>
 |Apr 19|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
 |Apr 24|Group Work | discuss rough draft |
 |Apr 26|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos) |
-|May 5| **Final Presentations: Friday May 6, 4:15-6:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
+|May 5| **Final Presentations: Friday May 6, 4:15-5:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
 
