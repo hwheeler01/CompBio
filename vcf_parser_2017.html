@@ -150,21 +150,21 @@ $(document).ready(function () {
 
 
 <p>For better or worse, new file formats are developed frequently in computational biology, often every time a new method or software is released. Thus, as budding computational biologists, you will often be tasked with parsing, filtering, or converting data in a particular way for a particular application. Tools or scripts will not be available for most applications. Thus, it is often quicker/safer/easier to write your own script. For this assignment, you are given the “real life” task of parsing and filtering imputed genotype data into a specified format. Imputation in genetics refers to the statistical inference of unobserved genotypes. Because SNPs are linked throughout the genome, we can genotype a subset of known SNPs (~1 million) and then use reference populations like the <a href="http://www.haplotype-reference-consortium.org/">Haplotype Reference Consortium</a> to estimate the unmeasured genotypes (~40 million). Write a script in Python that does the following:</p>
-<p><strong>Input:</strong> VCF file of imputed genotypes (example: <code>chr22.dose.vcf.gz</code>). VCF (variant call format) is a text file format stored in a compressed manner. It contains meta-information lines, a header line, and then data lines each containing information about a position in the genome.</p>
-<p>SNP reference file with chromosome, position, and rsID information (example: <code>chr22_SNPref_HRC.GRCh37.tab.gz</code>)</p>
+<p><strong>Input:</strong> VCF file of imputed genotypes (example: <code>chr22.vcf.gz</code>). VCF (variant call format) is a text file format stored in a compressed manner. It contains meta-information lines, a header line, and then data lines each containing information about a position in the genome.</p>
+<p>SNP reference file with chromosome, position, and rsID information (example: <code>chr22_SNPref.tab.gz</code>)</p>
 <p>Example files are available on <code>wheelerlab2</code>.</p>
-<p><strong>Output:</strong> A filtered file called <code>filt_chr*.dose.vcf.gz</code> where <code>*</code> is the chromosome number.</p>
+<p><strong>Output:</strong> A filtered file where <code>filt_</code> preceeds the input VCF file name (example: <code>filt_chr22.vcf.gz</code>)</p>
 <p>Your output should meet these criteria:</p>
 <ul>
-<li>header row starting with the <code>#CHROM</code> line (example: line 12 in <code>chr22_SNPref_HRC.GRCh37.tab.gz</code>)</li>
+<li>header row starting with the <code>#CHROM</code> line (example: line 12 in <code>chr22.vcf.gz</code>)</li>
 <li>SNPs with “Estimated Imputation Accuracy” R2 &gt; 0.8</li>
 <li>SNPs with MAF &gt; 0.01</li>
 <li>the columns headed by indiviudal IDs (from <code>0_10219</code> on) should only contain “Estimated Alternate Allele Dosage” DS values</li>
-<li>the value in the <code>ID</code> column should be replaced with the rsID number when possible, i.e. the SNP has an rsID in the reference file (example: <code>chr22_SNPref_HRC.GRCh37.tab.gz</code>). If there is no rsID, leave as is.</li>
+<li>the value in the <code>ID</code> column should be replaced with the rsID number when possible, i.e. the SNP has an rsID in the reference file. If there is no rsID, leave as is.</li>
 </ul>
 <p>Your script should meet these criteria:</p>
 <ul>
-<li>accepts command line arguments for input and output files using the python module <code>argparse</code>.</li>
+<li>accepts command line arguments for input and output files using the python module <code>argparse</code>, i.e. no file paths should be hardcoded in your script.</li>
 <li>parses the example input in &lt; 5 min.</li>
 </ul>
 <p>Upload your commented Python script (<code>*.py</code> file) to <a href="https://sakai.luc.edu/">Sakai</a> by 2:45PM on the due date. Don’t upload any input/output files. Your code must be commented in your own words. Code should be commented sufficiently so someone learning Python can understand it and get the script to run properly. (1 pt for comments, 4 pts for functional code). Ideally, <strong>parsing the example <code>chr22.vcf.gz</code> input file should not take more than 5 minutes</strong> on a standard laptop (4GB RAM).</p>
@@ -172,12 +172,14 @@ $(document).ready(function () {
 <h4><strong>TIPS and HINTS</strong></h4>
 <ul>
 <li>Understanding the VCF format: look at the meta-information in the top few lines that start with <code>##</code> to figure out where the dosages are.</li>
-<li>Make a test file of the top few rows for easy viewing and script development, e.g. typing <code>zcat chr22.dose.vcf.gz | head -n 1000 &gt; test.vcf</code> on the command line will generate a text file of the first 1000 lines called <code>test.vcf</code>.</li>
+<li>Make a test file of the top few rows for easy viewing and script development, e.g. typing <code>zcat chr22.vcf.gz | head -n 1000 &gt; test.vcf</code> on the command line will generate a text file of the first 1000 lines called <code>test.vcf</code>.</li>
 <li>The <code>gzip</code> module is useful for reading and writing compressed <code>*.gz</code> files</li>
 </ul>
 </div>
 <div id="example-input" class="section level4">
 <h4>Example INPUT</h4>
+<ul>
+<li><p>tabs were replaced with one space for viewing</p>
 <pre><code>##fileformat=VCFv4.1
 ##filedate=2016.11.7
 ##source=Minimac3
@@ -190,26 +192,27 @@ $(document).ready(function () {
 ##INFO=&lt;ID=R2,Number=1,Type=Float,Description=&quot;Estimated Imputation Accuracy&quot;&gt;
 ##INFO=&lt;ID=ER2,Number=1,Type=Float,Description=&quot;Empirical (Leave-One-Out) R-square (available only for genotyped variants)&quot;&gt;
 #CHROM POS ID REF ALT QUAL FILTER INFO FORMAT 0_10219 0_9913 
-22 16050435 22:16050435 T C . PASS AF=0.00036;MAF=0.00036;R2=0.01800 GT:DS:GP 0|0:0.001:0.999,0.001,0.000 0|0:0.000:1.000,0.000,0.000
-22 16050783 22:16050783 A G . PASS AF=0.00024;MAF=0.00024;R2=0.00007 GT:DS:GP 0|0:0.001:0.999,0.001,0.000 0|0:0.000:1.000,0.000,0.000
 22 16050822 22:16050822 G A . PASS AF=0.14142;MAF=0.14142;R2=0.02982 GT:DS:GP 0|0:0.272:0.746,0.236,0.018 0|0:0.250:0.766,0.219,0.016
+22 16051477 22:16051477 C A . PASS AF=0.00267;MAF=0.00267;R2=0.00953 GT:DS:GP 0|0:0.006:0.994,0.006,0.000 0|0:0.015:0.985,0.015,0.000
+22 16052870 22:16052870 G A . PASS AF=0.00057;MAF=0.00057;R2=0.00038 GT:DS:GP 0|0:0.001:0.999,0.001,0.000 0|0:0.001:0.999,0.001,0.000
 .
 .
 .
-22 17070764 22:17070764 C G . PASS AF=0.05127;MAF=0.05127;R2=0.83633 GT:DS:GP 0|0:0.005:0.995,0.005,0.000 0|0:0.001:0.999,0.001,0.000
 22 17071513 22:17071513 G A . PASS AF=0.05169;MAF=0.05169;R2=0.83684 GT:DS:GP 0|0:0.005:0.995,0.005,0.000 0|0:0.001:0.999,0.001,0.000
 22 17072483 22:17072483 A G . PASS;GENOTYPED AF=0.92830;MAF=0.07170;R2=0.99386;ER2=0.86772 GT:DS:GP 0|1:1.000:0.000,1.000,0.000 0|0:0.056:0.944,0.056,0.000
-22 17075353 22:17075353 C A . PASS;GENOTYPED AF=0.81872;MAF=0.18128;R2=0.99875;ER2=0.87432 GT:DS:GP 0|1:1.000:0.000,1.000,0.000 1|0:0.999:0.001,0.999,0.000  </code></pre>
+22 17075353 22:17075353 C A . PASS;GENOTYPED AF=0.81872;MAF=0.18128;R2=0.99875;ER2=0.87432 GT:DS:GP 0|1:1.000:0.000,1.000,0.000 1|0:0.999:0.001,0.999,0.000  </code></pre></li>
+</ul>
 </div>
 <div id="example-output" class="section level4">
 <h4>Example OUTPUT</h4>
-<pre><code>#CHROM POS ID REF ALT QUAL FILTER INFO FORMAT 0_10219 0_9913
-22 17070764 rs146346517 C G . PASS AF=0.05127;MAF=0.05127;R2=0.83633 DS 0.005 0.001
-22 17071513 rs11089253  G A . PASS AF=0.05169;MAF=0.05169;R2=0.83684 DS 0.005 0.001
-22 17072483 rs2236639   A G . PASS;GENOTYPED AF=0.92830;MAF=0.07170;R2=0.99386;ER2=0.86772 DS 1.000 0.056
-22 17075353 rs5747999   C A . PASS;GENOTYPED AF=0.81872;MAF=0.18128;R2=0.99875;ER2=0.87432 DS 1.000 0.999</code></pre>
 <ul>
-<li>Here are some python functions you may find useful as you strategize how to build your script. Try in your shell to test your understanding:</li>
+<li>see <code>filt_chr22.vcf.gz</code></li>
+<li><p>tabs were replaced with one space for viewing</p>
+<pre><code>#CHROM POS ID REF ALT QUAL FILTER INFO FORMAT 0_10219 0_9913
+22 17071513 rs11089253 G A . PASS AF=0.05169;MAF=0.05169;R2=0.83684 DS 0.005 0.001
+22 17072483 rs2236639 A G . PASS;GENOTYPED AF=0.92830;MAF=0.07170;R2=0.99386;ER2=0.86772 DS 1.000 0.056
+22 17075353 rs5747999 C A . PASS;GENOTYPED AF=0.81872;MAF=0.18128;R2=0.99875;ER2=0.87432 DS 1.000 0.999</code></pre></li>
+<li><p>Here are some python functions you may find useful as you strategize how to build your script. Try in your shell to test your understanding:</p></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">line <span class="op">=</span> <span class="st">&quot;22 16050435 22:16050435 T C . PASS AF=0.00036;MAF=0.00036;R2=0.01800 GT:DS:GP 0|0:0.001:0.999,0.001,0.000 0|0:0.000:1.000,0.000,0.000</span><span class="ch">\n</span><span class="st">&quot;</span>
 linelist <span class="op">=</span> line.strip().split()
@@ -224,7 +227,9 @@ dosagelist <span class="op">=</span> <span class="bu">map</span>(<span class="kw
 <ul>
 <li>See <a href="http://www.python-course.eu/lambda.php" class="uri">http://www.python-course.eu/lambda.php</a> for details on <code>lambda</code> and <code>map</code> functions (useful for parsing out MAF, R2, and DS values).</li>
 </ul>
-<p><strong>When you use your parser with the <code>chr22.dose.vcf.gz</code> input file, your output <code>filt_chr22.dose.vcf.gz</code> file should be xxxxx lines long and <code>zcat filt_chr22.dose.vcf.gz | grep -c rs</code> should return xxxxx</strong></p>
+</div>
+<div id="when-you-use-your-script-with-the-example-input-your-output-file-filt_chr22.vcf.gz-should-be-96526-lines-long-and-zcat-filt_chr22.vcf.gz-grep--c-rs-should-return-96428" class="section level4">
+<h4>When you use your script with the example input, your output file <code>filt_chr22.vcf.gz</code> should be 96526 lines long and <code>zcat filt_chr22.vcf.gz | grep -c rs</code> should return 96428</h4>
 <style type="text/css">
 body, td {
    font-size: 14px;
