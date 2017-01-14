@@ -67,7 +67,7 @@ Any student with special needs or difficulties in learning and completing course
 
 <span style="font-weight: bold;"><a name="assignments"></a>Assignments:</span>
 
-Your grade will comprise several assignments as listed below. Non-ROSALIND assignments will be turned in via <a href="https://sakai.luc.edu/">Sakai</a>. Details can be found on the <a href="http://hwheeler01.github.io/CompBio/assignments/">Assignments</a> page. **LATE ASSIGNMENTS WILL NOT BE ACCEPTED.**
+Your grade will comprise several assignments as listed below. Details can be found on the <a href="http://hwheeler01.github.io/CompBio/assignments/">Assignments</a> page. **LATE ASSIGNMENTS WILL NOT BE ACCEPTED.**
 
 
 
@@ -115,7 +115,7 @@ Course grades are assigned according to the following scale:<br>
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
 |Jan 18|Course Introduction, Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="https://www.yhat.com/products/rodeo">Rodeo IDE</a>, Num 1-6: INI1-6||
-|Jan 23|Command Line and SSH | <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>, <a href="https://cygwin.com/install.html">Cygwin</a> (Windows users), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>|<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
+|Jan 23|Command Line and SSH | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>  |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
 |Jan 25|Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
 |Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT ||
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
