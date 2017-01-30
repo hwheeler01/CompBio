@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>COMP 383 Computational Biology</title>
-    <description>Dr. Heather E. Wheeler, Spring 2016</description>
+    <description>Dr. Heather E. Wheeler, Spring 2017</description>
     <link>http://hwheeler01.github.io</link>
     <atom:link href="http://hwheeler01.github.io/feed.xml" rel="self" type="application/rss+xml" />
     

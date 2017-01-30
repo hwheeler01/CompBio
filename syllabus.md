@@ -117,7 +117,7 @@ Course grades are assigned according to the following scale:<br>
 |Jan 18|[Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="https://www.yhat.com/products/rodeo">Rodeo IDE</a>, Num 1-6: INI1-6||
 |Jan 23|[Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>  |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
 |Jan 25|Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
-|Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT ||
+|Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
 |Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM)|  |
 |Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
