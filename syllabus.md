@@ -119,7 +119,7 @@ Course grades are assigned according to the following scale:<br>
 |Jan 25|Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
 |Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
-|Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM)|  |
+|Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM) [Hints](http://hwheeler01.github.io/CompBio/stronghold2_hints.html)|  |
 |Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
 |Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
 |Feb 15|FASTQ NGS Data| Num 31-35: TFSQ, PHRE, FILT, BPHR, BFIL | |
