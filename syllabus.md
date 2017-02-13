@@ -121,7 +121,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
 |Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM) [Hints](http://hwheeler01.github.io/CompBio/stronghold2_hints.html)|  |
 |Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
-|Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
+|Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT [Hints](http://hwheeler01.github.io/CompBio/armory_hints.html)| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
 |Feb 15|FASTQ NGS Data| Num 31-35: TFSQ, PHRE, FILT, BPHR, BFIL | |
 |Feb 20|Parsing in Python | [parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html) | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
 |Feb 22|Group Project Introduction, Form Groups |  | |
