@@ -190,7 +190,7 @@ If you click on "commits" (upper left) you should see one with the message "A co
 
 It is likely that your first push, above, leads to a challenge for your GitHub username and password.
 
-This will drive you crazy in the long-run and make you reluctant to push. Read more [here](http://stat545-ubc.github.io/git06_credential-caching.html) about GitHub credential caching, so you don't have to type your password in each time. 
+This will drive you crazy in the long-run and make you reluctant to push. Read more [here](http://happygitwithr.com/credential-caching.html) about GitHub credential caching, so you don't have to type your password in each time. 
 
 ### 7. Add, commit, push a script, then change it
 
@@ -207,8 +207,8 @@ print a, c, g, t
 ```
 
 ```bash
-#copy your script (use your computer's path) to your repo
-cp ~/Dropbox/COMP_BIO/rosalind_solutions/bioi_stronghold1/07DNA.py DNA.py
+#copy your script (use your paths) to your repo
+scp /Users/heather/Dropbox/COMP_BIO/rosalind_solutions/2017/DNA.py testuser@<IP>:/home/testuser/myrepo
 #add, commit, push
 git add DNA.py
 git commit -m 'add nt count script'
