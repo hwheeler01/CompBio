@@ -9,7 +9,7 @@ Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http:
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
 
-Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now so we can track your progress and make sure you are actively working on your project. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it.
+Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now because there are also several [repo checks](http://hwheeler01.github.io/CompBio/assignments/#repos) throughout the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it. You should also set up your GitHub account on `wheelerlab2`, where Git is already installed.
 
 ### 1. Make a GitHub account and install Git
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
@@ -266,7 +266,7 @@ See how things have changed at GitHub.
 ### 8. Suggestions for using GitHub in a group
 
 - Designate one member to maintain the primary repository
-- All other members *fork* the primary repository and *clone* it to their local machines
+- All other members *fork* the primary repository and *clone* it to their local machine/home directory
 - Any changes made by other members can be submitted as pull requests to the primary repository owner
 - Primary owner can decide whether to accept the changes or not
 - This way, multiple copies of your code will be floating around in case one member does something stupid and deletes their entire repository
@@ -282,7 +282,7 @@ From your shell:
 ```bash
 #move up one directory from your myrepo
 cd ..
-#clone YOUR GitHub repo to your local machine
+#clone YOUR GitHub repo to your local machine/home directory
 git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
 cd DrW_myrepo
 #specify Dr. Wheeler's repo is upstream of your copy
@@ -360,4 +360,8 @@ For more details on creating and merging pull requests:
 - Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
 
 
-### KEY POINT: Add and commit new scripts and other small files throughout your coding session. Always push everything at the end of a session so your GitHub repository is updated with your new work.
+### KEY POINTS: 
+
+- **Add and commit new scripts and other small files throughout your coding session.**
+- **Always push everything at the end of a session so your GitHub repository is updated with your new work.**
+- **At the beginning of a coding session, always do a** `git pull` **to make sure your local files are up to date. If your repo is a forked copy, also sync with the upstream repo before making changes.**
