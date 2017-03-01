@@ -126,7 +126,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 20|Parsing in Python | [parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html) | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
 |Feb 22|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) |  | |
 |Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | [Python Parser](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html)  |
-|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start Wiki on your Project Repo defining individual roles & set weekly benchmarks| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
+|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 6| ***No class: SPRING BREAK*** |
 |Mar 8| ***No class: SPRING BREAK*** |
 |Mar 13|Group Work| | |
