@@ -143,7 +143,7 @@ Course grades are assigned according to the following scale:<br>
 |Apr 19|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
 |Apr 24|Group Work | discuss rough draft |
 |Apr 26|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos) |
-|May 5| **Final Presentations: Friday May 6, 4:15-5:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
+|May 5| **Final Presentations: Friday May 5, 4:15-5:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
 
