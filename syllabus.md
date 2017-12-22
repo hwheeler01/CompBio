@@ -3,11 +3,11 @@ layout: page
 title: Syllabus
 permalink: /syllabus/
 ---
-- Day/Time:	Mondays 2:45 - 4:05 and Wednesdays 2:45 - 4:45
-- Classroom:	LSB 412
+- Day/Time:	Tuesdays and Thursdays 2:30 - 4:10
+- Classroom:	Cuneo 202
 - Prerequisites:	COMP 271 and BIOL 388
 - Instructor:	 Dr. Heather Wheeler <hwheeler1@luc.edu>
-- Office Hours: Tuesdays 2:00 - 4:00 in LSB 324
+- Office Hours: Tuesdays 9:30 - 11:15 in Doyle 304
 - Website:	<http://hwheeler01.github.io/CompBio>
 
 
@@ -75,14 +75,16 @@ Your grade will comprise several assignments as listed below. Details can be fou
 
 | **Assignment** | **Points**|
 | :------------- | ---------:|
-| ROSALIND Python Village | 3 |
+| Unix Command Line Exercises | 2  |
+| ROSALIND Python Village | 2 |
 | ROSALIND Bioinformatics Stronghold 1  | 5 |
-| ROSALIND Bioinformatics Stronghold 2 | 8 |
-| ROSALIND Bioinformatics Armory | 7 |
+| ROSALIND Bioinformatics Stronghold 2 | 6 |
+| ROSALIND Bioinformatics Armory | 5 |
 | Python Parser | 5 |
+| R Plotting Exercises | 5  |
 | Initial Group Project Presentation | 10|
 | 5-minute Group Progress Presentations (5 points each, 2 total) | 10 |
-| GitHub Repo Checks (3 points each, 4 total) | 12 |
+| GitHub Repo Checks (2.5 points each, 4 total) | 10 |
 | Application Note Rough Draft | 5 |
 | Final Presentation | 10 |
 | Final Project (code) | 15 |
@@ -114,22 +116,23 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 18|[Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="https://www.yhat.com/products/rodeo">Rodeo IDE</a>, Num 1-6: INI1-6||
-|Jan 23|[Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a>  |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6) |
-|Jan 25|Sequences as Strings |Num 7-13: DNA, REVC, GC, RNA, PROT, SUBS, HAMM | |
-|Jan 30|Graphs and Motifs |Num 14-16: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
-|Feb 1|ORFs, Splicing, k-Mers, oh my! | Num 17-20: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-16) |
-|Feb 6|Constructing a de Bruijn Graph  | Num 21-22: SETO, DBRU (BONUS: Num 25-26 LONG, GASM) [Hints](http://hwheeler01.github.io/CompBio/stronghold2_hints.html)|  |
-|Feb 8|Dynamic Programming| Num 23-24: EDIT, EDTA (BONUS: Num 25-26 LONG, GASM)||
-|Feb 13|BioPython | Num 27-30: INI, DBPR, GBK, FRMT [Hints](http://hwheeler01.github.io/CompBio/armory_hints.html)| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 17-24, BONUS: 25-26) |
-|Feb 15|[FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) NGS Data| Num 31-35: TFSQ, PHRE, FILT, BPHR, BFIL | |
-|Feb 20|Parsing in Python | [parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html) | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 27-35)|
-|Feb 22|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) |  | |
-|Feb 27|<a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | [Python Parser](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html)  |
-|Mar 1|<a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
+|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
+|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)| Command Line exercise|
+|Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)
+|Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
+|Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
+|Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU (BONUS: Num 22-23 LONG, GASM) [Hints](http://hwheeler01.github.io/CompBio/stronghold2_hints.html)|  |
+|Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
+|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  [Hints](http://hwheeler01.github.io/CompBio/armory_hints.html)| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
+|Feb 13| Data visualization in R | | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
+|Feb 15| Parsing in Python |[parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html)  | |
+|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |
+|Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  | R Plots, [Python Parser](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html) |
+|Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks  |
+|Mar 1|Group Meetings | assign presentation date| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 6| ***No class: SPRING BREAK*** |
 |Mar 8| ***No class: SPRING BREAK*** |
-|Mar 13|Group Work| | |
+|Mar 13|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 15|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 20|Group Work | |  |
 |Mar 22|Group Work | | [Repo Check #2](http://hwheeler01.github.io/CompBio/assignments/#repos)|
@@ -138,12 +141,12 @@ Course grades are assigned according to the following scale:<br>
 |Apr 3|Group Work | | |
 |Apr 5|Cross-team hacking | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |Apr 10|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">|
-|Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>|
-|Apr 17| ***No class: EASTER BREAK*** |
-|Apr 19|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
-|Apr 24|Group Work | discuss rough draft |
-|Apr 26|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos) |
-|May 5| **Final Presentations: Friday May 5, 4:15-5:15 PM** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>
+|Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
+|Apr 17| Group Work  |discuss rough draft
+|Apr 19|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos)|
+|Apr 24|**Final Presentations** |  |
+|Apr 26|**Final Presentations**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
+
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
 
