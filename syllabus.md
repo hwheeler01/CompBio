@@ -117,7 +117,7 @@ Course grades are assigned according to the following scale:<br>
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
 |Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
-|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)| Command Line exercise|
+|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
 |Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)
 |Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
 |Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
