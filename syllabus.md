@@ -116,14 +116,14 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) | <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
+|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
 |Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
 |Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)
-|Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT [Hints](http://hwheeler01.github.io/CompBio/stronghold1_hints.html)||
+|Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT ||
 |Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
-|Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU (BONUS: Num 22-23 LONG, GASM) [Hints](http://hwheeler01.github.io/CompBio/stronghold2_hints.html)|  |
+|Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
-|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  [Hints](http://hwheeler01.github.io/CompBio/armory_hints.html)| <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
+|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
 |Feb 13| Data visualization in R | | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
 |Feb 15| Parsing in Python |[parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html)  | |
 |Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |
