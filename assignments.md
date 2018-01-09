@@ -5,8 +5,12 @@ permalink: /assignments/
 ---
 <table style="width: px; height: 12px;" class="docutils" border="1">
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
-    <tr>
+  	<tr>
+  	   <td><a class="reference external" href="#unix">Unix Command Line</a></td>
       <td><a class="reference internal" href="#rosalind">ROSALIND</a></td>
+    </tr>
+    <tr>
+      <td><a class="reference internal" href="#ggplot">R Data Visualization</a></td>
       <td><a class="reference external" href="#parser">Python Parser</a></td>
     </tr>
     <tr>
@@ -20,21 +24,33 @@ permalink: /assignments/
   </tbody>
 </table>
 
+<span style="font-weight: bold;"><a name="unix"></a></span>
+
+## Unix Command Line
+
+Unix is a vast array of simple, dependable command line tools that each do one simple task. By combining these tools, you can conduct rather sophisticated analyses. Unix is a wildly popular platform for high performance computing, required for most work in computational biology. Your first assignment is [here](http://hwheeler01.github.io/CompBio/unix-exercises). Be sure to complete the [tutorial](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) first.
+
 <span style="font-weight: bold;"><a name="rosalind"></a></span>
 
 ## ROSALIND
 
 ROSALIND, named after superstar scientist <a href="https://en.wikipedia.org/wiki/Rosalind_Franklin">Rosalind Franklin</a>, is a platform for learning bioinformatics and programming through problem solving. We will be using it in COMP 383 to introduce Python and to practice solving computational problems relevant to molecular biology.
 
-The first 4 assignments in the course will be submitted via the ROSALIND interface. To enroll, click
-<a href="http://rosalind.info/classes/enroll/ae1cc7502c/">here</a>.
+The first 4 Python assignments in the course will be submitted via the ROSALIND interface. To enroll, click
+<a href="http://rosalind.info/classes/enroll/e15f5c6c00/">here</a>.
 
-Once you are enrolled, you will see the assigment problems listed <a href="http://rosalind.info/classes/382/">here</a>. Each problem is due by 2:45 PM on the date listed (also see the <a href="http://hwheeler01.github.io/CompBio/syllabus/#schedule">course schedule</a>). You will be required to upload your commented code with your solution to each problem. Your code must be commented in **your own words** and turned in independently. Code should be commented sufficiently so someone learning Python can understand it. If you don't comment your code, you can only get a maximum of half credit for each assignment. If you work together with someone in class, make sure your code and comments are your own. Do not cut and paste others' work. Cheating includes submitting as your own work something that has been written by another person and/or found on a web site. You may be asked questions about how your code works and your comments will help you explain. Inability to answer such questions will result in a reduced grade.
+Once you are enrolled, you will see the assigment problems listed <a href="http://rosalind.info/classes/478/">here</a>. Each problem is due by 2:45 PM on the date listed (also see the <a href="http://hwheeler01.github.io/CompBio/syllabus/#schedule">course schedule</a>). You will be required to upload your commented code with your solution to each problem. Your code must be commented in **your own words** and turned in independently. Code should be commented sufficiently so someone learning Python can understand it. If you don't comment your code, you can only get a maximum of half credit for each assignment. If you work together with someone in class, make sure your code and comments are your own. Do not cut and paste others' work. Cheating includes submitting as your own work something that has been written by another person and/or found on a web site. You may be asked questions about how your code works and your comments will help you explain. Inability to answer such questions will result in a reduced grade.
+
+<span style="font-weight: bold;"><a name="ggplot"></a></span>
+
+## Data Visualization in R
+
+From initial exploratory analyses to final publication figures, data visualization is an integral component of science. We will use the popular R package [ggplot2](http://ggplot2.tidyverse.org/) to learn some basic plotting strategies that can be extended in your projects. Assignment details will be posted.
+
 <span style="font-weight: bold;"><a name="parser"></a></span>
-
 ## Python Parser
 
-For better or worse, new file formats are developed frequently in computational biology, often <a href="https://www.biostars.org/p/55351/">every time</a> a new method or software is released. Thus, as budding computational biologists, you will often be tasked with parsing, filtering, or converting data in a particular way for a particular application. Tools or scripts will not be available for most applications. Thus, it is often quicker/safer/easier to write your own script. For this assignment, you are given the “real life” task of parsing and filtering imputed genotype data into a specified format. Details are <a href="http://hwheeler01.github.io/CompBio/vcf_parser_2017.html">here</a>. 
+For better or worse, new file formats are developed frequently in computational biology, often <a href="https://www.biostars.org/p/55351/">every time</a> a new method or software is released. Thus, as budding computational biologists, you will often be tasked with parsing, filtering, or converting data in a particular way for a particular application. Tools or scripts will not be available for most applications. Thus, it is often quicker/safer/easier to write your own script. For this assignment, you are given the “real life” task of parsing and filtering imputed genotype data into a specified format. Assignment details will be posted. <!-- Details are <a href="http://hwheeler01.github.io/CompBio/vcf_parser_2017.html">here</a>. -->
 
 <span style="font-weight: bold;"><a name="present"></a></span>
 
@@ -47,13 +63,13 @@ You will be involved in four group presentations over the course of the semester
 
 ## GitHub Repo Checks
 
-There will be four due dates for GitHub Repo Checks, 3 points each. In addition to managing your code, your group's GitHub Repository (Repo) will serve as your “research notebook”, tracking your progress throughout the semester. By the end of class time on each day a Repo Check is due make sure all your latest code has been pushed to your repo and that you have recorded notes about what you have done and what you plan to do next. Use the Wiki tab for your progess notes. To earn the full 3 points, each person in the group must have contributed to the repo since the last repo check. This is easily checked by me because I will fork each repo and receive time stamped notifications when you contribute. Contributions include pushing code, submitting pull requests, opening/closing issues, and updating the Wiki documenting your progress. Make sure the primary repo owner resolves any pull requests made by other group members. Suggestions for organizing your repo are [here](http://hwheeler01.github.io/CompBio/github/#gitsuggest).
+There will be four due dates for GitHub Repo Checks, 2.5 points each. In addition to managing your code, your group's GitHub Repository (Repo) will serve as your “research notebook”, tracking your progress throughout the semester. By the end of class time on each day a Repo Check is due make sure all your latest code has been pushed to your repo and that you have recorded notes about what you have done and what you plan to do next. Use the Wiki tab for your progess notes. To earn the full 2.5 points, each person in the group must have contributed to the repo since the last repo check. This is easily checked by me because I will fork each repo and receive time stamped notifications when you contribute. Contributions include pushing code, submitting pull requests, opening/closing issues, and updating the Wiki documenting your progress. Make sure the primary repo owner resolves any pull requests made by other group members. Suggestions for organizing your repo are [here](http://hwheeler01.github.io/CompBio/github/#gitsuggest).
 
 <span style="font-weight: bold;"><a name="code"></a></span>
 
 ## Project Code
 
-Commented code is due on the day of the scheduled final exam period by 11:59PM. This code should be hosted online through <a href="https://github.com/">GitHub</a>. You should include straight-forward documentation and sample data in your repository. The code should have adequate documentation in the repository's `README.md` file such that anyone could download the code, install it or get it to run, and run through the sample/test data without encountering any problems; this should be thought of as a User’s Manual. **If I cannot run the code and run the test data, I cannot grade the functionality of the code. The breakdown of your group grade for code is: 2 pts comments; 2 pts documentation; 1 pt test data; 10 pts functionality.** Examples of nice `README.md` files with useful documentation and examples can be found <a href="https://github.com/hakyimlab/PrediXcan/tree/master/Software">here</a> and <a href="https://github.com/fcocjin/ReddyMicroRNA">here</a>.
+Commented code is due on the day of the scheduled final exam period by 11:59PM. This code should be hosted online through <a href="https://github.com/">GitHub</a>. You should include straight-forward documentation and sample data in your repository. The code should have adequate documentation in the repository's `README.md` file such that anyone could download the code, install it or get it to run, and run through the sample/test data without encountering any problems; this should be thought of as a User’s Manual. **If I cannot run the code and run the test data, I cannot grade the functionality of the code. The breakdown of your group grade for code is: 2 pts comments; 2 pts documentation; 1 pt test data; 10 pts functionality.** Examples of nice `README.md` files with useful documentation and examples can be found <a href="https://github.com/ozarnowski/RNAseq">here</a> and <a href="https://github.com/fcocjin/ReddyMicroRNA">here</a>.
 
 <span style="font-weight: bold;"><a name="note"></a></span>
 

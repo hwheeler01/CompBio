@@ -54,11 +54,11 @@ There is no specific text for this course. Rather, we will be using free online 
 Plagiarism and cheating will not be tolerated (see <a href="http://www.luc.edu/academics/catalog/undergrad/reg_academicintegrity.shtml">University Policy</a>) and will be
 reported to the college. STUDENTS FOUND TO PRESENT SOMEONE ELSE’S WORK AS THEIR OWN WILL **RECEIVE ZERO POINTS FOR THE ASSIGNMENT**. ANY STUDENT WHO REPEATS SUCH AN ACTION WILL RECEIVE A FAILING GRADE (F) FOR THE COURSE.
 
-The ROSALIND and Python programming assignments at the beginning of the semester will be done independently (although you can get help from each other in class). Cheating includes submitting as your own work something that has been written by another person (classmate, tutor, web site, etc.). You must comment your code in your own words to demonstrate that you understand it. You may be asked questions about how your code works and your comments will help you explain.  Inability to answer such questions will result in a reduced grade.
+The Unix, ROSALIND, R, and Python programming assignments at the beginning of the semester will be done independently (although you can get help from each other in class). Cheating includes submitting as your own work something that has been written by another person (classmate, tutor, web site, etc.). ***You must comment your code in your own words to demonstrate that you understand it. You may be asked questions about how your code works and your comments will help you explain. Inability to answer such questions will result in a reduced grade.***
 
-After the first third of the course, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. As such, “coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make. This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
+After the first third of the course, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. ***“Coasting” or letting your teammates carry you is in fact plagiarism; you are taking credit for contributions that you did not make.*** This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
 behavior. Repeat offenders will earn an F for the course.
-As a contributing member of a group, it is your responsibility to ensure that all members are contributing. Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
+***As a contributing member of a group, it is your responsibility to ensure that all members are contributing.*** Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
 
 <span style="font-weight: bold;"><a name="disabilities"></a>Students with Special Needs:</span>&nbsp; 
 
@@ -116,18 +116,18 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/1gzPRGExQpIjLUMNtOWEQd1t2LPk9IrjVcd6AKWpQoBA/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://www.luc.edu/uiso/resources/lsa.shtml">LSA</a>, <a href="http://www.putty.org/">PuTTY</a> (Windows SSH client), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
-|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
-|Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/382/">ROSALIND Python Village</a> (Num 1-6)
+|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
+|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
+|Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)
 |Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT ||
-|Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
+|Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
 |Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
-|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
-|Feb 13| Data visualization in R | | <a href="http://rosalind.info/classes/382/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
-|Feb 15| Parsing in Python |[parse VCF file](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html)  | |
-|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |
-|Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  | R Plots, [Python Parser](http://hwheeler01.github.io/CompBio/vcf_parser_2017.html) |
+|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
+|Feb 13| Data visualization in R | ggplot2 tutorial| |
+|Feb 15| Parsing in Python |parse VCF file | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
+|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |R Plots, Python Parser|
+|Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  |  |
 |Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks  |
 |Mar 1|Group Meetings | assign presentation date| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 6| ***No class: SPRING BREAK*** |
