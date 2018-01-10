@@ -124,9 +124,9 @@ Course grades are assigned according to the following scale:<br>
 |Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
 |Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
-|Feb 13| Data visualization in R | ggplot2 tutorial| |
-|Feb 15| Parsing in Python |parse VCF file | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
-|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |R Plotting Exercises, Python Parser|
+|Feb 13| Parsing in Python | parse VCF file | |
+|Feb 15| Data visualization in R  | ggplot2 tutorial| <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
+|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |Python Parser, R Plotting Exercises|
 |Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  |  |
 |Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks  |
 |Mar 1|Group Meetings | assign presentation date| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
@@ -140,8 +140,8 @@ Course grades are assigned according to the following scale:<br>
 |Mar 29|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>
 |Apr 3|Group Work | | |
 |Apr 5|Cross-team hacking | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos) |
-|Apr 10|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#blogs">|
-|Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
+|Apr 10|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
+|Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a> |
 |Apr 17| Group Work  |discuss rough draft
 |Apr 19|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Apr 24|**Final Presentations** |  |
