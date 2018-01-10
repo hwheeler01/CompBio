@@ -116,7 +116,7 @@ Course grades are assigned according to the following scale:<br>
 
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/introlecture_2017.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
+|Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/Quick_Start_2018.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
 |Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
 |Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)
 |Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT ||
