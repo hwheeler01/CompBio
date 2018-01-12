@@ -117,9 +117,9 @@ Course grades are assigned according to the following scale:<br>
 | **Date**      | **Topics**    | **Exercises** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
 |Jan 16| [Course Introduction](http://hwheeler01.github.io/CompBio/Quick_Start_2018.pdf), [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |Connect to biotech via [guacomole](https://boole.loyolachicagocs.org/guacamole/#/login/), <a href="http://rik.smith-unna.com/command_line_bootcamp/?id=wt0sdbtewavylv6bfq1tt9">Command Line Bootcamp</a> |
-|Jan 18| Introduction to Python & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |<a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
-|Jan 23|Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |<a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)
-|Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT ||
+|Jan 18| [Intro to Python](http://hwheeler01.github.io/CompBio/Python_lecture_2018.pdf) & <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> |[LSA](https://docs.google.com/presentation/d/1Mp17Wbw2KMYKmwMDSu-5VBSdXjY8Em16CEn3K7_sVdk/edit?usp=sharing), <a href="https://www.continuum.io/downloads">Anaconda distribution</a>, <a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)| [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
+|Jan 23|LSA Help, Sequences as Strings | Num 7-10: GC, RNA, PROT, SUBS |
+|Jan 25|Graphs and Motifs |Num 11-13: GRPH, LCSM, MPRT |<a href="http://rosalind.info/classes/478/">ROSALIND Python Village</a> (Num 1-6)|
 |Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
 |Feb 1|Constructing a de Bruijn Graph  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
