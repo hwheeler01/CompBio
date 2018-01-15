@@ -9,7 +9,7 @@ permalink: /syllabus/
 - Instructor:	 Dr. Heather Wheeler <hwheeler1@luc.edu>
 - Office Hours: Tuesdays 9:30 - 11:15 in Doyle 304
 - Website:	<http://hwheeler01.github.io/CompBio>
-
+- TA: Thomas Hatzopoulos <thatzopoulos@luc.edu>
 
 <table style="width: px; height: 12px;" class="docutils" border="1">
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
