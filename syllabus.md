@@ -123,7 +123,7 @@ Course grades are assigned according to the following scale:<br>
 |Jan 30|ORFs, Splicing, k-Mers, oh my! | Num 14-17: ORF, SPLC, TRAN, KMER [**Hints**](https://hwheeler01.github.io/CompBio/stronghold2_hints)| <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 1</a> (Num 7-13) |
 |Feb 1|Constructing a de Bruijn Graph [The future?](https://gizmodo.com/scientists-sequence-human-genome-with-handheld-usb-devi-1822591661/amp)  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
-|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL  | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
+|Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL [**Hints**](https://hwheeler01.github.io/CompBio/armory_hints) | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
 |Feb 13| Parsing in Python | parse VCF file | |
 |Feb 15| Data visualization in R  | ggplot2 tutorial| <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
 |Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |Python Parser, R Plotting Exercises|
