@@ -124,9 +124,9 @@ Course grades are assigned according to the following scale:<br>
 |Feb 1|Constructing a de Bruijn Graph [The future?](https://gizmodo.com/scientists-sequence-human-genome-with-handheld-usb-devi-1822591661/amp)  | Num 18-19: SETO, DBRU |  |
 |Feb 6|Dynamic Programming| Num 20-21: EDIT, EDTA (BONUS: Num 22-23 LONG, GASM)||
 |Feb 8|BioPython, [FASTQ](https://docs.google.com/presentation/d/1mhCDbjJDm1EQdkaPj5YAYnFVTCSPcFwiJb5Qk8qWzaY/edit?usp=sharing) Seq Files | Num 24-30: INI, GBK, TFSQ, PHRE, FILT, BPHR, BFIL [**Hints**](https://hwheeler01.github.io/CompBio/armory_hints) | <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Stronghold 2</a> (Num 14-21, BONUS: 22-23) |
-|Feb 13| Parsing in Python | parse VCF file | |
+|Feb 13| Parsing in Python | [parse VCF file](https://hwheeler01.github.io/CompBio/vcf_parser_2018) | |
 |Feb 15| Data visualization in R  | ggplot2 tutorial| <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
-|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |Python Parser, R Plotting Exercises|
+|Feb 20|Group Project Introduction, Form [Groups](http://hwheeler01.github.io/CompBio/group_assignments_2017.html) | |[Python Parser](https://hwheeler01.github.io/CompBio/vcf_parser_2018), R Plotting Exercises|
 |Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  |  |
 |Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks  |
 |Mar 1|Group Meetings | assign presentation date| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
