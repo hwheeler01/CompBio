@@ -197,13 +197,13 @@ This will drive you crazy in the long-run and make you reluctant to push. Read m
 Let's say you'd like to add your solution to the nucleotide counting problem to your GitHub repo. Here's what mine looks like:
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 s = open('rosalind_dna.txt','r').read()
 a = s.count("A")
 c = s.count("C")
 g = s.count("G")
 t = s.count("T")
-print a, c, g, t
+print(a, c, g, t)
 ```
 
 ```bash
@@ -219,10 +219,10 @@ Refresh GitHub to confirm your script was added.
 Now, let's say you've discovered a more efficient way to write your python script by using a for loop. Edit your script to something like this:
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 s = open('rosalind_dna.txt','r').read()
 for n in ["A","C","G","T"]:
-	print s.count(n),
+	print(s.count(n), end=' ')
 ```
 
 Check for differences between your local working directory and your GitHub repo.
@@ -316,9 +316,9 @@ How does a group member submit a pull request (change) to the primary group memb
 Let's say you've come up with any even shorter `DNA.py` script and changed the file in your local working directory to this:
 
 ```python
-#!/usr/bin/python
+#!/usr/bin/python3
 s = open('rosalind_dna.txt','r').read()
-print s.count("A"), s.count("C"), s.count("G"), s.count("T")
+print(s.count("A"), s.count("C"), s.count("G"), s.count("T"))
 ```
 Add, commit, and push the change to your forked repo.
 
