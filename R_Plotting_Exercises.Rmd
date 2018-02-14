@@ -1,0 +1,51 @@
+---
+title: "R Plotting Exercises"
+author: "COMP 383/488"
+date: "Due Feb. 20 at 2:30PM via Sakai"
+output: html_document
+---
+Use the R `ggplot2` package to generate the requested plots in this [`.Rmd`](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.Rmd) document. Turn in both your `.Rmd` and rendered `.html` document to [Sakai](https://sakai.luc.edu/) by Embed your code and plot below. Remember, you can embed and run Python code in R markdown, too (this will be useful for the FASTQ problems). See an example `.Rmd` file on `compbio` here: `/homes/hwheeler/ggplot_tutorial/R_Markdown_Examples.Rmd` and the rendered `.html` [here](http://hwheeler01.github.io/CompBio/R_Markdown_Examples.html).
+
+### Chick Weight Plotting
+
+**1. (0.5 pt) Within the `ggplot2` library, a small data.frame called `ChickWeight` is included. Print out the first six rows of this data.frame and the summary statistics describing the data.frame. Make a scatterplot comparing the Time variable (x-axis) to the weight variable (y-axis). Label the x-axis "Time (days)" and the y-axis "Weight (grams)".**
+
+
+**2. (0.5 pt) To your plot from problem 1, color the points according to the `diet` variable.**
+
+**3. (0.5 pt) To your plot from problem 2, add lines connecting the data points from individual chicks. Choose a different color scheme than what you used in problem 2.**
+
+
+**4. (0.5 pt) To your plot from problem 2, add a smoothing line through each set of `Diet` points (one line for each diet) and change the point shape to open circles.**
+
+
+**5. (0.5 pt) Make a density plot of `weight`, colored according to `Diet`, and faceted by `Time`. Make sure each time point is readable, you may need to allow each mini-plot to have a different scale.**
+
+
+**6. (0.5 pt) Using just the data from the final time point, generate a publication-quality plot of your choice that you feel best represents the differences in weight obseved among the diets. Title your plot appropriately and clearly label axes. Have fun with color and themes, but keep it professional.**
+
+
+### FASTQ QC Plotting
+
+**7. (1 pt)** [Rosalind Problem 29](http://rosalind.info/problems/bphr/?class=478) describes **base** quality distribution and shows examples of good data and bad data:
+```{r, out.width = "400px",echo=FALSE}
+knitr::include_graphics("/homes/hwheeler/ggplot_tutorial/plots/good_per_base.png")
+knitr::include_graphics("/homes/hwheeler/ggplot_tutorial/plots/bad_per_base.png")
+```
+
+**Starting with the FASTQ file in `/homes/hwheeler/Data/plotting.fastq` on `compbio.cs.luc.edu`, generate a box plot like those shown above using `ggplot2`, with base position on the x-axis and phred score on the y-axis. Make sure you label your axes. You *do not* need to color the figure or include a smoothing line like the examples above. Embed your code and plot below.**
+
+Hint: make an intermediate file of phred scores by position using Biopython and then read in with R. You may find the `melt` function from the `reshape2` R package useful.
+
+
+**8. (0.5 pt)** [Rosalind Problem 27](http://rosalind.info/problems/phre/?class=478) describes **read** quality distribution and shows examples of good data and bad data:
+
+```{r, out.width = "400px",echo=FALSE}
+knitr::include_graphics("/homes/hwheeler/ggplot_tutorial/plots/good_per_sequence.png")
+knitr::include_graphics("/homes/hwheeler/ggplot_tutorial/plots/bad_per_sequence.png")
+```
+
+**Using the same FASTQ file as problem 7, calculate the mean phred scores per read and generate a density plot like those shown above, but more legible, using the R package `ggplot2`. You should make the font size larger and you do not need to include the "Average Quality per read" box. Label the x-axis 'Mean Read Quality (Phred Score)' and the y-axis 'Read Count'. Feel free to experiment with color and theme, but aim for a publication quality figure. Embed your code and plot below.**
+
+
+**9. (0.5 pt) Comment on the quality of the sequencing reads from `*.fastq`. Is the data usable? What should you do next?**
