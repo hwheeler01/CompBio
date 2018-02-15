@@ -13,7 +13,7 @@ Use the R `ggplot2` package to generate the requested plots in this [`.Rmd`](htt
 
 **2. (0.5 pt) To your plot from problem 1, color the points according to the `diet` variable.**
 
-**3. (0.5 pt) To your plot from problem 2, add lines connecting the data points from individual chicks. Choose a different color scheme than what you used in problem 2.**
+**3. (0.5 pt) To your plot from problem 2, add lines connecting the data points from individual chicks. Continue to color by diet, but choose a different color scheme than what you used in problem 2.**
 
 
 **4. (0.5 pt) To your plot from problem 2, add a smoothing line through each set of `Diet` points (one line for each diet) and change the point shape to open circles.**
