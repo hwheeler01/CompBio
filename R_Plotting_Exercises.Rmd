@@ -4,7 +4,7 @@ author: "COMP 383/488"
 date: "Due Feb. 20 at 2:30PM via Sakai"
 output: html_document
 ---
-Use the R `ggplot2` package to generate the requested plots in this [`.Rmd`](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.Rmd) document. Turn in both your `.Rmd` and rendered `.html` document to [Sakai](https://sakai.luc.edu/) by Embed your code and plot below. Remember, you can embed and run Python code in R markdown, too (this will be useful for the FASTQ problems). See an example `.Rmd` file on `compbio` here: `/homes/hwheeler/ggplot_tutorial/R_Markdown_Examples.Rmd` and the rendered `.html` [here](http://hwheeler01.github.io/CompBio/R_Markdown_Examples.html).
+Use the R `ggplot2` package to generate the requested plots in this [`.Rmd`](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.Rmd) document. Turn in **both your `.Rmd` and rendered ('knitted') `.html` document to [Sakai](https://sakai.luc.edu/)**. Remember, you can embed and run Python code in R markdown, too (this will be useful for the FASTQ problems). See an example `.Rmd` file on `compbio` here: `/homes/hwheeler/ggplot_tutorial/R_Markdown_Examples.Rmd` and the rendered `.html` [here](http://hwheeler01.github.io/CompBio/R_Markdown_Examples.html).
 
 ### Chick Weight Plotting
 
