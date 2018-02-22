@@ -9,7 +9,7 @@ Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http:
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
 
-Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now because there are also several [repo checks](http://hwheeler01.github.io/CompBio/assignments/#repos) throughout the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it. You should also set up your GitHub account on `wheelerlab2`, where Git is already installed.
+Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now because there are also several [repo checks](http://hwheeler01.github.io/CompBio/assignments/#repos) throughout the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it. You should also set up your GitHub account on `compbio.cs.luc.edu`, where Git is already installed.
 
 ### 1. Make a GitHub account and install Git
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
@@ -21,13 +21,13 @@ Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that pr
 Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get Git in addition to some other useful tools, such as the <a href="http://stat545-ubc.github.io/git09_shell.html">Bash shell</a> and a GUI client. Choose the defaults upon installation.
 
 ### 2. Introduce yourself to Git
-*You only have to set this up once per machine.*
+*You only have to set this up once per machine. We'll do the first this on `compbio.cs.luc.edu` together and then you should do it on your laptop.*
 
-On Mac, open a terminal window and on Windows, open a Git BASH window. Tell `git` your name and **GitHub email** by typing (use your own name and email in the single quotes):
+On Mac and Linux, open a terminal window and on Windows, open a Git BASH window. Tell `git` your name and **GitHub email** by typing (use your own name and email in the single quotes):
 
 `git config --global user.name 'Heather E. Wheeler'`
   
-- A good option for the above is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators.
+- A good option for the above is your actual first name and last name. Your commits will be labelled with this name, so this should be informative to potential collaborators now and in the future.
 
 `git config --global user.email 'hwheeler1@luc.edu'`
   
@@ -52,9 +52,9 @@ Click green "New repository" button. Or, if you are on your own profile page, cl
 Repository name: `myrepo` (or whatever you wish)  
 Choose "Public" and check the box next to "Initialize this repository with a README."
 
-Click big green button "Create repository."
+Click big green button "New repository."
 
-Copy the HTTPS clone URL. There is clipboard icon near the right side under the description.
+Click big green button "Clone or download" and copy the HTTPS clone URL. There is clipboard icon near the right side under the description.
 
 ### 4. Clone the repo to your local computer
 
@@ -174,7 +174,7 @@ To https://github.com/hwheeler01/myrepo.git
    5bacf85..ba04d05  master -> master
 ```
 
-If you're a new GitHub user, you will be challenged for your GitHub username and password. Provide them!
+If this is the first time you've used your account on this particular machine, you will be challenged for your GitHub username and password. Provide them!
 
 ### 6. Confirm the local change propagated to the GitHub remote
 
@@ -190,11 +190,17 @@ If you click on "commits" (upper left) you should see one with the message "A co
 
 It is likely that your first push, above, leads to a challenge for your GitHub username and password.
 
-This will drive you crazy in the long-run and make you reluctant to push. Read more [here](http://happygitwithr.com/credential-caching.html) about GitHub credential caching, so you don't have to type your password in each time. 
+This will drive you crazy in the long-run and make you reluctant to push. On Linux, you can cache your credentials with this command to store your password for ten million seconds or around 16 weeks:
+
+```git config --global credential.helper 'cache --timeout=10000000'```
+
+You will have to enter your username and password one last time the next time you push, but then you're set for the semester.
+
+Read more [here](http://happygitwithr.com/credential-caching.html) about how to do GitHub credential caching on Mac and Windows, so you don't have to type your password in each time. 
 
 ### 7. Add, commit, push a script, then change it
 
-Let's say you'd like to add your solution to the nucleotide counting problem to your GitHub repo. Here's what mine looks like:
+Let's say you'd like to add a solution to the nucleotide counting problem to your GitHub repo. Here's what mine looks like:
 
 ```python
 #!/usr/bin/python3
@@ -207,8 +213,8 @@ print(a, c, g, t)
 ```
 
 ```bash
-#copy your script (use your paths) to your repo
-scp /Users/heather/Dropbox/COMP_BIO/rosalind_solutions/2017/DNA.py testuser@<IP>:/home/testuser/myrepo
+#copy the script to your repo
+cp /homes/hwheeler/DNA.py .
 #add, commit, push
 git add DNA.py
 git commit -m 'add nt count script'
@@ -236,19 +242,19 @@ Your screen should look something like this:
 ```bash
 Heathers-MacBook-Air:myrepo heather$ git diff
 diff --git a/DNA.py b/DNA.py
-index de9aee2..c7b9542 100755
+index 98645e6..55fbbe4 100644
 --- a/DNA.py
 +++ b/DNA.py
 @@ -1,7 +1,4 @@
- #!/usr/bin/python
+ #!/usr/bin/python3
  s = open('rosalind_dna.txt','r').read()
 -a = s.count("A")
 -c = s.count("C")
 -g = s.count("G")
 -t = s.count("T")
--print a, c, g, t
+-print(a, c, g, t)
 +for n in ["A","C","G","T"]:
-+       print s.count(n),
++    print(s.count(n), end=' ')
 ```
 
 Now add, commit (**with a relevant message!!!**), and push just like before.
@@ -283,6 +289,7 @@ From your shell:
 #move up one directory from your myrepo
 cd ..
 #clone YOUR GitHub repo to your local machine/home directory
+#after forking, click the green "Clone or download" button and clipboard to copy address
 git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
 cd DrW_myrepo
 #specify Dr. Wheeler's repo is upstream of your copy
@@ -299,7 +306,7 @@ upstream  https://github.com/hwheeler01/DrW_myrepo.git (fetch)
 upstream  https://github.com/hwheeler01/DrW_myrepo.git (push)
 ```
 
-### KEY POINT: Every time you start a coding session in your local forked repository, sync with the upstream branch to get any updates.
+## KEY POINT: Every time you start a coding session in your local forked repository, sync with the upstream branch to get any updates.
 
 To sync your fork with the upstream DrW_repo:
 
