@@ -128,7 +128,7 @@ Course grades are assigned according to the following scale:<br>
 |Feb 15| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| <a href="http://rosalind.info/classes/478/">ROSALIND Bioinformatics Armory</a> (Num 24-30)|
 |Feb 20|[Group Project Introduction](https://docs.google.com/presentation/d/1sZCiZcQSejt5Nfz_hZ1Nt1K6TOGRDtwuhD2AV1AguZ0/edit?usp=sharing), Assign [Groups and Projects](http://hwheeler01.github.io/CompBio/group_assignments_2018) | |[Python Parser](https://hwheeler01.github.io/CompBio/vcf_parser_2018), [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
 |Feb 22| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a>, Group Meetings | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  |  |
-|Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo defining individual roles & set weekly benchmarks  |
+|Feb 27| <a href="http://hwheeler01.github.io/CompBio/init_pres.html">Initial Group Presentation Details</a>, Group Meetings | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks, [Group Resources](http://hwheeler01.github.io/CompBio/group_assignments_2018)  |
 |Mar 1|Group Meetings | assign presentation date| [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Mar 6| ***No class: SPRING BREAK*** |
 |Mar 8| ***No class: SPRING BREAK*** |
