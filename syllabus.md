@@ -142,7 +142,7 @@ Course grades are assigned according to the following scale:<br>
 |Apr 5|Cross-team hacking | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |Apr 10|Group Work | | <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Rough Draft Application Note</a> |
 |Apr 12|Group Work, 5-min Group Progress Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">5-min Group Progress Presentation</a> |
-|Apr 17| Group Work  |discuss rough draft
+|Apr 17| Group Work  |Discuss Rough Draft (Check [Sakai](https://sakai.luc.edu/)), [Final Presentation Dates](http://hwheeler01.github.io/CompBio/group_assignments_2018)
 |Apr 19|Group Work | | [Repo Check #4](http://hwheeler01.github.io/CompBio/assignments/#repos)|
 |Apr 24|**Final Presentations** |  |
 |Apr 26|**Final Presentations**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
