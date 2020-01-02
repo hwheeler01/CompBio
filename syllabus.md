@@ -4,12 +4,11 @@ title: Syllabus
 permalink: /syllabus/
 ---
 - Day/Time:	Tuesdays and Thursdays 2:30 - 4:10
-- Classroom:	Cuneo 202
+- Classroom:	Mundelein 308
 - Prerequisites:	COMP 271 and BIOL 388
 - Instructor:	 Dr. Heather Wheeler <hwheeler1@luc.edu>
-- Office Hours: Tuesdays 9:30 - 11:15 in Doyle 304
+- Office Hours: Tuesdays 12:30 - 2:30 in LSB 324
 - Website:	<http://hwheeler01.github.io/CompBio>
-- TA: Thomas Hatzopoulos <thatzopoulos@luc.edu>
 
 <table style="width: px; height: 12px;" class="docutils" border="1">
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
@@ -56,13 +55,13 @@ reported to the college. STUDENTS FOUND TO PRESENT SOMEONE ELSE’S WORK AS THEI
 
 The Unix, Python, and R programming assignments at the beginning of the semester will be done independently (although you can get help from each other in class). Cheating includes submitting as your own work something that has been written by another person (classmate, tutor, web site, etc.). **You must comment your code in your own words** to demonstrate that you understand it. You may be asked questions about how your code works and your comments will help you explain. **Inability to explain how your code works will result in a reduced grade.**
 
-After the first third of the course, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. **“Coasting” or letting your teammates carry you is plagiarism; you are taking credit for contributions that you did not make.** This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
+After the first half of the course, the rest of the course will be spent working on a group project. As part of a group, you are expected to contribute to the same degree as your teammates. **“Coasting” or letting your teammates carry you is plagiarism; you are taking credit for contributions that you did not make.** This is on-par with presenting in a paper someone else’s idea/work as your own without proper citation. Plagiarism and cheating of any form will not be tolerated. A student suspected of such behavior will be assessed on an individual basis and action taken per the instructor’s evaluation of the seriousness of the
 behavior. Repeat offenders will earn an F for the course.
 **As a contributing member of a group, it is your responsibility to ensure that all members are contributing.** Issues that cannot be resolved within the group should be reported to the instructor. (Anonymous reports are welcome.)
 
 <span style="font-weight: bold;"><a name="disabilities"></a>Students with Special Needs:</span>&nbsp; 
 
-Any student with special needs or difficulties in learning and completing course assignments is strongly encouraged to contact the instructor as soon as possible. Please refer to the Student Handbook for student rights and <a href="http://www.luc.edu/sswd/">available resources</a> pertaining to assistance with special needs or disabilities.
+Any student requesting accommodations related to a disability or other condition is required to register with Student Accessibility Center (SAC), located in Sullivan Center, Suite 117. Students will provide professors with an accommodation notification from SAC, preferably within the first two weeks of class. Students are encouraged to meet with their professor individually in order to discuss their accommodations. All information will remain confidential. For more information or further assistance, please call 773.508.3700 or visit <https://www.luc.edu/sac/>.
 
 
 <span style="font-weight: bold;"><a name="assignments"></a>Assignments:</span>
@@ -76,40 +75,36 @@ Your grade will comprise several assignments as listed below. Details can be fou
 | **Assignment** | **Points**|
 | :------------- | ---------:|
 | Unix Command Line Exercises | 2  |
-| ROSALIND Python Village | 2 |
-| ROSALIND Bioinformatics Stronghold 1  | 5 |
-| ROSALIND Bioinformatics Stronghold 2 | 6 |
-| ROSALIND Bioinformatics Armory | 5 |
-| Python Parser | 5 |
+| ROSALIND 1-5 | 3 |
+| ROSALIND 6-10  | 5 |
+| ROSALIND 11-13 | 5 |
+| ROSALIND 14-15 | 5 |
+| ROSALIND 16-21 | 5 |
 | R Plotting Exercises | 5  |
+| Mini-Project | 15 |
 | Initial Group Project Presentation | 10|
-| 5-minute Group Progress Presentations (5 points each, 2 total) | 10 |
-| GitHub Repo Checks (2.5 points each, 4 total) | 10 |
-| Application Note Rough Draft | 5 |
+| 5-minute Group Progress Presentations (2.5 points each, 2 total) | 5 |
+| GitHub Repo Checks (2 points each, 3 total) | 6 |
+| Application Note Rough Draft | 3 |
 | Final Presentation | 10 |
 | Final Project (code) | 15 |
 | Final Application Note | 10 |
-| **TOTAL** | **100**|
 
-
-
-
-
-
-Course grades are assigned according to the following scale:<br>
+Note: More than 100 points are available. Course grades are assigned according to the following scale:<br>
 
 | **Grade** | **Minimum Points** |
 | :--- |:---:|
-|A | 90|
-|A-| 87|
-|B+| 84|
-|B | 80|
-|B-| 77|
-|C+| 74|
-|C | 70|
-|C-| 67|
-|D+| 64|
-|D | 60|
+|A | 93|
+|A-| 90|
+|B+| 87|
+|B | 83|
+|B-| 80|
+|C+| 77|
+|C | 73|
+|C-| 70|
+|D+| 67|
+|D | 63|
+
 
 
 <span style="font-weight: bold;"><a name="schedule"></a>Course Schedule:</span><br>
