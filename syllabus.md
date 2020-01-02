@@ -111,14 +111,14 @@ More than 100 points are available. Your final grade will simply be the sum of a
 
 | **Date**      | **Topics**    | **Exercises/Tools** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 14| Course Introduction, [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |LSA & compbio.cs.luc.edu |
+|Jan 14| Course Introduction, [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |[LSA](https://www.luc.edu/its/uiso/resources/lsa.shtml), compbio.cs.luc.edu |
 |Jan 16| Python and Biopython Review, Sequences as Strings | <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> | [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
 |Jan 21|Splicing, k-Mers, Sets | | [ROSALIND 1-5](http://rosalind.info/classes/683/) |
 |Jan 23|Dynamic Programming Review | | |
 |Jan 28|Genome Assembly Algorithms | | [ROSALIND 6-10](http://rosalind.info/classes/683/) |
 |Jan 30|Genome Assembly and Mapping Software | SRA, SPAdes, bowtie2 | |
-|Feb 4|Programming BLAST| NCBIWWW.qblast, BLAST+ | [ROSALIND 11-13](http://rosalind.info/classes/683/)|
-|Feb 6|Transcriptomics |kallisto, sleuth | |
+|Feb 4|Transcriptomics |kallisto, sleuth | |
+|Feb 6|Programming BLAST| NCBIWWW.qblast, BLAST+ | [ROSALIND 11-13](http://rosalind.info/classes/683/)|
 |Feb 11| FASTQ and Assembly Quality | |[ROSALIND 14-15](http://rosalind.info/classes/683/)|
 |Feb 13| Introduce Mini-projects | | |
 |Feb 18| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| [ROSALIND 16-21](http://rosalind.info/classes/683/)|
