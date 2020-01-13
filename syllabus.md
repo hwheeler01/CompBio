@@ -117,8 +117,8 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Jan 23|Dynamic Programming Review | | |
 |Jan 28|Genome Assembly Algorithms | | [ROSALIND 6-10](http://rosalind.info/classes/683/) |
 |Jan 30|Genome Assembly and Mapping Software | SRA, SPAdes, bowtie2 | |
-|Feb 4|Transcriptomics |kallisto, sleuth | |
-|Feb 6|Programming BLAST| NCBIWWW.qblast, BLAST+ | [ROSALIND 11-13](http://rosalind.info/classes/683/)|
+|Feb 4|Transcriptomics |kallisto, sleuth |[ROSALIND 11-13](http://rosalind.info/classes/683/) |
+|Feb 6|Programming BLAST| NCBIWWW.qblast, BLAST+ | |
 |Feb 11| FASTQ and Assembly Quality | |[ROSALIND 14-15](http://rosalind.info/classes/683/)|
 |Feb 13| Introduce Mini-projects | | |
 |Feb 18| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| [ROSALIND 16-21](http://rosalind.info/classes/683/)|
