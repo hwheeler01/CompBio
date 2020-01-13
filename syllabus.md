@@ -111,7 +111,7 @@ More than 100 points are available. Your final grade will simply be the sum of a
 
 | **Date**      | **Topics**    | **Exercises/Tools** | **DUE** |
 | ------------- |:-------------:| :-----:|---|
-|Jan 14| Course Introduction, [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |[LSA](https://www.luc.edu/its/uiso/resources/lsa.shtml), compbio.cs.luc.edu |
+|Jan 14| [Course Introduction](https://docs.google.com/presentation/d/14xf786am5E8ShNw89pAQbnidVY4F0gP_0d994tcv7mQ/edit?usp=sharing), [Command Line and SSH](https://docs.google.com/presentation/d/18O8grW1OR7SEjt5I0Lf21mH1oCqqVWN4h9KWw4XeHVM/edit?usp=sharing) |[LSA](https://www.luc.edu/its/uiso/resources/lsa.shtml), compbio.cs.luc.edu |
 |Jan 16| Python and Biopython Review, Sequences as Strings | <a href="http://hwheeler01.github.io/CompBio/assignments/#rosalind">ROSALIND</a> | [UNIX Command Line Exercises](http://hwheeler01.github.io/CompBio/unix-exercises)|
 |Jan 21|Splicing, k-Mers, Sets | | [ROSALIND 1-5](http://rosalind.info/classes/683/) |
 |Jan 23|Dynamic Programming Review | | |
