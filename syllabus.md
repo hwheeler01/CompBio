@@ -120,9 +120,9 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Feb 4|Transcriptomics |kallisto, sleuth |[ROSALIND 11-13](http://rosalind.info/classes/683/) |
 |Feb 6|Programming BLAST| NCBIWWW.qblast, BLAST+ | |
 |Feb 11| FASTQ and Assembly Quality | |[ROSALIND 14-15](http://rosalind.info/classes/683/)|
-|Feb 13| Introduce Mini-projects | | |
+|Feb 13| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a> Introduce Mini-projects |Start Mini-project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | |
 |Feb 18| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| [ROSALIND 16-21](http://rosalind.info/classes/683/)|
-|Feb 20| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a> | Start Project <a href="https://help.github.com/articles/create-a-repo/">Repo</a>  |  |
+|Feb 20| R/Mini-project Workday |  |  |
 |Feb 25|Group Project Introduction | rank projects | [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
 |Feb 27|Mini-project Workday | assign groups| [Mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) DUE 11:59PM|
 |Mar 3| ***No class: SPRING BREAK*** |
