@@ -4,7 +4,7 @@ title: Introduction to Git and GitHub
 permalink: /github/
 ---
 
-Portions adapted from <http://stat545-ubc.github.io/git00_index.html> and <http://www.cureffi.org/2014/08/27/git-tutorial/>
+Portions adapted from <https://happygitwithr.com/> and <http://www.cureffi.org/2014/08/27/git-tutorial/>
 
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
@@ -359,6 +359,8 @@ For more details on creating and merging pull requests:
 
 - Try to organize your work so multiple group members aren't working on the same file (or the same portion of the file) at the same time, but here's what to do if you have a
 <a href="http://kbroman.org/github_tutorial/pages/merge_conflicts.html">merge conflict</a>.
+
+- Once you get the hang of git add/commit/push, you may want to try [branches](https://happygitwithr.com/git-branches.html). Branching means that you take a detour from the main stream of development (master branch) and do work without changing the main stream. Git encourages workflows that create small branches for exploration or new features, often merging them back together quickly. See [here](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) for the basics of branching and merging.
 
 - Don't push large files to GitHub (>50 MB). If your project requires large input files, talk to Dr. Wheeler about options for storing them. See <a href="https://help.github.com/articles/what-is-my-disk-quota/">GitHub's policy</a> for more info.
 
