@@ -275,7 +275,7 @@ See how things have changed at GitHub.
 ### 8. Suggestions for using GitHub in a group
 
 - Designate one member to maintain the primary repository
-- All other members *fork* the primary repository and *clone* it to their local machine/home directory
+- All other members ***fork*** the primary repository and ***clone*** it to their local machine/home directory
 - Any changes made by other members can be submitted as pull requests to the primary repository owner
 - Primary owner can decide whether to accept the changes or not
 - This way, multiple copies of your code will be floating around in case one member does something stupid and deletes their entire repository
@@ -338,7 +338,10 @@ git commit -m 'shortened DNA.py to 2 lines'
 git push
 ```
 
-Compare files at GitHub. Go to your forked `DrW_myrepo` repository and click the green button "New pull request". This will take you to a page comparing the differences between the ***base fork*** `hwheeler01/DrW_myrepo` and the ***head fork*** `YOUR-USERNAME/DrW_myrepo` and look something like this:
+Compare files at GitHub. Go to your forked `DrW_myrepo` repository and click the green button "New pull request". This will take you to a page similar to the screen shot below comparing the differences between the two forks:
+
+-  ***base fork*** `hwheeler01/DrW_myrepo`
+-  ***head fork*** `YOUR-USERNAME/DrW_myrepo`
 
 ![]({{ site.baseurl }}/images/pullrequest1.png)
 
@@ -371,7 +374,7 @@ For more details on creating and merging pull requests:
 
 - Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
 
-- Most of all, don't get discouraged if things go wrong. The Git learning curve is steep. 
+- Most of all, don't get discouraged if things go wrong. The Git learning curve is steep. <https://xkcd.com/1597/>
 
 ![](https://imgs.xkcd.com/comics/git.png)
 
