@@ -9,16 +9,17 @@ Portions adapted from <https://happygitwithr.com/> and <http://www.cureffi.org/2
 ## Why Git?
 Git is a version control system. It’s original purpose was to help groups of developers work collaboratively on big software projects. Git manages the evolution of a set of files – called a repository – in a sane, highly structured way. If you have no idea what I’m talking about, think of it as the “Track Changes” features from Microsoft Word but much, much better.
 
-Full participation in the “data science community” these days practically requires familiarity with Git and GitHub. You will use GitHub to host and share your code as your work on your projects. You will be required to turn in your <a href="http://hwheeler01.github.io/CompBio/assignments/#code">project code</a> via GitHub at the end of the semester. You should start using it now because there are also several [repo checks](http://hwheeler01.github.io/CompBio/assignments/#repos) throughout the semester. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it. You should also set up your GitHub account on `compbio.cs.luc.edu`, where Git is already installed.
+Full participation in the bioinformatics community these days practically requires familiarity with Git and GitHub. Most publications include a GitHub repo (or other online repo) of the code used in the project. You will use GitHub to host and share your code as you work on your [mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) and [group project](http://hwheeler01.github.io/CompBio/assignments/#code). There are also several [repo checks](http://hwheeler01.github.io/CompBio/assignments/#repos) throughout the semester to encourage continuous engagement with Git and GitHub. Below are directions on how to install the Git software locally on your computer and a tutorial on how to use it. You should also set up your GitHub account on `compbio.cs.luc.edu`, where Git is already installed, we will do this together in class.
 
 ### 1. Make a GitHub account and install Git
 Go to <a href="https://github.com/">GitHub.com</a> and register yourself an account. You can have unlimited free public repositories; their business model is based on charging for private repositories. If you use your `.edu` email address, you can sign up for an <a href="https://education.github.com/discount_requests/new">education discount</a> which gives you five free private repos. You'll also need to install and configure git; follow the directions for your operating system.
 
-#### For Mac OSX:
-Install <a href="https://desktop.github.com/">GitHub Desktop for Mac</a> that provides the command line version of Git itself, a GUI client, and smooth integration with GitHub. Choose the defaults upon installation.
+#### Git Clients
+To most effectively use Git from `compbio.cs.luc`, we will focus on command line operation, but you are welcome to try a GUI client on your local laptop. Here are some [Git client recommendations](https://happygitwithr.com/git-client.html).
 
-#### For Windows:
-Install <a href="https://git-for-windows.github.io/">Git for Windows</a> to get Git in addition to some other useful tools, such as the <a href="http://stat545-ubc.github.io/git09_shell.html">Bash shell</a> and a GUI client. Choose the defaults upon installation.
+#### Installing command line Git
+Follow these directions for your OS to [install git](https://happygitwithr.com/install-git.html).
+
 
 ### 2. Introduce yourself to Git
 *You only have to set this up once per machine. We'll do the first this on `compbio.cs.luc.edu` together and then you should do it on your laptop.*
@@ -40,7 +41,7 @@ The above commands return nothing. You can check that `git` understood what you 
 Resources:
 
 * [GitHub's advice](https://help.github.com/articles/set-up-git)
-* [Quick primer on the shell](http://stat545-ubc.github.io/git09_shell.html)
+* [Quick primer on the shell](https://happygitwithr.com/shell.html)
 
 
 ### 3. Make your first repo on GitHub
@@ -58,11 +59,11 @@ Click big green button "Clone or download" and copy the HTTPS clone URL. There i
 
 ### 4. Clone the repo to your local computer
 
-Go to the [shell](http://stat545-ubc.github.io/git09_shell.html) (on Mac: Terminal, on Windows: Git BASH).
+Go to the [shell](https://happygitwithr.com/shell.html) (on Mac: Terminal, on Windows: Git BASH).
 
 Take note of what directory you're in. Use `pwd` to display working directory and `cd` to move around. 
 
-Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](http://stat545-ubc.github.io/git09_shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
+Clone `myrepo` from GitHub to your computer. This URL should have **your GitHub username** and the name of **your practice repo**. If your [shell](https://happygitwithr.com/shell.html) cooperates, you should be able to paste the whole `https://....` bit that we copied above. But some shells are not (immediately) clipboard aware. Type it. **Accurately.**
 
 ``` bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
@@ -71,12 +72,12 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 This should look something like this:
 
 ``` bash
-Heathers-MacBook-Air:GitHub heather$ git clone https://github.com/hwheeler01/myrepo.git
+hwheeler@compbio:~$ git clone https://github.com/hwheeler01/myrepo.git
 Cloning into 'myrepo'...
-remote: Counting objects: 3, done.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-Checking connectivity... done.
 ```
 
 Make this new repo your working directory, list its files, display the README, and get some information on its connection to GitHub:
@@ -91,12 +92,11 @@ git remote show origin
 This should look something like this:
 
 ``` bash
-Heathers-MacBook-Air:GitHub heather$ cd myrepo/
-Heathers-MacBook-Air:myrepo heather$ ls
+hwheeler@compbio:~$ cd myrepo/
+hwheeler@compbio:~/myrepo$ ls
 README.md
-Heathers-MacBook-Air:myrepo heather$ cat README.md 
-# myrepo
-Heathers-MacBook-Air:myrepo heather$ git remote show origin
+hwheeler@compbio:~/myrepo$ cat README.md 
+# myrepohwheeler@compbio:~/myrepo$ git remote show origin
 * remote origin
   Fetch URL: https://github.com/hwheeler01/myrepo.git
   Push  URL: https://github.com/hwheeler01/myrepo.git
@@ -121,7 +121,7 @@ If your needs are relatively simple, then in a typical usage you would:
 - `git add` your changes to be tracked by git
 - `git commit` your changes to your local git repo
 - `git push` your changes from local to your remote repo (GitHub.com)
-- `git pull` any remote changes to your local repo
+- `git pull` any remote changes to your local repo 
 
 ### 5. Make a local change, then: add, commit, and push
 
@@ -135,11 +135,11 @@ git status
 This should look something like this:
 
 ``` bash
-Heathers-MacBook-Air:myrepo heather$ echo " Some words I wrote on my local computer" >> README.md
-
-Heathers-MacBook-Air:myrepo heather$ git status
+hwheeler@compbio:~/myrepo$ echo " Some words I wrote on my local computer" >> README.md
+hwheeler@compbio:~/myrepo$ git status
 On branch master
-Your branch is up-to-date with 'origin/master'.
+Your branch is up to date with 'origin/master'.
+
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
@@ -160,18 +160,19 @@ git push
 This should look something like this:
 
 ``` bash
-Heathers-MacBook-Air:myrepo heather$ git add README.md 
-
-Heathers-MacBook-Air:myrepo heather$ git commit -m 'A commit from my local computer'
-[master ba04d05] A commit from my local computer
+hwheeler@compbio:~/myrepo$ git add README.md
+hwheeler@compbio:~/myrepo$ git commit -m "A commit from my local computer"
+[master bf105dd] A commit from my local computer
  1 file changed, 1 insertion(+), 1 deletion(-)
-
-Heathers-MacBook-Air:myrepo heather$ git push
+hwheeler@compbio:~/myrepo$ git push
+Username for 'https://github.com': hwheeler01
+Password for 'https://hwheeler01@github.com': 
 Counting objects: 3, done.
-Writing objects: 100% (3/3), 305 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/hwheeler01/myrepo.git
-   5bacf85..ba04d05  master -> master
+   2e0f314..bf105dd  master -> master
+
 ```
 
 If this is the first time you've used your account on this particular machine, you will be challenged for your GitHub username and password. Provide them!
@@ -212,17 +213,19 @@ t = s.count("T")
 print(a, c, g, t)
 ```
 
+Open a new file called DNA.py with your favorite text editor, e.g. nano. Copy and paste the code above into this file and save. 
+
 ```bash
-#copy the script to your repo
-cp /homes/hwheeler/DNA.py .
-#add, commit, push
+#copy the script into DNA.py and save
+nano DNA.py
+#add, commit, push to your repo
 git add DNA.py
 git commit -m 'add nt count script'
 git push
 ```
 Refresh GitHub to confirm your script was added.
 
-Now, let's say you've discovered a more efficient way to write your python script by using a for loop. Edit your script to something like this:
+Now, let's say you've discovered a "more efficient" way to write your python script by using a for loop. Edit your script to something like this:
 
 ```python
 #!/usr/bin/python3
@@ -240,9 +243,9 @@ git diff
 Your screen should look something like this:
 
 ```bash
-Heathers-MacBook-Air:myrepo heather$ git diff
+hwheeler@compbio:~/myrepo$ git diff
 diff --git a/DNA.py b/DNA.py
-index 98645e6..55fbbe4 100644
+index 98645e6..31909f7 100644
 --- a/DNA.py
 +++ b/DNA.py
 @@ -1,7 +1,4 @@
@@ -254,7 +257,7 @@ index 98645e6..55fbbe4 100644
 -t = s.count("T")
 -print(a, c, g, t)
 +for n in ["A","C","G","T"]:
-+    print(s.count(n), end=' ')
++       print(s.count(n), end=' ')
 ```
 
 Now add, commit (**with a relevant message!!!**), and push just like before.
@@ -290,7 +293,7 @@ From your shell:
 cd ..
 #clone YOUR GitHub repo to your local machine/home directory
 #after forking, click the green "Clone or download" button and clipboard to copy address
-git clone https://github.com/YOUR-USERNAME/DrW_myrepo.git
+git clone https://github.com/<YOUR-USERNAME>/DrW_myrepo.git
 cd DrW_myrepo
 #specify Dr. Wheeler's repo is upstream of your copy
 git remote add upstream https://github.com/hwheeler01/DrW_myrepo.git
@@ -299,9 +302,9 @@ git remote -v
 The final command above should look like:
 
 ```bash
-Heathers-MacBook-Air:DrW_myrepo heather$ git remote -v
-origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (fetch)
-origin	https://github.com/YOUR-USERNAME/DrW_myrepo.git (push)
+hwheeler@compbio:~/DrW_myrepo$ git remote -v
+origin	https://github.com/<YOUR-USERNAME>/DrW_myrepo.git (fetch)
+origin	https://github.com/<YOUR-USERNAME>/DrW_myrepo.git (push)
 upstream  https://github.com/hwheeler01/DrW_myrepo.git (fetch)
 upstream  https://github.com/hwheeler01/DrW_myrepo.git (push)
 ```
@@ -335,7 +338,7 @@ git commit -m 'shortened DNA.py to 2 lines'
 git push
 ```
 
-Compare files at GitHub. Go to your forked `DrW_myrepo` repository and click the green button "New pull request". This will take you to a page comparing the differences between the base fork `hwheeler01/DrW_myrepo` and the head fork `YOUR-USERNAME/DrW_myrepo` and look something like this:
+Compare files at GitHub. Go to your forked `DrW_myrepo` repository and click the green button "New pull request". This will take you to a page comparing the differences between the ***base fork*** `hwheeler01/DrW_myrepo` and the ***head fork*** `YOUR-USERNAME/DrW_myrepo` and look something like this:
 
 ![]({{ site.baseurl }}/images/pullrequest1.png)
 
@@ -368,9 +371,17 @@ For more details on creating and merging pull requests:
 
 - Additional Git and GitHub resources are posted <a href="http://hwheeler01.github.io/CompBio/resources/">here</a>.
 
+- Most of all, don't get discouraged if things go wrong. The Git learning curve is steep. 
+
+![](https://imgs.xkcd.com/comics/git.png)
+
 
 ### KEY POINTS: 
 
 - **Add and commit new scripts and other small files throughout your coding session.**
+
 - **Always push everything at the end of a session so your GitHub repository is updated with your new work.**
-- **At the beginning of a coding session, always do a** `git pull` **to make sure your local files are up to date. If your repo is a forked copy, also sync with the upstream repo before making changes.**
+
+-  **If you make an edit on the GitHub website itself, be sure to do a `git pull` before you resume working on your local files.**
+
+- **At the beginning of a coding session, always do a `git pull` to make sure your local files are up to date. If your repo is a forked copy, also sync with the upstream repo before making changes.**
