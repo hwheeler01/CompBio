@@ -122,15 +122,15 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Feb 11| FASTQ and Assembly Quality | |[ROSALIND 14-15](http://rosalind.info/classes/683/)|
 |Feb 13| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a> Introduce Mini-projects |Start Mini-project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | |
 |Feb 18| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| [ROSALIND 16-21](http://rosalind.info/classes/683/)|
-|Feb 20| R/Mini-project Workday |  |  |
-|Feb 25|Group Project Introduction | rank projects | [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
-|Feb 27|Mini-project Workday | assign groups| [Mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) DUE 11:59PM|
+|Feb 20| R/Mini-project Workday | rank projects |  |
+|Feb 25|Group Project Introduction | assign groups | [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
+|Feb 27|Mini-project Workday | | [Mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) DUE 11:59PM|
 |Mar 3| ***No class: SPRING BREAK*** |
 |Mar 5| ***No class: SPRING BREAK*** |
 |Mar 10| Initial Group Presentation Details | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks |
 |Mar 12|Group Work | |  |
 |Mar 17|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
-|Mar 19|Group Work | | [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
+|Mar 19|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |Mar 24|Group Work | | |
 |Mar 26|Group Work, 5-min Group Progress Presentations| |[5-min Group Progress Presentation](http://hwheeler01.github.io/CompBio/assignments/#present) |
 |Mar 31|Group Work | | |
