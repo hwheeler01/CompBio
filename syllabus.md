@@ -123,7 +123,7 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Feb 13| <a href="http://hwheeler01.github.io/CompBio/github">Introduction to GitHub</a> Introduce Mini-projects |Start Mini-project <a href="https://help.github.com/articles/create-a-repo/">Repo</a> | |
 |Feb 18| Data visualization in R  | [ggplot2 tutorial](https://hwheeler01.github.io/CompBio/ggplot_tutorial.html)| [ROSALIND 16-21](http://rosalind.info/classes/683/)|
 |Feb 20| R/Mini-project Workday | rank projects |  |
-|Feb 25|[Group Project Introduction](https://docs.google.com/presentation/d/1_sg_fL4_Wnrkozqpgq8KKG6kQdMCtbRxniI4A8LKsOk/edit?usp=sharing) | assign groups | [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
+|Feb 25|[Group Project Introduction](https://docs.google.com/presentation/d/1_sg_fL4_Wnrkozqpgq8KKG6kQdMCtbRxniI4A8LKsOk/edit?usp=sharing) | assign [groups](https://hwheeler01.github.io/CompBio/group_assignments_2020) | [R Plotting Exercises](https://hwheeler01.github.io/CompBio/R_Plotting_Exercises.html)|
 |Feb 27|Mini-project Workday | | [Mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) DUE 11:59PM|
 |Mar 3| ***No class: SPRING BREAK*** |
 |Mar 5| ***No class: SPRING BREAK*** |
