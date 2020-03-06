@@ -127,7 +127,7 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Feb 27|Mini-project Workday | | [Mini-project](http://hwheeler01.github.io/CompBio/assignments/#miniproject) DUE 11:59PM|
 |Mar 3| ***No class: SPRING BREAK*** |
 |Mar 5| ***No class: SPRING BREAK*** |
-|Mar 10| Initial Group Presentation Details | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks |
+|Mar 10| Initial Group Presentation [Details](https://hwheeler01.github.io/CompBio/init_pres) | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks |
 |Mar 12|Group Work | |  |
 |Mar 17|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 19|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
