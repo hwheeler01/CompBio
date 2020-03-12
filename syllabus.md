@@ -129,18 +129,19 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Mar 5| ***No class: SPRING BREAK*** |
 |Mar 10| Initial Group Presentation [Details](https://hwheeler01.github.io/CompBio/init_pres) | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks |
 |Mar 12|Group Work | |  |
-|Mar 17|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
-|Mar 19|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
-|Mar 24|Group Work | | |
-|Mar 26|Group Work, 5-min Group Progress Presentations| |[5-min Group Progress Presentation](http://hwheeler01.github.io/CompBio/assignments/#present) |
+|Mar 17|Group Work - open Zoom/slack office hours | [https://luc.zoom.us/j/8231145193](https://luc.zoom.us/j/8231145193) [comp383483.slack.com](https://comp383483.slack.com)|
+|Mar 19|Group Work - open Zoom/slack office hours | |
+|Mar 24|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
+|Mar 26|Initial Group Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
 |Mar 31|Group Work | | |
-|Apr 2|Cross-team hacking | | [Repo Check #2](http://hwheeler01.github.io/CompBio/assignments/#repos) |
+|Apr 2|Group Work, 5-min Group Progress Presentations| |[5-min Group Progress Presentation](http://hwheeler01.github.io/CompBio/assignments/#present) |
 |Apr 7|Group Work | | |
-|Apr 9|Group Work, 5-min Group Progress Presentations| |[5-min Group Progress Presentation](http://hwheeler01.github.io/CompBio/assignments/#present), [Rough Draft App Note](http://hwheeler01.github.io/CompBio/assignments/#note) |
-|Apr 14|Group Work | Discuss Rough Draft |  |
-|Apr 16| Group Work  | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos)|
-|Apr 21| Group Work |  |
-|Apr 23|**Final Presentations**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
+|Apr 9|Group Work, 5-min Group Progress Presentations | | [5-min Group Progress Presentation](http://hwheeler01.github.io/CompBio/assignments/#present), [Repo Check #2](http://hwheeler01.github.io/CompBio/assignments/#repos) |
+|Apr 14|Group Work | | [Rough Draft App Note](http://hwheeler01.github.io/CompBio/assignments/#note) |
+|Apr 16|Discuss Rough Draft| ||
+|Apr 21|Group Work |  |  |
+|Apr 23| **Final Presentations** | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos)|
+|Apr 30|**Final Projects DUE**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
 
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
