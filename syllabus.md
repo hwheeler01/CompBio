@@ -140,8 +140,8 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Apr 14|Group Work | | [Rough Draft App Note](http://hwheeler01.github.io/CompBio/assignments/#note) |
 |Apr 16|Discuss Rough Draft| ||
 |Apr 21|Group Work |  |  |
-|Apr 23| **Final Presentations** | | [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos)|
-|Apr 30|**Final Projects DUE**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
+|Apr 23| **Final Presentations** | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Final Presentation</a>, [Repo Check #3](http://hwheeler01.github.io/CompBio/assignments/#repos)|
+|Apr 30|**Final Projects DUE**| |  <a href="http://hwheeler01.github.io/CompBio/assignments/#code">Project code</a>, <a href="http://hwheeler01.github.io/CompBio/assignments/#note">Final Application Note</a>|
 
 
 <span style="font-weight: bold;"><a name="dates"></a>Important Dates:<br>
