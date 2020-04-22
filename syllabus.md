@@ -129,7 +129,7 @@ More than 100 points are available. Your final grade will simply be the sum of a
 |Mar 5| ***No class: SPRING BREAK*** |
 |Mar 10| Initial Group Presentation [Details](https://hwheeler01.github.io/CompBio/init_pres) | Start [Wiki](https://help.github.com/articles/about-github-wikis/) on your Project Repo: define individual roles & set weekly benchmarks |
 |Mar 12|Group Work | |  |
-|Mar 17|Group Work - open Zoom/slack office hours | [https://luc.zoom.us/j/8231145193](https://luc.zoom.us/j/8231145193) [comp383483.slack.com](https://comp383483.slack.com)|
+|Mar 17|Group Work - open Zoom/slack office hours | [comp383483.slack.com](https://comp383483.slack.com)|
 |Mar 19|Group Work - open Zoom/slack office hours | |
 |Mar 24|Initial [Group](https://hwheeler01.github.io/CompBio/group_assignments_2020) Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> |
 |Mar 26|Initial [Group](https://hwheeler01.github.io/CompBio/group_assignments_2020) Presentations | | <a href="http://hwheeler01.github.io/CompBio/assignments/#present">Initial Group Presentation</a> [Repo Check #1](http://hwheeler01.github.io/CompBio/assignments/#repos) |
