@@ -189,13 +189,38 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -205,14 +230,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -221,9 +248,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -310,6 +337,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -421,7 +449,7 @@ summary {
 
 <h1 class="title toc-ignore">Biopython Review &amp; Tips</h1>
 <h4 class="author">Heather Wheeler</h4>
-<h4 class="date">2020-01-16 11:47:52</h4>
+<h4 class="date">2021-01-11 13:42:32</h4>
 
 </div>
 
@@ -441,70 +469,69 @@ summary {
 <div id="windows" class="section level4">
 <h4>Windows</h4>
 <ol style="list-style-type: decimal">
-<li>Download and Install MobaXterm <a href="https://mobaxterm.mobatek.net/" class="uri">https://mobaxterm.mobatek.net/</a></li>
+<li><p>Download and Install MobaXterm <a href="https://mobaxterm.mobatek.net/" class="uri">https://mobaxterm.mobatek.net/</a></p></li>
 <li><p>Ensure X11 Forwarding box is checked (should be by default)</p></li>
 <li><p>Use the <code>-X</code> flag when you log in:</p></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">ssh</span> -X UVID@compbio.cs.luc.edu</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#verify it worked with this command</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="ex">xeyes</span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">#do you see googly eyes? If not, get help.</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#to start idle for coding/debugging:</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="ex">idle</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ssh</span> -X UVID@compbio.cs.luc.edu</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#verify it worked with this command</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">xeyes</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co">#do you see googly eyes? If not, get help.</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">#to start idle for coding/debugging:</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="ex">idle</span></span></code></pre></div>
 </div>
 </div>
 <div id="here-is-the-python-3-code-we-went-over-in-class-in-the-idle-shell" class="section level3">
 <h3>Here is the Python 3 code we went over in class in the IDLE shell</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co">#!/usr/bin/python3</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="im">from</span> Bio.Seq <span class="im">import</span> Seq <span class="co">#imports the sequence class</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#if this import gives an error, install biopython </span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#make a Seq object</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">myseq <span class="op">=</span> Seq(<span class="st">&quot;AGTACAGTGGT&quot;</span>)</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">myseq</a></code></pre></div>
-<pre><code>## Seq('AGTACAGTGGT')</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="bu">print</span>(myseq)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#!/usr/bin/python3</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">from</span> Bio.Seq <span class="im">import</span> Seq <span class="co">#imports the sequence class</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#if this import gives an error, install biopython </span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#make a Seq object</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>myseq <span class="op">=</span> Seq(<span class="st">&quot;AGTACAGTGGT&quot;</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>myseq</span></code></pre></div>
+<pre><code>## Seq(&#39;AGTACAGTGGT&#39;)</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="bu">print</span>(myseq)</span></code></pre></div>
 <pre><code>## AGTACAGTGGT</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="bu">dir</span>(myseq) <span class="co">#see all methods associated with Seq object</span></a></code></pre></div>
-<pre><code>## ['__add__', '__class__', '__contains__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__imul__', '__init__', '__init_subclass__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__radd__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_data', '_get_seq_str_and_check_alphabet', 'alphabet', 'back_transcribe', 'complement', 'count', 'count_overlap', 'encode', 'endswith', 'find', 'index', 'join', 'lower', 'lstrip', 'reverse_complement', 'rfind', 'rindex', 'rsplit', 'rstrip', 'split', 'startswith', 'strip', 'tomutable', 'transcribe', 'translate', 'ungap', 'upper']</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" data-line-number="1">rc <span class="op">=</span> myseq.reverse_complement()</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="bu">print</span>(rc)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="bu">dir</span>(myseq) <span class="co">#see all methods associated with Seq object</span></span></code></pre></div>
+<pre><code>## [&#39;__add__&#39;, &#39;__class__&#39;, &#39;__contains__&#39;, &#39;__delattr__&#39;, &#39;__dict__&#39;, &#39;__dir__&#39;, &#39;__doc__&#39;, &#39;__eq__&#39;, &#39;__format__&#39;, &#39;__ge__&#39;, &#39;__getattribute__&#39;, &#39;__getitem__&#39;, &#39;__gt__&#39;, &#39;__hash__&#39;, &#39;__imul__&#39;, &#39;__init__&#39;, &#39;__init_subclass__&#39;, &#39;__le__&#39;, &#39;__len__&#39;, &#39;__lt__&#39;, &#39;__module__&#39;, &#39;__mul__&#39;, &#39;__ne__&#39;, &#39;__new__&#39;, &#39;__radd__&#39;, &#39;__reduce__&#39;, &#39;__reduce_ex__&#39;, &#39;__repr__&#39;, &#39;__rmul__&#39;, &#39;__setattr__&#39;, &#39;__sizeof__&#39;, &#39;__str__&#39;, &#39;__subclasshook__&#39;, &#39;__weakref__&#39;, &#39;_data&#39;, &#39;back_transcribe&#39;, &#39;complement&#39;, &#39;complement_rna&#39;, &#39;count&#39;, &#39;count_overlap&#39;, &#39;encode&#39;, &#39;endswith&#39;, &#39;find&#39;, &#39;index&#39;, &#39;join&#39;, &#39;lower&#39;, &#39;lstrip&#39;, &#39;reverse_complement&#39;, &#39;reverse_complement_rna&#39;, &#39;rfind&#39;, &#39;rindex&#39;, &#39;rsplit&#39;, &#39;rstrip&#39;, &#39;split&#39;, &#39;startswith&#39;, &#39;strip&#39;, &#39;tomutable&#39;, &#39;transcribe&#39;, &#39;translate&#39;, &#39;ungap&#39;, &#39;upper&#39;]</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>rc <span class="op">=</span> myseq.reverse_complement()</span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="bu">print</span>(rc)</span></code></pre></div>
 <pre><code>## ACCACTGTACT</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" data-line-number="1">myseq.translate()</a>
-<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="co">#warning that myseq is not a multiple of three</span></a></code></pre></div>
-<pre><code>## Seq('STV', ExtendedIUPACProtein())
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>myseq.translate()</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="co">#warning that myseq is not a multiple of three</span></span></code></pre></div>
+<pre><code>## Seq(&#39;STV&#39;)
 ## 
-## //usr/local/lib/python3.6/dist-packages/Bio/Seq.py:2859: BiopythonWarning: Partial codon, len(sequence) not a multiple of three. Explicitly trim the sequence or add trailing N before translation. This may become an error in future.
-##   BiopythonWarning,</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="bu">len</span>(myseq)</a></code></pre></div>
+## /homes/hwheeler/.local/lib/python3.8/site-packages/Bio/Seq.py:2334: BiopythonWarning: Partial codon, len(sequence) not a multiple of three. Explicitly trim the sequence or add trailing N before translation. This may become an error in future.
+##   warnings.warn(</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="bu">len</span>(myseq)</span></code></pre></div>
 <pre><code>## 11</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" data-line-number="1">myseq[:<span class="op">-</span><span class="dv">2</span>].translate()</a></code></pre></div>
-<pre><code>## Seq('STV', ExtendedIUPACProtein())</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" data-line-number="1">gc_count <span class="op">=</span> myseq.count(<span class="st">&quot;G&quot;</span>) <span class="op">+</span> myseq.count(<span class="st">&quot;C&quot;</span>)</a>
-<a class="sourceLine" id="cb16-2" data-line-number="2"><span class="co">#calculate GC content</span></a>
-<a class="sourceLine" id="cb16-3" data-line-number="3">gc_content <span class="op">=</span> gc_count<span class="op">/</span><span class="bu">len</span>(myseq) <span class="op">*</span> <span class="dv">100</span></a>
-<a class="sourceLine" id="cb16-4" data-line-number="4"><span class="bu">print</span>(gc_content)</a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a>myseq[:<span class="op">-</span><span class="dv">2</span>].translate()</span></code></pre></div>
+<pre><code>## Seq(&#39;STV&#39;)</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a>gc_count <span class="op">=</span> myseq.count(<span class="st">&quot;G&quot;</span>) <span class="op">+</span> myseq.count(<span class="st">&quot;C&quot;</span>)</span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="co">#calculate GC content</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>gc_content <span class="op">=</span> gc_count<span class="op">/</span><span class="bu">len</span>(myseq) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb16-4"><a href="#cb16-4"></a><span class="bu">print</span>(gc_content)</span></code></pre></div>
 <pre><code>## 45.45454545454545</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">def</span> gc(sequence):</a>
-<a class="sourceLine" id="cb18-2" data-line-number="2">    <span class="co">#make function to calculate GC content</span></a>
-<a class="sourceLine" id="cb18-3" data-line-number="3">    gc_count <span class="op">=</span> sequence.count(<span class="st">&quot;G&quot;</span>) <span class="op">+</span> sequence.count(<span class="st">&quot;C&quot;</span>)</a>
-<a class="sourceLine" id="cb18-4" data-line-number="4">    gc_content <span class="op">=</span> gc_count<span class="op">/</span><span class="bu">len</span>(sequence) <span class="op">*</span> <span class="dv">100</span></a>
-<a class="sourceLine" id="cb18-5" data-line-number="5">    <span class="cf">return</span> gc_content</a>
-<a class="sourceLine" id="cb18-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb18-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb18-8" data-line-number="8">gc(myseq)</a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">def</span> gc(sequence):</span>
+<span id="cb18-2"><a href="#cb18-2"></a>    <span class="co">&#39;&#39;&#39;function to calculate GC content&#39;&#39;&#39;</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>    gc_count <span class="op">=</span> sequence.count(<span class="st">&quot;G&quot;</span>) <span class="op">+</span> sequence.count(<span class="st">&quot;C&quot;</span>)</span>
+<span id="cb18-4"><a href="#cb18-4"></a>    gc_content <span class="op">=</span> gc_count<span class="op">/</span><span class="bu">len</span>(sequence) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb18-5"><a href="#cb18-5"></a>    <span class="cf">return</span> gc_content</span>
+<span id="cb18-6"><a href="#cb18-6"></a></span>
+<span id="cb18-7"><a href="#cb18-7"></a>gc(myseq)</span></code></pre></div>
 <pre><code>## 45.45454545454545</code></pre>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="im">from</span> Bio <span class="im">import</span> SeqIO</a>
-<a class="sourceLine" id="cb20-2" data-line-number="2"><span class="co">#use Biopython to parse FASTA files!</span></a>
-<a class="sourceLine" id="cb20-3" data-line-number="3"><span class="co">#need the SeqIO class</span></a>
-<a class="sourceLine" id="cb20-4" data-line-number="4">mydir <span class="op">=</span> <span class="st">'/data/hwheeler/'</span></a>
-<a class="sourceLine" id="cb20-5" data-line-number="5">handle <span class="op">=</span> <span class="bu">open</span>(mydir <span class="op">+</span> <span class="st">&quot;example.fasta&quot;</span>)</a>
-<a class="sourceLine" id="cb20-6" data-line-number="6"><span class="cf">for</span> record <span class="kw">in</span> SeqIO.parse(handle, <span class="st">'fasta'</span>):</a>
-<a class="sourceLine" id="cb20-7" data-line-number="7">    <span class="co">#this will parse each sequence in the fasta file</span></a>
-<a class="sourceLine" id="cb20-8" data-line-number="8">    <span class="bu">print</span>(record.<span class="bu">id</span>)</a>
-<a class="sourceLine" id="cb20-9" data-line-number="9">    <span class="bu">print</span>(record.seq)</a>
-<a class="sourceLine" id="cb20-10" data-line-number="10">    <span class="bu">print</span>(gc(record.seq))</a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a><span class="im">from</span> Bio <span class="im">import</span> SeqIO</span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="co">#use Biopython to parse FASTA files!</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a><span class="co">#need the SeqIO class</span></span>
+<span id="cb20-4"><a href="#cb20-4"></a>mydir <span class="op">=</span> <span class="st">&#39;/homes/data/&#39;</span></span>
+<span id="cb20-5"><a href="#cb20-5"></a>handle <span class="op">=</span> <span class="bu">open</span>(mydir <span class="op">+</span> <span class="st">&quot;example.fasta&quot;</span>)</span>
+<span id="cb20-6"><a href="#cb20-6"></a><span class="cf">for</span> record <span class="kw">in</span> SeqIO.parse(handle, <span class="st">&#39;fasta&#39;</span>):</span>
+<span id="cb20-7"><a href="#cb20-7"></a>    <span class="co">#this will parse each sequence in the fasta file</span></span>
+<span id="cb20-8"><a href="#cb20-8"></a>    <span class="bu">print</span>(record.<span class="bu">id</span>)</span>
+<span id="cb20-9"><a href="#cb20-9"></a>    <span class="bu">print</span>(record.seq)</span>
+<span id="cb20-10"><a href="#cb20-10"></a>    <span class="bu">print</span>(gc(record.seq))</span></code></pre></div>
 <pre><code>## Rosalind_6404
 ## CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG
 ## 53.75
@@ -514,18 +541,17 @@ summary {
 ## Rosalind_0808
 ## CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT
 ## 60.91954022988506</code></pre>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" data-line-number="1">record <span class="co">#see what's in record</span></a></code></pre></div>
-<pre><code>## SeqRecord(seq=Seq('CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT', SingleLetterAlphabet()), id='Rosalind_0808', name='Rosalind_0808', description='Rosalind_0808', dbxrefs=[])</code></pre>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" data-line-number="1">handle <span class="op">=</span> <span class="bu">open</span>(mydir <span class="op">+</span> <span class="st">&quot;example.fasta&quot;</span>)</a>
-<a class="sourceLine" id="cb24-2" data-line-number="2"><span class="co">#if you want to keep all of the sequences in the file,</span></a>
-<a class="sourceLine" id="cb24-3" data-line-number="3"><span class="co">#put them in a list</span></a>
-<a class="sourceLine" id="cb24-4" data-line-number="4">sequences <span class="op">=</span> <span class="bu">list</span>(SeqIO.parse(handle, <span class="st">&quot;fasta&quot;</span>))</a>
-<a class="sourceLine" id="cb24-5" data-line-number="5"><span class="bu">type</span>(sequences)</a></code></pre></div>
-<pre><code>## &lt;class 'list'&gt;</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" data-line-number="1">sequences</a></code></pre></div>
-<pre><code>## [SeqRecord(seq=Seq('CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGC...AGG', SingleLetterAlphabet()), id='Rosalind_6404', name='Rosalind_6404', description='Rosalind_6404', dbxrefs=[]), SeqRecord(seq=Seq('CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGA...CGC', SingleLetterAlphabet()), id='Rosalind_5959', name='Rosalind_5959', description='Rosalind_5959', dbxrefs=[]), SeqRecord(seq=Seq('CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT', SingleLetterAlphabet()), id='Rosalind_0808', name='Rosalind_0808', description='Rosalind_0808', dbxrefs=[])]</code></pre>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" data-line-number="1"><span class="bu">print</span>(sequences[<span class="dv">0</span>].seq)</a></code></pre></div>
-<pre><code>## CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a>record <span class="co">#see what&#39;s in record</span></span></code></pre></div>
+<pre><code>## SeqRecord(seq=Seq(&#39;CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT&#39;), id=&#39;Rosalind_0808&#39;, name=&#39;Rosalind_0808&#39;, description=&#39;Rosalind_0808&#39;, dbxrefs=[])</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a>handle <span class="op">=</span> <span class="bu">open</span>(mydir <span class="op">+</span> <span class="st">&quot;example.fasta&quot;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="co">#if you want to keep all of the sequences in the file, put them in a list</span></span>
+<span id="cb24-3"><a href="#cb24-3"></a>sequences <span class="op">=</span> <span class="bu">list</span>(SeqIO.parse(handle, <span class="st">&quot;fasta&quot;</span>))</span>
+<span id="cb24-4"><a href="#cb24-4"></a>sequences</span></code></pre></div>
+<pre><code>## [SeqRecord(seq=Seq(&#39;CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGC...AGG&#39;), id=&#39;Rosalind_6404&#39;, name=&#39;Rosalind_6404&#39;, description=&#39;Rosalind_6404&#39;, dbxrefs=[]), SeqRecord(seq=Seq(&#39;CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGA...CGC&#39;), id=&#39;Rosalind_5959&#39;, name=&#39;Rosalind_5959&#39;, description=&#39;Rosalind_5959&#39;, dbxrefs=[]), SeqRecord(seq=Seq(&#39;CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT&#39;), id=&#39;Rosalind_0808&#39;, name=&#39;Rosalind_0808&#39;, description=&#39;Rosalind_0808&#39;, dbxrefs=[])]</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1"></a>sequences[<span class="dv">0</span>].seq</span></code></pre></div>
+<pre><code>## Seq(&#39;CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGC...AGG&#39;)</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1"></a><span class="bu">str</span>(sequences[<span class="dv">0</span>].seq) <span class="co">#convert Seq object to string</span></span></code></pre></div>
+<pre><code>## &#39;CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG&#39;</code></pre>
 </div>
 <div id="hint-for-rosalind-problem-5-finding-a-shared-motif" class="section level3">
 <h3>Hint for ROSALIND Problem 5 Finding a Shared Motif</h3>
@@ -547,7 +573,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
