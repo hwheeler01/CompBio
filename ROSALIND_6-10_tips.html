@@ -189,13 +189,77 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
+<style type="text/css">
+a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
+a.anchor-section::before {content: '#';}
+.hasAnchor:hover a.anchor-section {visibility: visible;}
+</style>
+<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
+document.addEventListener('DOMContentLoaded', function() {
+  // Do nothing if AnchorJS is used
+  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
+    return;
+  }
+
+  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  // Do nothing if sections are already anchored
+  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
+    return null;
+  }
+
+  // Use section id when pandoc runs with --section-divs
+  const section_id = function(x) {
+    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
+            ? x.id : '');
+  };
+
+  // Add anchors
+  h.forEach(function(x) {
+    const id = x.id || section_id(x.parentElement);
+    if (id === '') {
+      return null;
+    }
+    let anchor = document.createElement('a');
+    anchor.href = '#' + id;
+    anchor.classList = ['anchor-section'];
+    x.classList.add('hasAnchor');
+    x.appendChild(anchor);
+  });
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -205,14 +269,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -221,9 +287,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -421,14 +487,13 @@ summary {
 
 <h1 class="title toc-ignore">ROSALIND 6-10 Tips</h1>
 <h4 class="author">COMP 383/483</h4>
-<h4 class="date">2020-01-21 10:00:04</h4>
+<h4 class="date">2021-01-24 15:29:40</h4>
 
 </div>
 
 
 <div id="class-rosalind-page." class="section level3">
-<h3>Class <a href="http://rosalind.info/classes/683/">ROSALIND</a> page.</h3>
-<p>Return to <a href="http://hwheeler01.github.io/CompBio/syllabus/#schedule">course schedule</a>.</p>
+<h3>Class <a href="http://rosalind.info/classes/788/">ROSALIND</a> page.</h3>
 <div id="problem-6-splc-0.5-pt" class="section level4">
 <h4>Problem 6 SPLC (0.5 pt)</h4>
 <ul>
@@ -452,16 +517,16 @@ summary {
 <ul>
 <li>Build a matrix and fill it in just like when you do it by hand. See Resources on <a href="https://sakai.luc.edu/">Sakai</a> for slides reviewing pairwise alignment with dynamic programming. Write out the Sample Dataset by hand to verify your matrix is filled correctly.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">#one way to build a matrix is a list of lists</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#try this in your shell:</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">M <span class="op">=</span> []</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):      <span class="co">#make a 5 row x 10 column matrix filled with zeroes</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">    M.append([<span class="dv">0</span>] <span class="op">*</span> <span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="bu">print</span>(M)                <span class="co">#view matrix M</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">#one way to build a matrix is a list of lists</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#try this in your shell:</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>M <span class="op">=</span> []</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):      <span class="co">#make a 5 row x 10 column matrix filled with zeroes</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    M.append([<span class="dv">0</span>] <span class="op">*</span> <span class="dv">10</span>)</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">print</span>(M)                <span class="co">#view matrix M</span></span></code></pre></div>
 <pre><code>## [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1">M[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">=</span> <span class="dv">1</span>             <span class="co">#change the 0 at row 0, column 1 to a 1</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">M[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">=</span> <span class="dv">3</span>             <span class="co">#change the 0 at row 1, column 2 to a 3</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="bu">print</span>(M)                <span class="co">#view matrix M</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>M[<span class="dv">0</span>][<span class="dv">1</span>] <span class="op">=</span> <span class="dv">1</span>             <span class="co">#change the 0 at row 0, column 1 to a 1</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>M[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">=</span> <span class="dv">3</span>             <span class="co">#change the 0 at row 1, column 2 to a 3</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(M)                <span class="co">#view matrix M</span></span></code></pre></div>
 <pre><code>## [[0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]</code></pre>
 </div>
 <div id="problem-10-edta-1.5-pt" class="section level4">
@@ -482,7 +547,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
