@@ -487,7 +487,7 @@ summary {
 
 <h1 class="title toc-ignore">ROSALIND 6-10 Tips</h1>
 <h4 class="author">COMP 383/483</h4>
-<h4 class="date">2021-01-24 15:29:40</h4>
+<h4 class="date">2021-01-27 09:20:25</h4>
 
 </div>
 
@@ -532,7 +532,7 @@ summary {
 <div id="problem-10-edta-1.5-pt" class="section level4">
 <h4>Problem 10 EDTA (1.5 pt)</h4>
 <ul>
-<li>Builds on Problem 9 EDIT. You’ll need to keep track of traceback “arrows” as you go in order to align the sequences by adding gaps (<code>-</code>) in the appropriate places. Since you only need to return one optimal alignment for this problem, you need to only save one directional arrow per matrix cell.</li>
+<li>Builds on Problem 9 EDIT. Once you’ve filled in your scoring matrix, you can build a traceback function that starts in the lower right corner and moves to the upper left corner of the matrix. In each cell, determine whether the minimum score came from the diagonal, left, or up position and use this information to build your alignment from right to left, adding gaps (<code>-</code>) in the appropriate places. Since you only need to return one optimal alignment for this problem, you need to only choose one minimum direction per matrix cell.</li>
 </ul>
 <p><strong><em>On the due date, in class, you may be asked questions about how your code works and your comments will help you explain. Inability to explain how your code works will result in a reduced grade.</em></strong></p>
 </div>
