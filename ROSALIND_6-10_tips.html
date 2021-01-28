@@ -487,33 +487,33 @@ summary {
 
 <h1 class="title toc-ignore">ROSALIND 6-10 Tips</h1>
 <h4 class="author">COMP 383/483</h4>
-<h4 class="date">2021-01-27 09:20:25</h4>
+<h4 class="date">2021-01-28 11:40:49</h4>
 
 </div>
 
 
 <div id="class-rosalind-page." class="section level3">
 <h3>Class <a href="http://rosalind.info/classes/788/">ROSALIND</a> page.</h3>
-<div id="problem-6-splc-0.5-pt" class="section level4">
-<h4>Problem 6 SPLC (0.5 pt)</h4>
+<div id="problem-6-splc" class="section level4">
+<h4>Problem 6 SPLC</h4>
 <ul>
 <li>Remove the given introns, concatenate the exons, and translate. I suggest using the Biopython Seq translate method.</li>
 </ul>
 </div>
-<div id="problem-7-kmer-0.5-pt" class="section level4">
-<h4>Problem 7 KMER (0.5 pt)</h4>
+<div id="problem-7-kmer" class="section level4">
+<h4>Problem 7 KMER</h4>
 <ul>
 <li>Try initializing a dictionary with keys for every possible 4-mer (<code>itertools.product()</code> may be helpful). Then, iterate over the DNA sequence and add a count to your dictionary when a 4-mer is encountered. Remember a string of length <em>n</em> can be seen as composed of <em>n−k+1</em> overlapping <em>k</em>-mers.</li>
 </ul>
 </div>
-<div id="problem-8-seto-1-pt" class="section level4">
-<h4>Problem 8 SETO (1 pt)</h4>
+<div id="problem-8-seto" class="section level4">
+<h4>Problem 8 SETO</h4>
 <ul>
 <li>Generate separate functions to calculate the union, intersection, or set difference of two sets (or use built-in Python set methods). Then build the required sets from the input (the <code>eval()</code> function may be useful) and call your functions.</li>
 </ul>
 </div>
-<div id="problem-9-edit-1.5-pt" class="section level4">
-<h4>Problem 9 EDIT (1.5 pt)</h4>
+<div id="problem-9-edit" class="section level4">
+<h4>Problem 9 EDIT</h4>
 <ul>
 <li>Build a matrix and fill it in just like when you do it by hand. See Resources on <a href="https://sakai.luc.edu/">Sakai</a> for slides reviewing pairwise alignment with dynamic programming. Write out the Sample Dataset by hand to verify your matrix is filled correctly.</li>
 </ul>
@@ -529,8 +529,8 @@ summary {
 <span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(M)                <span class="co">#view matrix M</span></span></code></pre></div>
 <pre><code>## [[0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]</code></pre>
 </div>
-<div id="problem-10-edta-1.5-pt" class="section level4">
-<h4>Problem 10 EDTA (1.5 pt)</h4>
+<div id="problem-10-edta" class="section level4">
+<h4>Problem 10 EDTA</h4>
 <ul>
 <li>Builds on Problem 9 EDIT. Once you’ve filled in your scoring matrix, you can build a traceback function that starts in the lower right corner and moves to the upper left corner of the matrix. In each cell, determine whether the minimum score came from the diagonal, left, or up position and use this information to build your alignment from right to left, adding gaps (<code>-</code>) in the appropriate places. Since you only need to return one optimal alignment for this problem, you need to only choose one minimum direction per matrix cell.</li>
 </ul>
