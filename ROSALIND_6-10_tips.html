@@ -487,7 +487,7 @@ summary {
 
 <h1 class="title toc-ignore">ROSALIND 6-10 Tips</h1>
 <h4 class="author">COMP 383/483</h4>
-<h4 class="date">2021-01-31 16:38:16</h4>
+<h4 class="date">2021-02-01 11:49:50</h4>
 
 </div>
 
@@ -498,18 +498,33 @@ summary {
 <h4>Problem 6 SPLC</h4>
 <ul>
 <li>Remove the given introns, concatenate the exons, and translate. I suggest using the Biopython Seq translate method.</li>
+<li>Additional <strong>Sample Data</strong> for testing/debugging
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_splc.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_splc.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-7-kmer" class="section level4">
 <h4>Problem 7 KMER</h4>
 <ul>
 <li>Try initializing a dictionary with keys for every possible 4-mer (<code>itertools.product()</code> may be helpful). Then, iterate over the DNA sequence and add a count to your dictionary when a 4-mer is encountered. Remember a string of length <em>n</em> can be seen as composed of <em>n−k+1</em> overlapping <em>k</em>-mers.</li>
+<li>Additional <strong>Sample Data</strong> for testing/debugging
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_kmer.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_kmer.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-8-seto" class="section level4">
 <h4>Problem 8 SETO</h4>
 <ul>
 <li>Generate separate functions to calculate the union, intersection, or set difference of two sets (or use built-in Python set methods). Then build the required sets from the input (the <code>eval()</code> function may be useful) and call your functions.</li>
+<li>Additional <strong>Sample Data</strong> for testing/debugging
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_seto.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_seto.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-9-edit" class="section level4">
@@ -540,6 +555,12 @@ summary {
 <h4>Problem 10 EDTA</h4>
 <ul>
 <li>Builds on Problem 9 EDIT. Once you’ve filled in your scoring matrix, you can build a traceback function that starts in the lower right corner and moves to the upper left corner of the matrix. In each cell, determine whether the minimum score came from the diagonal, left, or up position and use this information to build your alignment from right to left, adding gaps (<code>-</code>) in the appropriate places. Since you only need to return one optimal alignment for this problem, you need to only choose one minimum direction per matrix cell.</li>
+<li>Keep in mind you always add one from the up and left cells, but the diagonal could be +1 (mismatch) or +0 (match). You’ll want to determine the minimum score between the following 3 cases in your scoring matrix, M. That tells you the proper direction to traceback.
+<ul>
+<li><code>M[i-1][j] + 1</code></li>
+<li><code>M[i][j-1] + 1</code></li>
+<li><code>M[i-1][j-1] + 1</code> (if mismatch) or <code>M[i-1][j-1] + 0</code> (if match)</li>
+</ul></li>
 <li>Additional <strong>Sample Data</strong> for testing/debugging
 <ul>
 <li><a href="https://hwheeler01.github.io/CompBio/rosalind_edta.txt">Input</a></li>
