@@ -189,13 +189,77 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
+<style type="text/css">
+a.anchor-section {margin-left: 10px; visibility: hidden; color: inherit;}
+a.anchor-section::before {content: '#';}
+.hasAnchor:hover a.anchor-section {visibility: visible;}
+</style>
+<script>// Anchor sections v1.0 written by Atsushi Yasumoto on Oct 3rd, 2020.
+document.addEventListener('DOMContentLoaded', function() {
+  // Do nothing if AnchorJS is used
+  if (typeof window.anchors === 'object' && anchors.hasOwnProperty('hasAnchorJSLink')) {
+    return;
+  }
+
+  const h = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  // Do nothing if sections are already anchored
+  if (Array.from(h).some(x => x.classList.contains('hasAnchor'))) {
+    return null;
+  }
+
+  // Use section id when pandoc runs with --section-divs
+  const section_id = function(x) {
+    return ((x.classList.contains('section') || (x.tagName === 'SECTION'))
+            ? x.id : '');
+  };
+
+  // Add anchors
+  h.forEach(function(x) {
+    const id = x.id || section_id(x.parentElement);
+    if (id === '') {
+      return null;
+    }
+    let anchor = document.createElement('a');
+    anchor.href = '#' + id;
+    anchor.classList = ['anchor-section'];
+    x.classList.add('hasAnchor');
+    x.appendChild(anchor);
+  });
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -205,14 +269,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -221,9 +287,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -421,18 +487,22 @@ summary {
 
 <h1 class="title toc-ignore">ROSALIND 11-15 Tips</h1>
 <h4 class="author">COMP 383/483</h4>
-<h4 class="date">2020-01-28 11:21:37</h4>
+<h4 class="date">2021-02-01 09:32:02</h4>
 
 </div>
 
 
 <div id="class-rosalind-page." class="section level3">
-<h3>Class <a href="http://rosalind.info/classes/683/">ROSALIND</a> page.</h3>
-<p>Return to <a href="http://hwheeler01.github.io/CompBio/syllabus/#schedule">course schedule</a>.</p>
+<h3>Class <a href="http://rosalind.info/classes/788/">ROSALIND</a> page.</h3>
 <div id="problem-11-gbk-1-pt" class="section level4">
 <h4>Problem 11 GBK (1 pt)</h4>
 <ul>
-<li>See the <strong>Programming Shortcut</strong>. Use the <code>Bio.Entrez</code> and <code>Bio.SeqIO</code> modules. Entrez requires your email address, a precaution against excessive usage. See the <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc110">Biopython tutorial</a> for details. You can always try your search on the <a href="https://www.ncbi.nlm.nih.gov/nucleotide">NCBI Nucleotide database</a> to figure out how to structure your query.</li>
+<li><p>See the <strong>Programming Shortcut</strong>. Use the <code>Bio.Entrez</code> and <code>Bio.SeqIO</code> modules. Entrez requires your email address, a precaution against excessive usage. See the <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc110">Biopython tutorial</a> for details. You can always try your search on the <a href="https://www.ncbi.nlm.nih.gov/nucleotide">NCBI Nucleotide database</a> to figure out how to structure your query.</p></li>
+<li><p>Additional <strong>Sample Data</strong> for testing/debugging</p>
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_gbk.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_gbk.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-12-grph-2-pts" class="section level4">
@@ -440,57 +510,79 @@ summary {
 <ul>
 <li>Consider storing FASTA IDs as keys and sequences as values in a dictionary. Then, you can use the <code>itertools.combinations</code> method from the <code>itertools</code> module. For example:</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="im">import</span> itertools</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#combinations method from itertools module pulls all pairwise (2) keys from dict</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="cf">for</span> k1,k2 <span class="kw">in</span> itertools.combinations(datadict, <span class="dv">2</span>): </a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="co">#k1 is one key from datadict</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="co">#k2 is another key from datadict</span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">  <span class="co">#do something with them</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> itertools</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co">#combinations method from itertools module pulls all pairwise (2) keys from dict</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="cf">for</span> k1,k2 <span class="kw">in</span> itertools.combinations(datadict, <span class="dv">2</span>): </span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="co">#k1 is one key from datadict</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="co">#k2 is another key from datadict</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="co">#do something with them</span></span></code></pre></div>
+<ul>
+<li>Additional <strong>Sample Data</strong> for testing/debugging
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_grph.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_grph.txt">Output</a></li>
+</ul></li>
+</ul>
 </div>
 <div id="problem-13-dbru-2-pts" class="section level4">
 <h4>Problem 13 DBRU (2 pts)</h4>
 <ul>
-<li>Understand how sets work in Python (review Problem 8), use your reverse complement function (or Biopython’s method) from previous problems, and it should be fairly straightforward to print the adjacency list.</li>
+<li><p>Understand how sets work in Python (review Problem 8), use your reverse complement function (or Biopython’s method) from previous problems, and it should be fairly straightforward to print the adjacency list.</p></li>
+<li><p>Additional <strong>Sample Data</strong> for testing/debugging</p>
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_dbru.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_dbru.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-14-long-2.5-pts" class="section level4">
 <h4>Problem 14 LONG (2.5 pts)</h4>
 <ul>
-<li>One of the two most challenging ROSALIND problems.</li>
-<li>Builds on number 12 GRPH. (Review “Overlap Graphs” videos under Resources on <a href="https://sakai.luc.edu/">Sakai</a> for inspiration.)</li>
-<li>The greedy shortest common superstring algorithm will return the correct answer given constraints of this problem.</li>
-<li>Thus, start by finding the two strings with the longest overlap, replace these two strings with their merged string, then search for the next longest overlap, and repeat until you only have one merged string.</li>
-<li>Consider writing functions to find the overlap between two strings and the pair of strings with the maximum overlap in a list of strings.</li>
+<li><p>One of the two most challenging ROSALIND problems.</p></li>
+<li><p>Builds on number 12 GRPH. (Review “Assembly_Algorithms.pptx” on Week03 <a href="https://sakai.luc.edu/">Sakai</a> for inspiration.)</p></li>
+<li><p>The greedy shortest common superstring algorithm will return the correct answer given constraints of this problem.</p></li>
+<li><p>Thus, start by finding the two strings with the longest overlap, replace these two strings with their merged string, then search for the next longest overlap, and repeat until you only have one merged string.</p></li>
+<li><p>Consider writing functions to find the overlap between two strings and the pair of strings with the maximum overlap in a list of strings.</p></li>
+<li><p>Additional <strong>Sample Data</strong> for testing/debugging</p>
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_long.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_long.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="problem-15-gasm-2.5-pts" class="section level4">
 <h4>Problem 15 GASM (2.5 pts)</h4>
 <ul>
-<li>The other most challenging ROSALIND problem.</li>
-<li>Builds on number 13 DBRU. (Review “de Bruijn Graphs” videos under Resources on <a href="https://sakai.luc.edu/">Sakai</a> for inspiration.)</li>
-<li>You don’t know which value of <code>k</code> gives exactly two directed cycles, so iterate until you find the right value of <code>k</code>.</li>
-<li>For each value of <code>k</code>, build the <code>k-1</code> de Bruijn graph and try to build just 2 directed cycles that consume all of your edges.</li>
-<li>Remember, when the suffix of one edge matches the prefix of a second edge, you simply add the last character of the second edge’s suffix to the growing superstring.</li>
-<li>Keep in mind your superstrings may be a rotation of the Sample Dataset output, since they are cyclic.</li>
-<li>Also, the problem asks for one cyclic superstring, so you shouldn’t write both that you find.</li>
+<li><p>The other most challenging ROSALIND problem.</p></li>
+<li><p>Builds on number 13 DBRU. (Review “Assembly_Algorithms.pptx” on Week03 on <a href="https://sakai.luc.edu/">Sakai</a> for inspiration.)</p></li>
+<li><p>You don’t know which value of <code>k</code> gives exactly two directed cycles, so iterate until you find the right value of <code>k</code>.</p></li>
+<li><p>For each value of <code>k</code>, build the <code>k-1</code> de Bruijn graph and try to build just 2 directed cycles that consume all of your edges.</p></li>
+<li><p>Remember, when the suffix of one edge matches the prefix of a second edge, you simply add the last character of the second edge’s suffix to the growing superstring.</p></li>
+<li><p>Keep in mind your superstrings may be a rotation of the Sample Dataset output, since they are cyclic.</p></li>
+<li><p>Also, the problem asks for one cyclic superstring, so you shouldn’t write both that you find.</p></li>
+<li><p>Additional <strong>Sample Data</strong> for testing/debugging</p>
+<ul>
+<li><a href="https://hwheeler01.github.io/CompBio/rosalind_gasm.txt">Input</a></li>
+<li><a href="https://hwheeler01.github.io/CompBio/out_gasm.txt">Output</a></li>
+</ul></li>
 </ul>
 </div>
 <div id="visualizing-graphs-with-graphviz" class="section level4">
-<h4>Visualizing graphs with <code>graphviz</code></h4>
+<h4>Visualizing graphs with <a href="https://graphviz.readthedocs.io/en/stable/manual.html">graphviz</a></h4>
 <ul>
-<li>You may find it helpful to visualize graphs as you develop your solutions.</li>
+<li>You may find it helpful to visualize graphs as you develop your solutions to Problems 12-15.</li>
 <li>Install the <code>graphviz</code> module: <code>pip install graphviz</code> or <code>pip3 install graphviz</code> should work</li>
-<li>Here’s how to visualize the de Bruijn graph from the Sample Output from Problem 13:</li>
+<li>Here’s how to visualize the de Bruijn graph from the <a href="http://rosalind.info/problems/dbru/?class=788">Sample Output</a> from Problem 13:</li>
 </ul>
-<pre class="python3"><code>import graphviz
-dbg = graphviz.Digraph('dBgraph', format='png')
-with open(&quot;rosalind_solutions/out_dbru.txt&quot;, 'r') as f:
-    for line in f:
-        e1, e2 = line.rstrip().split(', ')
-        e1 = e1[1:]
-        e2 = e2[:-1]
-        dbg.edge(e1, e2)
-dbg.render()</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> graphviz</span>
+<span id="cb2-2"><a href="#cb2-2"></a>dbg <span class="op">=</span> graphviz.Digraph(<span class="st">&#39;dBgraph&#39;</span>, <span class="bu">format</span><span class="op">=</span><span class="st">&#39;png&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&quot;sample_output_13.txt&quot;</span>, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> f:</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="cf">for</span> line <span class="kw">in</span> f:</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        e1, e2 <span class="op">=</span> line.rstrip().split(<span class="st">&#39;, &#39;</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>        e1 <span class="op">=</span> e1[<span class="dv">1</span>:]</span>
+<span id="cb2-7"><a href="#cb2-7"></a>        e2 <span class="op">=</span> e2[:<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb2-8"><a href="#cb2-8"></a>        dbg.edge(e1, e2)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>dbg.render()</span></code></pre></div>
 <ul>
 <li>The above code will write a <code>dBgraph.gv.png</code> file that looks like this:</li>
 </ul>
@@ -508,7 +600,7 @@ dbg.render()</code></pre>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
