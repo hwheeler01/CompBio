@@ -10,6 +10,7 @@ permalink: /syllabus/
 - Office Hours: Tuesdays 12:30 - 2:30 in LSB 324
 - Website:	<http://hwheeler01.github.io/CompBio>
 
+
 <table style="width: px; height: 12px;" class="docutils" border="1">
   <caption><b>Index</b></caption> <colgroup><col width="50%"><col width="50%"></colgroup> <tbody valign="top">
     <tr>
